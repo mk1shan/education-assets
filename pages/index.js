@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import { useState } from "react";
 
 const grades = [
   {
@@ -29,6 +30,8 @@ const grades = [
 ];
 
 export default function Home() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <>
       <Head>
@@ -54,6 +57,25 @@ export default function Home() {
               <a href="#" className="nav-link active">Home</a>
               <a href="#grades" className="nav-link">Grades</a>
             </div>
+            <button 
+              className="mobile-menu-btn"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                {isMenuOpen ? (
+                  <path d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
+            </button>
+          </div>
+          
+          {/* Mobile Menu */}
+          <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
+            <a href="#" className="nav-link active" onClick={() => setIsMenuOpen(false)}>Home</a>
+            <a href="#grades" className="nav-link" onClick={() => setIsMenuOpen(false)}>Grades</a>
           </div>
         </nav>
 

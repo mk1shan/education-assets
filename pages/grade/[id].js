@@ -103,6 +103,23 @@ const chemistryFiles = [
   { name: "ශක්ති විද්‍යාව MCQ POINT COLLECTION", link: chemistryFolderLink }
 ];
 
+// Data for Physics (Science Stream)
+const physicsFolderLink = "https://drive.google.com/drive/folders/16QP9eM-iwEsGPHbWnx6VRhzbCqTAl5CL?usp=drive_link";
+
+const physicsFiles = [
+  { name: "Amith Pussella Sirs' Notes", link: physicsFolderLink },
+  { name: "EM_Phy-Classified EQs (1991-2020)", link: physicsFolderLink },
+  { name: "EM_Phy-Classified MCQs (1991-2022)", link: physicsFolderLink },
+  { name: "EM_Phy-Classified SEQs (1991-2022)", link: physicsFolderLink },
+  { name: "EM_Phy-Past Papers (1990-2025)", link: physicsFolderLink },
+  { name: "EM_Phy-Reference Books", link: physicsFolderLink },
+  { name: "EM_Phy-Resource Book", link: physicsFolderLink },
+  { name: "EM_Phy-Reviews (2000-2023)", link: physicsFolderLink },
+  { name: "SM_Phy-Past Papers (1980-2023)", link: physicsFolderLink },
+  { name: "SM_Phy-Reviews (1995-2024)", link: physicsFolderLink },
+  { name: "MCQ ANALYSIS I...pdf", link: physicsFolderLink }
+];
+
 // Data for Economics (Commerce Stream)
 const econFolderLink = "https://drive.google.com/drive/folders/10A43cuXuXsPvc63Wa4QSaot7KFoqNJaS?usp=sharing";
 
@@ -185,8 +202,16 @@ const businessStudiesFiles = [
 
 // Data for Engineering Tech (Technology Stream)
 const etFolderLink = "https://drive.google.com/drive/folders/1I7bDOPzzKkNf6RgkpPAf25iNcJhLlMbG?usp=sharing";
+const etNewFolderLink = "https://drive.google.com/drive/folders/1VdfeMKs8r4qbzMR9bFjFoQ60sQ2643pT?usp=drive_link";
 
 const etFiles = [
+  { name: "Short Notes", link: etNewFolderLink },
+  { name: "Syllabus", link: etNewFolderLink },
+  { name: "Teacher Guide", link: etNewFolderLink },
+  { name: "TextBook", link: etNewFolderLink },
+  { name: "hadinwima.txt", link: etNewFolderLink },
+  
+  // Existing files
   { name: "2015 et", link: etFolderLink },
   { name: "2016 et", link: etFolderLink },
   { name: "2017 et", link: etFolderLink },
@@ -203,8 +228,16 @@ const etFiles = [
 
 // Data for ICT (Technology Stream)
 const ictFolderLink = "https://drive.google.com/drive/folders/1qmF7DlnemUtyVkq4YSfR8404MGNY4ZMc?usp=sharing";
+const ictNewFolderLink = "https://drive.google.com/drive/folders/1xc5jnO4AJqiittZOcbryFkpNYh_n4z5v?usp=drive_link";
 
 const ictFiles = [
+  { name: "short notes", link: ictNewFolderLink },
+  { name: "Syllabus", link: ictNewFolderLink },
+  { name: "Teachers Guide", link: ictNewFolderLink },
+  { name: "Text Book", link: ictNewFolderLink },
+  { name: "hadinwima.txt", link: ictNewFolderLink },
+
+  // Existing files
   { name: "Answers", link: ictFolderLink },
   { name: "විවරණ 2015-2024", link: ictFolderLink },
   { name: "2011 ict", link: ictFolderLink },
@@ -257,6 +290,18 @@ const sftFiles = [
   { name: "2021 sft", link: sftFolderLink },
   { name: "2022 sft", link: sftFolderLink },
   { name: "2023 sft", link: sftFolderLink }
+];
+
+// Data for BST (Technology Stream)
+const bstFolderLink = "https://drive.google.com/drive/folders/1m-1sOfCxWYWctV1j6Ir1lRKsVgb76v-b?usp=drive_link";
+
+const bstFiles = [
+  { name: "Short Notes", link: bstFolderLink },
+  { name: "Syllabus", link: bstFolderLink },
+  { name: "Teachers Guide", link: bstFolderLink },
+  { name: "TextBook", link: bstFolderLink },
+  { name: "BST Subjects.txt", link: bstFolderLink },
+  { name: "hadinwima.txt", link: bstFolderLink }
 ];
 
 // Data for Geography (Arts Stream)
@@ -419,7 +464,12 @@ const gradeConfig = {
         subtitle: "Physics, Chemistry, Biology...",
         image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=600&q=80",
         subjects: [
-          { name: "Physics", files: [], link: "#" },
+          { 
+            name: "Physics", 
+            files: physicsFiles, 
+            link: physicsFolderLink,
+            special: true
+          },
           { 
             name: "Chemistry", 
             files: chemistryFiles, 
@@ -450,6 +500,12 @@ const gradeConfig = {
             name: "SFT", 
             files: sftFiles, 
             link: sftFolderLink,
+            special: true
+          },
+          { 
+            name: "BST", 
+            files: bstFiles, 
+            link: bstFolderLink,
             special: true
           }
         ]
@@ -558,6 +614,8 @@ export default function GradePage() {
   const router = useRouter();
   const { id } = router.query;
   const [selectedStream, setSelectedStream] = useState(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
 
   const grade = gradeConfig[id] || null;
 
@@ -605,7 +663,16 @@ export default function GradePage() {
   };
 
   // Render Subject Card
-  const renderSubjectCard = (subject) => (
+  const renderSubjectCard = (subject) => {
+    const query = searchQuery.toLowerCase();
+    const subjectMatches = subject.name.toLowerCase().includes(query);
+    
+    // If subject matches, show all files. If not, show only matching files.
+    const displayFiles = subject.files ? subject.files.filter(f => 
+        !searchQuery || subjectMatches || f.name.toLowerCase().includes(query)
+    ) : [];
+
+    return (
     <div 
       key={subject.name} 
       className="grade-card" 
@@ -626,18 +693,21 @@ export default function GradePage() {
           )}
       </div>
 
-      {subject.files && subject.files.length > 0 && (
+      {displayFiles && displayFiles.length > 0 && (
         <div style={{ padding: '0', background: '#f9fafb' }}>
           <p style={{ padding: '1rem 1.5rem 0.5rem', fontSize: '0.85rem', fontWeight: '600', color: 'var(--gray)' }}>
-            {subject.files.length} Lessons Available:
+            {displayFiles.length} Lessons Available:
           </p>
           <ul style={{ 
             listStyle: 'none', fontSize: '0.9rem', color: '#4b5563', 
             maxHeight: '300px', overflowY: 'auto', padding: '0' 
           }}>
-            {subject.files.map((f, i) => {
-              // For Econ, Business Studies, IT, SFT, Geography, Political Science, Sinhala, General English, GIT, Common Test, Environment, and Grade 2, strip the upload person's name
-              const displayName = (
+            {displayFiles.map((f, i) => {
+              // If searching, show full name to avoid confusion. Otherwise, simplify.
+              const shouldShowFullName = !!searchQuery;
+
+              // For certain subjects, we normally strip the uploader's name for cleaner UI
+              const isStripSubject = (
                 subject.name === "Econ" || 
                 subject.name === "Business Studies" || 
                 subject.name === "IT" || 
@@ -650,7 +720,9 @@ export default function GradePage() {
                 subject.name === "General Knowledge" ||
                 subject.name === "Environment" ||
                 subject.name === "Grade 2"
-              )
+              );
+
+              const displayName = (isStripSubject && !shouldShowFullName)
                 ? f.name.split(" - ")[0] 
                 : f.name;
 
@@ -698,7 +770,7 @@ export default function GradePage() {
         )}
       </div>
     </div>
-  );
+  )};
 
   return (
     <>
@@ -832,7 +904,27 @@ export default function GradePage() {
             <Link href="/" className="brand">
               <span className="brand-name">EduRelief SL</span>
             </Link>
-            <Link href="/" className="nav-link">← Back to Home</Link>
+            <div className="nav-links">
+                <Link href="/" className="nav-link">← Back to Home</Link>
+            </div>
+            <button 
+              className="mobile-menu-btn"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                {isMenuOpen ? (
+                  <path d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
+            </button>
+          </div>
+
+          {/* Mobile Menu */}
+          <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
+            <Link href="/" className="nav-link" onClick={() => setIsMenuOpen(false)}>← Back to Home</Link>
           </div>
         </nav>
 
@@ -855,9 +947,99 @@ export default function GradePage() {
           </div>
         </header>
 
+        {/* Search Bar */}
+        <div className="search-container" style={{ marginTop: '-30px', position: 'relative', zIndex: 50, padding: '0 1.5rem' }}>
+            <div style={{ position: 'relative', display: 'flex', alignItems: 'center' }}>
+                <svg 
+                    className="search-icon" 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="20" height="20" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    strokeWidth="2" 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round"
+                    style={{ pointerEvents: 'none' }}
+                >
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input 
+                    type="text" 
+                    className="search-input" 
+                    placeholder="Search for subjects, files..." 
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    autoComplete="off"
+                    style={{ paddingRight: searchQuery ? '3rem' : '1.5rem' }}
+                />
+                {searchQuery && (
+                    <button
+                        onClick={() => setSearchQuery("")}
+                        style={{
+                            position: 'absolute',
+                            right: '1rem',
+                            background: 'none',
+                            border: 'none',
+                            cursor: 'pointer',
+                            color: '#9ca3af',
+                            padding: '0.25rem',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center'
+                        }}
+                        aria-label="Clear search"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                )}
+            </div>
+        </div>
+
         <main className="main-content" style={{ minHeight: '50vh' }}>
-          {/* Render Content based on selection state */}
-          {grade.streams ? (
+          {/* Search Results View */}
+          {searchQuery ? (
+             <div className="animate-fade-in">
+                 <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+                    <h2 style={{ fontSize: '2rem', color: '#1f2937', marginBottom: '0.5rem' }}>
+                        Search Results
+                    </h2>
+                 </div>
+                 <div className="grades-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))' }}>
+                     {(() => {
+                        // Collect all subjects
+                        const allSubjects = grade.streams 
+                            ? grade.streams.flatMap(s => s.subjects) 
+                            : grade.subjects;
+
+                        const filteredSubjects = allSubjects.filter(sub => {
+                            const query = searchQuery.toLowerCase();
+                            const subjectMatches = sub.name.toLowerCase().includes(query);
+                            const hasMatchingFiles = sub.files && sub.files.some(f => f.name.toLowerCase().includes(query));
+                            return subjectMatches || hasMatchingFiles;
+                        });
+
+                        if (filteredSubjects.length === 0) {
+                            return (
+                                <div style={{ textAlign: 'center', gridColumn: '1/-1', padding: '4rem' }}>
+                                    <p style={{ fontSize: '1.2rem', color: 'var(--gray)' }}>No matches found for "{searchQuery}"</p>
+                                </div>
+                            );
+                        }
+
+                        return filteredSubjects.map(renderSubjectCard);
+                     })()}
+                 </div>
+             </div>
+          ) : (
+            /* Normal Content Rendering */
+            <>
+              {/* Render Content based on selection state */}
+              {grade.streams ? (
              <>
                {/* If a stream is selected, show its subjects and a back button */}
                {selectedStream ? (
@@ -923,6 +1105,8 @@ export default function GradePage() {
               {grade.subjects.map((subject) => renderSubjectCard(subject))}
             </div>
           )}
+          </>
+        )}
         </main>
 
         <footer className="site-footer">
