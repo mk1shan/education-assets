@@ -95,7 +95,7 @@ export default function Home() {
             <span className="hero-badge">For Sri Lankan Students 🇱🇰</span>
             <h1>Stay Safe.<br/>Keep Learning.</h1>
             <p className="hero-text" style={{ color: 'white' }}>
-              Access essential school documents, past papers, and short notes from Grade 1 to A/L. 
+              Access <strong style={{ fontSize: '1.2em' }}>1000+</strong> essential school documents, past papers, and short notes from Grade 1 to A/L. 
               Designed to be fast and accessible, even during floods and power cuts.
             </p>
             <div className="hero-buttons">
@@ -112,7 +112,7 @@ export default function Home() {
         <main className="main-content" id="grades">
           <div className="section-header">
             <h2>Select your grade</h2>
-            <p>Everything is organized by grade and subject for quick access.</p>
+            <p>Access <strong style={{ color: 'var(--primary)', fontSize: '1.1em' }}>1000+ resources</strong> organized by grade and subject for quick access.</p>
           </div>
 
           <div className="grades-grid">
@@ -142,6 +142,7 @@ export default function Home() {
                   No login required. Just click your subject and you'll be directed straight to <strong>Google Drive</strong> to view or download files.
                 </p>
                 <ul className="feature-list">
+                  <li>📚 <strong>1000+ Resources</strong> - Past papers, notes, and study materials</li>
                   <li>⚡ Direct Download Links</li>
                   <li>📱 Mobile Optimized PDFs</li>
                   <li>🆓 100% Free Forever</li>
