@@ -93,7 +93,7 @@ export default function Home() {
           
           <div className="hero-content">
             <span className="hero-badge">For Sri Lankan Students 🇱🇰</span>
-            <h1>Keep learning,<br/>come rain or shine.</h1>
+            <h1>Stay Safe.<br/>Keep Learning.</h1>
             <p className="hero-text" style={{ color: 'white' }}>
               Access essential school documents, past papers, and short notes from Grade 1 to A/L. 
               Designed to be fast and accessible, even during floods and power cuts.
