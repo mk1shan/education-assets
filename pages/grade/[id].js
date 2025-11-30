@@ -4,84 +4,87 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 
 // Data for Media Studies (Art Stream)
+const mediaStudiesFolderLink = "https://drive.google.com/drive/folders/1ctG24ct0CHLW3EMRubYDkSP2w3rg2aJ4?usp=sharing";
+
 const mediaStudiesFiles = [
-  { name: "01. සන්නිවේදන අධ්‍යයනයෙහි ආරම්භය හා විකාශය", link: "https://drive.google.com/file/d/1qL6rsIKCcuRXPSpwlWa3Ru9zvWITgqgp/view?usp=sharing" },
-  { name: "02. සන්නිවේදනයේ පදනම", link: "https://drive.google.com/file/d/13oFRyJR0eE3GtWrRk7I6MW7kZr5fynTd/view?usp=sharing" },
-  { name: "03. මූලික සන්නිවේදන වර්ග, ස්වරූප හා ආකෘති", link: "https://drive.google.com/file/d/1F9oQNZ6lX9SlRn4AW_2ssizaKMxgjiZI/view?usp=sharing" },
-  { name: "04. සාම්ප්‍රදායික මාධ්‍ය ජනමාධ්‍ය හා නව මාධ්‍ය", link: "https://drive.google.com/file/d/1URFHPB5vUYOSd6KSZCAkwJY-KUaSURyU/view?usp=sharing" },
-  { name: "05. සංස්කෘතිකාවබෝධය, මාධ්‍යයේ ස්වභාවය", link: "https://drive.google.com/file/d/138GrcTzorXiWFWag2jkOXsOTffkklQGN/view?usp=sharing" },
-  { name: "06. මාධ්‍ය සාක්ෂරතාව හා මාධ්‍ය චිචාරය", link: "https://drive.google.com/file/d/1Gzt1J1BrERYyYkXfgxA3y4hq2N2AAJmv/view?usp=sharing" },
-  { name: "07. නිර්මාණාත්මක සන්නිවේදනය", link: "https://drive.google.com/file/d/1KDPEOQZ25hP7fIkbqQxDnB73Yfvy8vUe/view?usp=sharing" },
-  { name: "08. මහජන සම්බන්ධතා හා සිද්ධි කළමනාකරණය", link: "https://drive.google.com/file/d/1ShIoWOyojNo9mPdzPBdR00zujr5S3ZM9/view?usp=sharing" },
-  { name: "09. සංවර්ධනය සඳහා සන්නිවේදනය", link: "https://drive.google.com/file/d/1V9WZ6BR3txsspTr2dEwWRowA29M5CkEp/view?usp=sharing" },
-  { name: "10. සන්නිවේදන ප්‍රතිපත්ති හා මාධ්‍ය නියාමනය", link: "https://drive.google.com/file/d/1sxvXIjC5qaXjIXhm0aFhTgyf4h5PCWHy/view?usp=sharing" },
-  { name: "11. ශ්‍රී ලංකාවේ මාධ්‍ය හා සමකාලීන ප්‍රවණතා", link: "https://drive.google.com/file/d/1cjLZetb1QXRV_DYdDeU7DGxzKGq75WRh/view?usp=sharing" },
-  { name: "12. සන්නිවෙදන සමීක්ශන", link: "https://drive.google.com/file/d/178k6eEXTsXr5FITUboRAHNesy7g2Y1UI/view?usp=sharing" }
+  { name: "_MEDIA_12_ශ්‍රේණිය_ප්‍රශ්නෝත්තර_සංග්‍රහය-1 - Hiruni Wijethunge.pdf", link: mediaStudiesFolderLink },
+  { name: "01_සන්නිවේදන_අධ්‍යයනයෙහි_ආරම්භය_හා_විකාශය_lesson_short_note_book - Waruni Nelusha.pdf", link: mediaStudiesFolderLink },
+  { name: "02_සන්නිවේදනයේ_පදනම_lesson_short_note_book_Lahiruk_MEDIASTU_compressed - Waruni Nelusha.pdf", link: mediaStudiesFolderLink },
+  { name: "03_මූලික_සන්නිවේදන_වර්ග,_ස්වරූප_හා_ආකෘති_lesson_short_note_book - Waruni Nelusha.pdf", link: mediaStudiesFolderLink },
+  { name: "04_සාම්ප්‍රදායික_මාධ්‍ය_ජනමාධ්‍ය_හා_නව_මාධ්‍_lesson_short_note_book - Waruni Nelusha.pdf", link: mediaStudiesFolderLink },
+  { name: "05_සංස්කෘතිකාවබෝධය,_මාධ්‍යයේ_ස්වභාවය_සහ_එහි_බලපෑම_lesson_short_note - Waruni Nelusha.pdf", link: mediaStudiesFolderLink },
+  { name: "06_මාධ්‍ය_සාක්ෂරතාව_හා_මාධ්‍ය_චිචාරය_lesson_short_note_book_Lahiruk - Waruni Nelusha.pdf", link: mediaStudiesFolderLink },
+  { name: "07_නිර්මාණාත්මක_සන්නිවේදනය_lesson_short_note_book_Lahiruk_MEDIASTU - Waruni Nelusha.pdf", link: mediaStudiesFolderLink },
+  { name: "08_මහජන_සම්බන්ධතා_හා_සිද්ධි_කළමනාකරණය_lesson_short_note_book_Lahiruk - Waruni Nelusha.pdf", link: mediaStudiesFolderLink },
+  { name: "09_සංවර්ධනය_සඳහා_සන්නිවේදනය_lesson_short_note_book_Lahiruk_MEDIASTU - Waruni Nelusha.pdf", link: mediaStudiesFolderLink },
+  { name: "10_සන්නිවේදන_ප්‍රතිපත්ති_හා_මාධ්‍ය_නියාමනය_lesson_short_note_book - Waruni Nelusha.pdf", link: mediaStudiesFolderLink },
+  { name: "11_ශ්‍රී_ලංකාවේ_මාධ්‍ය_හා_සමකාලීන_ප්‍රවණතා_lesson_short_note_book - Waruni Nelusha.pdf", link: mediaStudiesFolderLink },
+  { name: "12_සන්නිවෙදන_සමීක්ශන_lesson_short_note_book_Lahiruk_MEDIASTU - Waruni Nelusha.pdf", link: mediaStudiesFolderLink },
+  { name: "13 ශ්‍රේණිය දකුණු පලාත ප්‍රශ්න පත්‍රය - Waruni Nelusha.pdf", link: mediaStudiesFolderLink },
+  { name: "13_ශ්‍රේණිය_2024_අනුමාන_ප්‍රශ්න_පත්‍රය_1_කොටස_013543 - Waruni Nelusha.pdf", link: mediaStudiesFolderLink },
+  { name: "2016 AL Communication & Media Studies Past Paper - Sinhala Medium - Waruni Nelusha.pdf", link: mediaStudiesFolderLink },
+  { name: "2017 AL Communication & Media Studies Past Paper - Sinhala Medium - Waruni Nelusha.pdf", link: mediaStudiesFolderLink },
+  { name: "2020 AL Communication & Media Studies Past Paper - Sinhala Medium - Waruni Nelusha.pdf", link: mediaStudiesFolderLink },
+  { name: "2024 NCP AL Media paper_241016_120408 - Waruni Nelusha.pdf", link: mediaStudiesFolderLink },
+  { name: "2024 NWP AL Media paper with marking scheme (1) - Waruni Nelusha.pdf", link: mediaStudiesFolderLink },
+  { name: "CamScanner 25-10-2025 11.41 - Waruni Nelusha.pdf", link: mediaStudiesFolderLink },
+  { name: "grade_13_2024_පෙරහුරු_ප්‍රශ්න_පත්‍රය_Paper_II_031609 - Waruni Nelusha.pdf", link: mediaStudiesFolderLink },
+  { name: "mediaසියලු නිර්වචන _220213_115145 - Chamathka Ganeshan.pdf", link: mediaStudiesFolderLink }
 ];
 
 // Data for Accounting (Commerce Stream)
 const accountingFolderLink = "https://drive.google.com/drive/folders/1Zhl9U1-xMQWvDVXFfmSlM0LstF-MMXfj?usp=sharing";
 
 const accountingFiles = [
-  // New files (cleaned names)
-  { name: "02. ගිණුම්කරණ සමීකරණය", link: accountingFolderLink },
-  { name: "03. ද්විත්ව සටහන් ගිණුම්කරණය", link: accountingFolderLink },
-  { name: "04. මූලික සටහන් පොත්", link: accountingFolderLink },
-  { name: "05. ගිණුම්කරණ සංකල්ප හැඳින්වීම", link: accountingFolderLink },
-  { name: "06.01. මූල්‍ය ප්‍රකාශන", link: accountingFolderLink },
-  { name: "06.02. මූල්‍ය ප්‍රකාශන ගැලපිලි", link: accountingFolderLink },
-  { name: "07. නිෂ්පාදන ව්‍යාපාර", link: accountingFolderLink },
-  { name: "09. අසම්පූර්ණ සටහන්", link: accountingFolderLink },
-  { name: "10. හවුල් ව්‍යාපාර", link: accountingFolderLink },
-  { name: "13. අනුපාත විශ්ලේෂණය", link: accountingFolderLink },
-  { name: "14.01. කළමනාකරණ ගිණුම්කරණය තීරණ ගැනීමේ ක්‍රියාවලියට සම්බන්ධ කරගැනීම", link: accountingFolderLink },
-  { name: "14.03. ශ්‍රම කාලය සම්බන්ධයෙන් වාර්තා කරයි 1", link: accountingFolderLink },
-  { name: "15. පිරිවැය ලාභ පරිමා විශ්ලේශණය", link: accountingFolderLink },
-  { name: "16. ප්‍රාග්ධන ආයෝජන තීරණ Review", link: accountingFolderLink },
-  { name: "අරමුණු කර නොගත් ව්‍යාපාර", link: accountingFolderLink },
-  { name: "ගිණුම්කරණ ප්‍රමිත පොත", link: accountingFolderLink },
-  { name: "ගිණුම්කරණය හා එහි අවශ්‍යතාවය", link: accountingFolderLink },
-  { name: "සීමාසහිත සමාගම් Note", link: accountingFolderLink },
-
-  // Existing files
-  { name: "1 ව්_යුහගත පිළිතුරු", link: accountingFolderLink },
-  { name: "4 ඒකකය", link: accountingFolderLink },
-  { name: "2024 AL Accounting Part I Paper (Sinhala Medium)", link: accountingFolderLink },
-  { name: "Acc G12 3rd Term Q & ANS 01", link: accountingFolderLink },
-  { name: "Acc G12 3rd Term Q & ANS 02", link: accountingFolderLink },
-  { name: "Acc G12 3rd Term Q & ANS 03", link: accountingFolderLink },
-  { name: "Accounting Focus Final", link: accountingFolderLink },
-  { name: "Grade 13 Accounting 3rd Term Answers 2025", link: accountingFolderLink },
-  { name: "North Western Province Gr12 Business Studies 2020", link: accountingFolderLink },
-  { name: "Grade 12 Teacher Guide - Accounting", link: accountingFolderLink },
-  { name: "SM Acc T3 G12 I,II Paper Answers 2019", link: accountingFolderLink },
-  { name: "SM Acco G12 T3 I,II Paper Answers 2018", link: accountingFolderLink },
-  { name: "Unit Paper 10 - 2025", link: accountingFolderLink },
-  { name: "Unit Paper 19 - 2025", link: accountingFolderLink },
-  { name: "Unit Test 01-06", link: accountingFolderLink },
-  { name: "අවිනිශ්චිත Seminar (1)", link: accountingFolderLink },
-  { name: "නිපුණතාවය 02 - බහුවරණ ප්_රශ්න 3", link: accountingFolderLink },
-  { name: "නිපුණතාවය 03 - බහුවරණ ප්_රශ්න 2", link: accountingFolderLink },
-  { name: "පැහැසරණිය Accounting", link: accountingFolderLink },
-  { name: "මූලික ෙපාත්", link: accountingFolderLink },
-  
-  // Images
-  { name: "Institute Nithya - Image 01", link: accountingFolderLink },
-  { name: "Institute Nithya - Image 02", link: accountingFolderLink },
-  { name: "Institute Nithya - Image 03", link: accountingFolderLink },
-  { name: "Institute Nithya - Image 04", link: accountingFolderLink },
-  { name: "Institute Nithya - Image 05", link: accountingFolderLink },
-  { name: "Institute Nithya - Image 06", link: accountingFolderLink },
-  { name: "Institute Nithya - Image 07", link: accountingFolderLink },
-  { name: "Institute Nithya - Image 08", link: accountingFolderLink },
-  { name: "Institute Nithya - Image 09", link: accountingFolderLink },
-  { name: "Institute Nithya - Image 10", link: accountingFolderLink },
-  { name: "Institute Nithya - Image 11", link: accountingFolderLink },
-  { name: "Institute Nithya - Image 12", link: accountingFolderLink },
-  { name: "Institute Nithya - Image 13", link: accountingFolderLink },
-  { name: "Institute Nithya - Image 14", link: accountingFolderLink },
-  { name: "Institute Nithya - Image 15", link: accountingFolderLink },
-  { name: "Institute Nithya - Image 16", link: accountingFolderLink }
+  { name: "1 ව්_යුහගත පිළිතුරු - Pawani Akarsha.pdf", link: accountingFolderLink },
+  { name: "1 BF2023SN - Sachini Bulathsinhala.pdf", link: accountingFolderLink },
+  { name: "2 SR&BE 2023 SN - Sachini Bulathsinhala.pdf", link: accountingFolderLink },
+  { name: "4 ඒකකය - Pawani Akarsha.pdf", link: accountingFolderLink },
+  { name: "7 M&FI SN new - Sachini Bulathsinhala.pdf", link: accountingFolderLink },
+  { name: "8I SN - Sachini Bulathsinhala.pdf", link: accountingFolderLink },
+  { name: "13 OM SN - Sachini Bulathsinhala.pdf", link: accountingFolderLink },
+  { name: "2023 Accounting ඌව පලාත් MCQ - Unknown.pdf", link: accountingFolderLink },
+  { name: "2023 Accounting බස්නාහිර පළාත් Sinhala paper 1 - Unknown.pdf", link: accountingFolderLink },
+  { name: "2023 Accounting බස්නාහිර පළාත් Sinhala paper II - Unknown.pdf", link: accountingFolderLink },
+  { name: "2024-AL-ACCOUNTING-PART-I-PAPER-SINHALA-MEDIUM-alevelapi.com-pdf - Chamathka Chandupa.pdf", link: accountingFolderLink },
+  { name: "1764434130391448360357 - institute nithya.jpg", link: accountingFolderLink },
+  { name: "1764434182611739165113 - institute nithya.jpg", link: accountingFolderLink },
+  { name: "1764434206793730327663 - institute nithya.jpg", link: accountingFolderLink },
+  { name: "1764434253446170476660 - institute nithya.jpg", link: accountingFolderLink },
+  { name: "1764434275330196549344 - institute nithya.jpg", link: accountingFolderLink },
+  { name: "1764434323835201383036 - institute nithya.jpg", link: accountingFolderLink },
+  { name: "1764434506666106188532 - institute nithya.jpg", link: accountingFolderLink },
+  { name: "1764434534087467060723 - institute nithya.jpg", link: accountingFolderLink },
+  { name: "17644341586531460247944 - institute nithya.jpg", link: accountingFolderLink },
+  { name: "17644342302431605453933 - institute nithya.jpg", link: accountingFolderLink },
+  { name: "17644343043761850607036 - institute nithya.jpg", link: accountingFolderLink },
+  { name: "17644343585371288657873 - institute nithya.jpg", link: accountingFolderLink },
+  { name: "17644345814811272943394 - institute nithya.jpg", link: accountingFolderLink },
+  { name: "17644346202611354707598 - institute nithya.jpg", link: accountingFolderLink },
+  { name: "17644346551351706661626 - institute nithya.jpg", link: accountingFolderLink },
+  { name: "17644346856561257182915 - institute nithya.jpg", link: accountingFolderLink },
+  { name: "ACC Sinhala Grade 13 Part 1_240902_130546 - Unknown.pdf", link: accountingFolderLink },
+  { name: "Acc Sinhala Grade 13- Part 2_240902_130633 - Unknown.pdf", link: accountingFolderLink },
+  { name: "Acc_G12_3rd_Term_Q_&_ANS_01 - Sethumi Yuhansa.pdf", link: accountingFolderLink },
+  { name: "Acc_G12_3rd_Term_Q_&_ANS_01 (1) - Sethumi Yuhansa.pdf", link: accountingFolderLink },
+  { name: "Acc_G12_3rd_Term_Q_&_ANS_02 - Sethumi Yuhansa.pdf", link: accountingFolderLink },
+  { name: "Acc_G12_3rd_Term_Q_&_ANS_03 - Sethumi Yuhansa.pdf", link: accountingFolderLink },
+  { name: "Accounting 01,02 S Answers (2012) - Unknown.pdf", link: accountingFolderLink },
+  { name: "ACCOUNTING FOCUS_final - Chamathka Chandupa.pdf", link: accountingFolderLink },
+  { name: "Accounting paper 2 (S) - Unknown.pdf", link: accountingFolderLink },
+  { name: "ACCOUNTING PROCESS (1) - Sachini Bulathsinhala.pdf", link: accountingFolderLink },
+  { name: "Copy of 02.ගිණුම්කරණ සමීකරණය .pdf", link: accountingFolderLink },
+  { name: "Copy of 03_ද්විත්ව_සටහන්_ගිණුම්කරණය_.pdf", link: accountingFolderLink },
+  { name: "Copy of 04. මූලික සටහන් පොත් .pdf", link: accountingFolderLink },
+  { name: "Copy of 05_ගිණුම්කරණ_සංකල්ප_හැඳින්වීම_.pdf", link: accountingFolderLink },
+  { name: "Copy of 06_02_මූල්_ය_ප්_රකාශන_ගැලපිලි_.pdf", link: accountingFolderLink },
+  { name: "Copy of 06.01. මූල්‍ය ප්‍රකාශන .pdf", link: accountingFolderLink },
+  { name: "Copy of 07. නිෂ්පාදන ව්‍යාපාර .pdf", link: accountingFolderLink },
+  { name: "Copy of 09. අසම්පූර්ණ සටහන් .pdf", link: accountingFolderLink },
+  { name: "Copy of 10. හවුල් ව්‍යාපාර .pdf", link: accountingFolderLink },
+  { name: "Copy of 13. අනුපාත විශ්ලේෂණය .pdf", link: accountingFolderLink },
+  { name: "Copy of 14_01_කළමනාකරණ_ගිණුම්කරණය_තීරණ_ගැනීමේ_ක්_රියාවලියට_සම්බන්ධ_කරගැනීම.pdf", link: accountingFolderLink },
+  { name: "Copy of 14_03_ශ්‍රම_කාලය_සම්බන්ධයෙන්_වාර්තා_කරයි_1.pdf", link: accountingFolderLink }
 ];
 
 // Data for Chemistry (Science Stream)
@@ -134,52 +137,56 @@ const physicsFiles = [
 const econFolderLink = "https://drive.google.com/drive/folders/10A43cuXuXsPvc63Wa4QSaot7KFoqNJaS?usp=sharing";
 
 const econFiles = [
-  { name: "2.1 - Jimi", link: econFolderLink },
-  { name: "2.2 - Jimi", link: econFolderLink },
-  { name: "2.3 - Jimi", link: econFolderLink },
-  { name: "2.4 - Jimi", link: econFolderLink },
-  { name: "2.6 - Jimi", link: econFolderLink },
-  { name: "2.7 - Jimi", link: econFolderLink },
-  { name: "3පාඩම_වෙලදපොට_රජයේ_මැදිහත්_වීම්_1 (5) - Manuka Methdini", link: econFolderLink },
-  { name: "2018 econ 1st & 2nd - Chanuri Nishara", link: econFolderLink },
-  { name: "2019 econ 1st & 2nd - Chanuri Nishara", link: econFolderLink },
-  { name: "2020 econ 1st - Chanuri Nishara", link: econFolderLink },
-  { name: "2020 econ 2nd - Chanuri Nishara", link: econFolderLink },
-  { name: "2021 econ 1st - Chanuri Nishara", link: econFolderLink },
-  { name: "2021 econ 2nd - Chanuri Nishara", link: econFolderLink },
-  { name: "2022 (23)econ 1st - Chanuri Nishara", link: econFolderLink },
-  { name: "2022(23) econ 2nd - Chanuri Nishara", link: econFolderLink },
-  { name: "2023 econ 1st - Chanuri Nishara", link: econFolderLink },
-  { name: "2024 econ 1st & 2nd - Chanuri Nishara", link: econFolderLink },
-  { name: "Eco_1.1_lo - Jimi", link: econFolderLink },
-  { name: "Eco_1.2_lo - Jimi", link: econFolderLink },
-  { name: "Eco_1.3_lo - Jimi", link: econFolderLink },
-  { name: "Eco_1.4_lo - Jimi", link: econFolderLink },
-  { name: "Eco_1.5_lo - Jimi", link: econFolderLink },
-  { name: "Eco_1.6_lo - Jimi", link: econFolderLink },
-  { name: "Eco_1.7_lo - Jimi", link: econFolderLink },
-  { name: "Eco_1.8_lo - Jimi", link: econFolderLink },
-  { name: "Eco_1.9_lo - Jimi", link: econFolderLink },
-  { name: "Eco_2.1_lo - Jimi", link: econFolderLink },
-  { name: "Eco_2.2_lo - Jimi", link: econFolderLink },
-  { name: "Eco_2.3_lo - Jimi", link: econFolderLink },
-  { name: "Eco_2.4_lo - Jimi", link: econFolderLink },
-  { name: "Eco_2.5_lo - Jimi", link: econFolderLink },
-  { name: "Eco_2.6_lo - Jimi", link: econFolderLink },
-  { name: "Eco_2.7_lo - Jimi", link: econFolderLink },
-  { name: "Eco_2.8_lo - Jimi", link: econFolderLink },
-  { name: "Eco_2.9_lo - Jimi", link: econFolderLink },
-  { name: "Eco_2.10_lo - Jimi", link: econFolderLink },
-  { name: "Eco_2.11_lo - Jimi", link: econFolderLink },
-  { name: "Eco_2.12_lo - Jimi", link: econFolderLink },
-  { name: "ECON 1 පාඩම - Manuka Methdini", link: econFolderLink },
-  { name: "Econ All lessons - Unit Papers - Reshana Gamage", link: econFolderLink },
+  { name: "2.1 - Jimi.pdf", link: econFolderLink },
+  { name: "2.2 - Jimi.pdf", link: econFolderLink },
+  { name: "2.3 - Jimi.pdf", link: econFolderLink },
+  { name: "2.4 - Jimi.pdf", link: econFolderLink },
+  { name: "2.6 - Jimi.pdf", link: econFolderLink },
+  { name: "2.7 - Jimi.pdf", link: econFolderLink },
+  { name: "3පාඩම_වෙලදපොට_රජයේ_මැදිහත්_වීම්_1 (5) - Manuka Methdini.pdf", link: econFolderLink },
+  { name: "2018 econ 1st & 2nd - Chanuri Nishara.pdf", link: econFolderLink },
+  { name: "2019 econ 1st & 2nd - Chanuri Nishara.pdf", link: econFolderLink },
+  { name: "2020 econ 1st - Chanuri Nishara.pdf", link: econFolderLink },
+  { name: "2020 econ 2nd - Chanuri Nishara.pdf", link: econFolderLink },
+  { name: "2020-AL-Economics-Marking-Scheme-–-Sinhala-Medium - Sineth Sadalu.pdf", link: econFolderLink },
+  { name: "2021 econ 1st - Chanuri Nishara.pdf", link: econFolderLink },
+  { name: "2021 econ 2nd - Chanuri Nishara.pdf", link: econFolderLink },
+  { name: "2021-AL-Econ-Past-Paper-Sinhala-Medium - Sineth Sadalu.pdf", link: econFolderLink },
+  { name: "2022 (23)econ 1st - Chanuri Nishara.pdf", link: econFolderLink },
+  { name: "2022(23) econ 2nd - Chanuri Nishara.pdf", link: econFolderLink },
+  { name: "2023 econ 1st - Chanuri Nishara.pdf", link: econFolderLink },
+  { name: "2024 econ 1st & 2nd - Chanuri Nishara.pdf", link: econFolderLink },
+  { name: "20232024-AL-Economics-Marking-Scheme-Sinhala-Medium (1) - Sineth Sadalu.pdf", link: econFolderLink },
+  { name: "Eco_1.1_lo - Jimi.pdf", link: econFolderLink },
+  { name: "Eco_1.2_lo - Jimi.pdf", link: econFolderLink },
+  { name: "Eco_1.3_lo - Jimi.pdf", link: econFolderLink },
+  { name: "Eco_1.4_lo - Jimi.pdf", link: econFolderLink },
+  { name: "Eco_1.5_lo - Jimi.pdf", link: econFolderLink },
+  { name: "Eco_1.6_lo - Jimi.pdf", link: econFolderLink },
+  { name: "Eco_1.7_lo - Jimi.pdf", link: econFolderLink },
+  { name: "Eco_1.8_lo - Jimi.pdf", link: econFolderLink },
+  { name: "Eco_1.9_lo - Jimi.pdf", link: econFolderLink },
+  { name: "Eco_2.1_lo - Jimi.pdf", link: econFolderLink },
+  { name: "Eco_2.2_lo - Jimi.pdf", link: econFolderLink },
+  { name: "Eco_2.3_lo - Jimi.pdf", link: econFolderLink },
+  { name: "Eco_2.4_lo - Jimi.pdf", link: econFolderLink },
+  { name: "Eco_2.5_lo - Jimi.pdf", link: econFolderLink },
+  { name: "Eco_2.6_lo - Jimi.pdf", link: econFolderLink },
+  { name: "Eco_2.7_lo - Jimi.pdf", link: econFolderLink },
+  { name: "Eco_2.8_lo - Jimi.pdf", link: econFolderLink },
+  { name: "Eco_2.9_lo - Jimi.pdf", link: econFolderLink },
+  { name: "Eco_2.10_lo - Jimi.pdf", link: econFolderLink },
+  { name: "Eco_2.11_lo - Jimi.pdf", link: econFolderLink },
+  { name: "Eco_2.12_lo - Jimi.pdf", link: econFolderLink },
+  { name: "ECON 1 පාඩම - Manuka Methdini.pdf", link: econFolderLink },
+  { name: "ECON 03rd Lesson - Unknown.pdf", link: econFolderLink },
+  { name: "Econ All lessons - Unit Papers - Reshana Gamage.pdf", link: econFolderLink },
   { name: "Econ lesson 3 theory - RMB Rathnayaka", link: econFolderLink },
-  { name: "ECON RAPID MCQ PACK Lesson 01 - RMB Rathnayaka", link: econFolderLink },
-  { name: "Econ_I,IIpp_2018 - Sethumi Yuhansa", link: econFolderLink },
-  { name: "Econ-G-13 Uva-province-model paper -Answe - RMB Rathnayaka", link: econFolderLink },
-  { name: "Econ-G-13 Wayaba-province-model paper -Answe - RMB Rathnayaka", link: econFolderLink },
-  { name: "Economics Unit 1 T - Dilmi Ranaweera", link: econFolderLink },
+  { name: "ECON RAPID MCQ PACK Lesson 01 - RMB Rathnayaka.pdf", link: econFolderLink },
+  { name: "Econ_I,IIpp_2018 - Sethumi Yuhansa.PDF", link: econFolderLink },
+  { name: "Econ-G-13 Uva-province-model paper -Answe - RMB Rathnayaka.pdf", link: econFolderLink },
+  { name: "Econ-G-13 Wayaba-province-model paper -Answe - RMB Rathnayaka.pdf", link: econFolderLink },
+  { name: "Economics Unit 1 T - Dilmi Ranaweera.pdf", link: econFolderLink },
   { name: "Economics Unit 2 T - Dilmi Ranaweera", link: econFolderLink },
   { name: "Economics Unit 3 T - Dilmi Ranaweera", link: econFolderLink },
   { name: "Economics Unit 4 T - Dilmi Ranaweera", link: econFolderLink },
@@ -190,24 +197,56 @@ const econFiles = [
 const businessStudiesFolderLink = "https://drive.google.com/drive/folders/1Tz5wXzQP-5S_7GUEF_NQNqBVTmPo03y9?usp=sharing";
 
 const businessStudiesFiles = [
-  { name: "12 managment SN 1 - Chamathka Chandupa", link: businessStudiesFolderLink },
-  { name: "13 OM SN - Chamathka Chandupa", link: businessStudiesFolderLink },
-  { name: "2024 bs 1st & 2nd - Chanuri Nishara", link: businessStudiesFolderLink },
-  { name: "BS_I,II Ans_dakunu palatha_2019 - Sethumi Yuhansa", link: businessStudiesFolderLink },
-  { name: "BuisStu_I,IIpp-2018 - Sethumi Yuhansa", link: businessStudiesFolderLink },
-  { name: "BuisStu_I,IIpp-2018 (1) - Sethumi Yuhansa", link: businessStudiesFolderLink },
-  { name: "Busi_T2_I,II pp_dakunu palatha_2019 - Sethumi Yuhansa", link: businessStudiesFolderLink },
-  { name: "Busi_T2_I,II pp_dakunu palatha_2019 (1) - Sethumi Yuhansa", link: businessStudiesFolderLink },
-  { name: "BusiStu_I,IIans_2018 - Sethumi Yuhansa", link: businessStudiesFolderLink },
-  { name: "c4095ebe-ee2a-451f-8ef7-ca976102c2a1 - Mayanjana Hewagamage", link: businessStudiesFolderLink },
-  { name: "SM_Bus_G12_T3_I,II pp Ans_2018 - Sethumi Yuhansa", link: businessStudiesFolderLink },
-  { name: "SM_Bus_T3_G12_I,II pp Ans_2019 - Sethumi Yuhansa", link: businessStudiesFolderLink },
-  { name: "රජය ව්‍ය්‍රාපර - Jimi", link: businessStudiesFolderLink },
-  { name: "වියාපාර mcQ 500පිලිතුරු - Chamathka Chandupa", link: businessStudiesFolderLink },
-  { name: "වියාපාර_mcQ_500ප්_රශ්න_පොත_poto_copy - Chamathka Chandupa", link: businessStudiesFolderLink },
-  { name: "වියාපාර_mcQ_500ප්_රශ්න_පොත_poto_copy - Chanuri Nishara", link: businessStudiesFolderLink },
-  { name: "වියාපාර_mcQ_500ප්_රශ්න_පොත_poto_copy", link: businessStudiesFolderLink },
-  { name: "සමාජ වගකීම_ - Jimi", link: businessStudiesFolderLink }
+  { name: "12 BS 1.0 (1) - Sineth Sadalu.pdf", link: businessStudiesFolderLink },
+  { name: "12 managment SN 1 - Chamathka Chandupa.pdf", link: businessStudiesFolderLink },
+  { name: "13 OM SN - Chamathka Chandupa.pdf", link: businessStudiesFolderLink },
+  { name: "15.මූල්‍ය කළමනාකරණය - Anupa Indeewara.pdf", link: businessStudiesFolderLink },
+  { name: "16_මානව_සම්පත්_කළමනාකරණය - Anupa Indeewara.pdf", link: businessStudiesFolderLink },
+  { name: "2024 bs 1st & 2nd - Chanuri Nishara.pdf", link: businessStudiesFolderLink },
+  { name: "Bs - Punsala Hewage.pdf", link: businessStudiesFolderLink },
+  { name: "BS 5.6.11 lessons - Hesara wickramasinghe.pdf", link: businessStudiesFolderLink },
+  { name: "BS FINAL PAPER 02 - 02 - Unknown.pdf", link: businessStudiesFolderLink },
+  { name: "BS_I,II Ans_dakunu palatha_2019 - Sethumi Yuhansa.pdf", link: businessStudiesFolderLink },
+  { name: "BuisStu_I,IIpp-2018 - Sethumi Yuhansa.PDF", link: businessStudiesFolderLink },
+  { name: "BuisStu_I,IIpp-2018 (1) - Sethumi Yuhansa.PDF", link: businessStudiesFolderLink },
+  { name: "Busi_T2_I,II pp_dakunu palatha_2019 - Sethumi Yuhansa.pdf", link: businessStudiesFolderLink },
+  { name: "Busi_T2_I,II pp_dakunu palatha_2019 (1) - Sethumi Yuhansa.pdf", link: businessStudiesFolderLink },
+  { name: "Business studies_12_Unit exam_ 01 - Sineth Sadalu.pdf", link: businessStudiesFolderLink },
+  { name: "Business-Studies-Marking-Scheme-Sinhala-Medium - Unknown.pdf", link: businessStudiesFolderLink },
+  { name: "BusiStu_I,IIans_2018 - Sethumi Yuhansa.PDF", link: businessStudiesFolderLink },
+  { name: "c4095ebe-ee2a-451f-8ef7-ca976102c2a1 - Mayanjana Hewagamage.PDF", link: businessStudiesFolderLink },
+  { name: "Classify The Information System - Unknown.pdf", link: businessStudiesFolderLink },
+  { name: "Grade-12-Business-Studies-2nd-Term-Test-Paper-With-Answers-2020-North-Western-Province - Sineth Sadalu.pdf", link: businessStudiesFolderLink },
+  { name: "sGr13TG Business - Punsala Hewage.pdf", link: businessStudiesFolderLink },
+  { name: "SM_Bus_G12_T3_I,II pp Ans_2018 - Sethumi Yuhansa.pdf", link: businessStudiesFolderLink },
+  { name: "SM_Bus_T3_G12_I,II pp Ans_2019 - Sethumi Yuhansa.pdf", link: businessStudiesFolderLink },
+  { name: "අලෙවිකරණය 14 - Anupa Indeewara.pdf", link: businessStudiesFolderLink },
+  { name: "කළමණාකරණය 12 - Anupa Indeewara.pdf", link: businessStudiesFolderLink },
+  { name: "ගනුදෙනු කළ හැකි ලියවිලි ( දැනුමට යමක් page ) - Unknown.pdf", link: businessStudiesFolderLink },
+  { name: "නිර්වචන 02 - Unknown.pdf", link: businessStudiesFolderLink },
+  { name: "නිර්වචන. - Unknown.1", link: businessStudiesFolderLink },
+  { name: "ප්‍රවාහනය හා සැපයුම් සේවා 10 - Anupa Indeewara.pdf", link: businessStudiesFolderLink },
+  { name: "මුදල් හා මූල්‍ය ආයතන 7 - Anupa Indeewara.pdf", link: businessStudiesFolderLink },
+  { name: "මූල්‍ය වෙළදපොල - Unknown.pdf", link: businessStudiesFolderLink },
+  { name: "මෙහෙයුම් කළමණාකරණය 13 - Anupa Indeewara.pdf", link: businessStudiesFolderLink },
+  { name: "රක්ශනය 8 - Anupa Indeewara.pdf", link: businessStudiesFolderLink },
+  { name: "රජය ව්‍ය්‍රාපර - Jimi.pdf", link: businessStudiesFolderLink },
+  { name: "රජය හා ව්‍යාපාර 3 - Anupa Indeewara.pdf", link: businessStudiesFolderLink },
+  { name: "වරලත් ව්‍යාපාර Franchises - Unknown.pdf", link: businessStudiesFolderLink },
+  { name: "විදේශ වෙළදාම (දැනුමට යමක් FB PAGE) - Unknown.pdf", link: businessStudiesFolderLink },
+  { name: "වියාපාර mcQ 500පිලිතුරු - Chamathka Chandupa.pdf", link: businessStudiesFolderLink },
+  { name: "වියාපාර mcQ 500පිලිතුරු - Punsala Hewage.pdf", link: businessStudiesFolderLink },
+  { name: "වියාපාර_mcQ_500ප්_රශ්න_පොත_poto_copy - Chamathka Chandupa.pdf", link: businessStudiesFolderLink },
+  { name: "වියාපාර_mcQ_500ප්_රශ්න_පොත_poto_copy - Chanuri Nishara.pdf", link: businessStudiesFolderLink },
+  { name: "වියාපාර_mcQ_500ප්_රශ්න_පොත_poto_copy - Enuthi Methasha.pdf", link: businessStudiesFolderLink },
+  { name: "වියාපාර_mcQ_500ප්_රශ්න_පොත_poto_copy - Punsala Hewage.pdf", link: businessStudiesFolderLink },
+  { name: "වියාපාර_mcQ_500ප්_රශ්න_පොත_poto_copy.pdf", link: businessStudiesFolderLink },
+  { name: "ව්‍යවසායකත්වය 5 - Anupa Indeewara.pdf", link: businessStudiesFolderLink },
+  { name: "ව්‍යාපාර පදනම හා පරිසරය 1 - Anupa Indeewara.pdf", link: businessStudiesFolderLink },
+  { name: "ව්‍යාපාර සන්විදාන 4.1 - Anupa Indeewara.pdf", link: businessStudiesFolderLink },
+  { name: "සන්නිවේදනය 9 - Anupa Indeewara.pdf", link: businessStudiesFolderLink },
+  { name: "සමාජ වගකීම_ - Jimi.pdf", link: businessStudiesFolderLink },
+  { name: "සමාජ වගකීම් හා අචාරධර්ම 2 - Anupa Indeewara.pdf", link: businessStudiesFolderLink }
 ];
 
 // Data for Engineering Tech (Technology Stream)
@@ -318,17 +357,28 @@ const bstFiles = [
 const geoFolderLink = "https://drive.google.com/drive/folders/1dlWFtKKampkFivA5IAXl76RJshapd9xU?usp=sharing";
 
 const geoFiles = [
-  { name: "♨️භෞතික_භූගෝල_විද්‍යාව(1) - Hiruni Wijethunge", link: geoFolderLink }
+  { name: "♨️භෞතික_භූගෝල_විද්‍යාව(1) - Hiruni Wijethunge", link: geoFolderLink },
+  { name: "17644827207084807018727028412062 - Gangani Sasadara.jpg", link: geoFolderLink },
+  { name: "IMG_20251130_105301 - Samadi Paramitha.jpg", link: geoFolderLink },
+  { name: "IMG_20251130_105310 - Samadi Paramitha.jpg", link: geoFolderLink },
+  { name: "IMG_20251130_105316 - Samadi Paramitha.jpg", link: geoFolderLink },
+  { name: "IMG_20251130_105323 - Samadi Paramitha.jpg", link: geoFolderLink },
+  { name: "IMG_20251130_105329 - Samadi Paramitha.jpg", link: geoFolderLink },
+  { name: "IMG_20251130_105338 - Samadi Paramitha.jpg", link: geoFolderLink },
+  { name: "IMG_20251130_105343 - Samadi Paramitha.jpg", link: geoFolderLink },
+  { name: "IMG_20251130_105400 - Samadi Paramitha.jpg", link: geoFolderLink },
+  { name: "IMG_20251130_105411 - Samadi Paramitha.jpg", link: geoFolderLink },
+  { name: "IMG_20251130_105416 - Samadi Paramitha.jpg", link: geoFolderLink }
 ];
 
 // Data for Political Science (Arts Stream)
 const polSciFolderLink = "https://drive.google.com/drive/folders/1-UlfuKhBchmQVKnx6yRCH6S2TMWXLkRM?usp=sharing";
 
 const polSciFiles = [
-  { name: "07 ps - Hiruni Wijethunge", link: polSciFolderLink },
-  { name: "08 ps - Hiruni Wijethunge", link: polSciFolderLink },
-  { name: "1978 දෙවන ජනරජ ආණ්ඩුක්‍රම ව්‍යවස්ථාව - Hiruni Wijethunge", link: polSciFolderLink },
-  { name: "රාජ්‍යය සහ එහි භූමිකාව - Hiruni Wijethunge", link: polSciFolderLink }
+  { name: "07 ps - Hiruni Wijethunge.pdf", link: polSciFolderLink },
+  { name: "08 ps - Hiruni Wijethunge.pdf", link: polSciFolderLink },
+  { name: "1978 දෙවන ජනරජ ආණ්ඩුක්‍රම ව්‍යවස්ථාව - Hiruni Wijethunge.pdf", link: polSciFolderLink },
+  { name: "රාජ්‍යය සහ එහි භූමිකාව - Hiruni Wijethunge.pdf", link: polSciFolderLink }
 ];
 
 // Data for Sinhala (Arts Stream)
@@ -339,6 +389,50 @@ const sinhalaFiles = [
   { name: "සද්ධර්මරත්නාවලිය__(1) - Hiruni Wijethunge", link: sinhalaFolderLink },
   { name: "සද්ධර්මලංකාරය විඡාර 4 - Hiruni Wijethunge", link: sinhalaFolderLink },
   { name: "සිංහල-පූජාවලිය-සද්ධර්මාලංකාරය_(1) - Hiruni Wijethunge", link: sinhalaFolderLink }
+];
+
+// Data for Japanese (Arts Stream)
+const japaneseFolderLink = "https://drive.google.com/drive/folders/1TTWQ3XqLdSNyp3Xgxj7sfas31RuLbwZS?usp=sharing";
+
+const japaneseFiles = [
+  { name: "05. About Japan - 02 - Tharushi Ama.pdf", link: japaneseFolderLink },
+  { name: "05. About Japan - 03 (4) - Tharushi Ama.pdf", link: japaneseFolderLink },
+  { name: "AL රචනා සංග්‍රහය(日本🇯🇵) - Tharushi Ama.pdf", link: japaneseFolderLink },
+  { name: "DOC060524-06052024102923 - Tharushi Ama.pdf", link: japaneseFolderLink },
+  { name: "Kaiwa and Essay - Tharushi Ama.pdf", link: japaneseFolderLink },
+  { name: "NIE Textbook Literature - Tharushi Ama.pdf", link: japaneseFolderLink },
+  { name: "ViVt - Tharushi Ama.pdf", link: japaneseFolderLink },
+  { name: "サチニさんといっしょ1_たんごリスト_1課⇒12課 - Tharushi Ama.pdf", link: japaneseFolderLink },
+  { name: "サチニさんといっしょ2_単語リスト_13課⇒20課 - Tharushi Ama.pdf", link: japaneseFolderLink }
+];
+
+// Data for History (Arts Stream)
+const historyFolderLink = "https://drive.google.com/drive/folders/1-nh895N3Knyqs8L-3LdQOASIgtlXxu4t?usp=sharing";
+
+const historyFiles = [
+  { name: "IMG_20251130_082734_726 - Sachini Aluthgedara.jpg", link: historyFolderLink },
+  { name: "IMG_20251130_082740_506 - Sachini Aluthgedara.jpg", link: historyFolderLink },
+  { name: "IMG_20251130_082751_065 - Sachini Aluthgedara.jpg", link: historyFolderLink },
+  { name: "IMG_20251130_082758_298 - Sachini Aluthgedara.jpg", link: historyFolderLink },
+  { name: "IMG_20251130_082812_454 - Sachini Aluthgedara.jpg", link: historyFolderLink },
+  { name: "IMG_20251130_082817_728 - Sachini Aluthgedara.jpg", link: historyFolderLink },
+  { name: "IMG_20251130_082827_239 - Sachini Aluthgedara.jpg", link: historyFolderLink },
+  { name: "IMG_20251130_082833_435 - Sachini Aluthgedara.jpg", link: historyFolderLink },
+  { name: "IMG_20251130_082841_346 - Sachini Aluthgedara.jpg", link: historyFolderLink },
+  { name: "IMG_20251130_082846_787 - Sachini Aluthgedara.jpg", link: historyFolderLink },
+  { name: "අනුරාධපුර රාජධානි සමයේ මුල් භාගයේ එල්ල වූ ආක් - Deepani Nadeesha.pdf", link: historyFolderLink },
+  { name: "නිශ්ශංක මල්ල රජ මුහුණ දුන් අභියෝග හා ඒවා ජයගත් ආකාරය පරීක්ෂා කරන්නන - Deepani Nadeesha.pdf", link: historyFolderLink },
+  { name: "මහා විජයබාහු රජතුමාගේ කාර්යභාරය පිළිබඳ විමසීමක් කරන්න - Deepani Nadeesha.pdf", link: historyFolderLink },
+  { name: "ශ්‍රී ලාංකේය ඉතිහාසය - Deepani Nadeesha.pdf", link: historyFolderLink }
+];
+
+// Data for Music (Arts Stream)
+const musicFolderLink = "https://drive.google.com/drive/folders/1zqnfwwSrJkYg-gCQRm59OMfxDEEYUEku?usp=sharing";
+
+const musicFiles = [
+  { name: "grade-13-oriental-music-teacher-guide-619dd89168782 - Yesuru Banuka.pdf", link: musicFolderLink },
+  { name: "sGr12OM OrienMusic - Yesuru Banuka.pdf", link: musicFolderLink },
+  { name: "sGr12TG Orient Music - Yesuru Banuka.pdf", link: musicFolderLink }
 ];
 
 // Data for General English (Common Stream)
@@ -393,19 +487,479 @@ const commonTestFiles = [
 ];
 
 // Data for Ordinary Level
-const olFolderLink = "https://drive.google.com/drive/folders/13ag0Hlrz8OGYwAo1iV87vgxBQ6MaPHnk?usp=sharing";
+// Updated to use individual subject folders
+// const olFolderLink = "https://drive.google.com/drive/folders/13ag0Hlrz8OGYwAo1iV87vgxBQ6MaPHnk?usp=sharing";
 
-// O/L Files to display directly (instead of subject-based)
-const olFiles = [
-  { name: "BUDHDHISM", link: olFolderLink },
-  { name: "ENGLISH", link: olFolderLink },
-  { name: "ENGLISH LIT", link: olFolderLink },
-  { name: "HISTORY", link: olFolderLink },
-  { name: "ICT", link: olFolderLink },
-  { name: "MATHEMATICS", link: olFolderLink },
-  { name: "SCIENCE", link: olFolderLink },
-  { name: "SINHALA", link: olFolderLink },
-  { name: "SINHALA LIT", link: olFolderLink },
+// Data for O/L Art
+const olArtFolderLink = "https://drive.google.com/drive/folders/1UyrpaFsadD6Co8VKboUozx5NrgItlr1e?usp=sharing";
+
+const olArtFiles = [
+  { name: "ART-Grade-11 - Copy - ANJANA Chamodya.pdf", link: olArtFolderLink },
+  { name: "DOC-20250528-WA0008. - ANJANA Chamodya.pdf", link: olArtFolderLink },
+  { name: "grade11-syllabus - ANJANA Chamodya.pdf", link: olArtFolderLink },
+  { name: "HIGHLIGHTED ART BOOK g10 - ANJANA Chamodya.pdf", link: olArtFolderLink }
+];
+
+// Data for O/L Buddhism
+const olBuddhismFolderLink = "https://drive.google.com/drive/folders/14i20AbDN0wJVMTvqBWLuKGrf3udoUK0q?usp=sharing";
+
+const olBuddhismFiles = [
+  { name: "1 - ANJANA Chamodya.pdf", link: olBuddhismFolderLink },
+  { name: "2 (1) - ANJANA Chamodya.pdf", link: olBuddhismFolderLink },
+  { name: "3 - ANJANA Chamodya.pdf", link: olBuddhismFolderLink },
+  { name: "5 - ANJANA Chamodya.pdf", link: olBuddhismFolderLink },
+  { name: "6 - ANJANA Chamodya.pdf", link: olBuddhismFolderLink },
+  { name: "7 - ANJANA Chamodya.pdf", link: olBuddhismFolderLink },
+  { name: "9 - ANJANA Chamodya.pdf", link: olBuddhismFolderLink },
+  { name: "10 - ANJANA Chamodya.pdf", link: olBuddhismFolderLink },
+  { name: "11 - ANJANA Chamodya.pdf", link: olBuddhismFolderLink },
+  { name: "11 wsara 3 padama - Brian Makalanda.pdf", link: olBuddhismFolderLink },
+  { name: "11 ශ්‍රේණිය 1 වාරය 1 පාඩම - Reshana Gamage.pdf", link: olBuddhismFolderLink },
+  { name: "11. බුද්ධ ධර්මය කෙටි සටහන් අත්වැල-1 - Amodya Sewmindi.pdf", link: olBuddhismFolderLink },
+  { name: "12 - ANJANA Chamodya.pdf", link: olBuddhismFolderLink },
+  { name: "12 කාර්_ය පත්_රිකාව - බුද්ධ ධර්මය - Amodya Sewmindi.pdf", link: olBuddhismFolderLink },
+  { name: "14 කාර්_ය පත්_රිකාව - බුද්ධ ධර්මය - Amodya Sewmindi.pdf", link: olBuddhismFolderLink },
+  { name: "15 කාර්_ය පත්_රිකාව - බුද්ධ ධර්මය - Amodya Sewmindi.pdf", link: olBuddhismFolderLink },
+  { name: "Buddhism 11 - Sujeewa Pradeep.pdf", link: olBuddhismFolderLink },
+  { name: "Buddhism Grade 10 Unit 02 - susantha pushpakumara.pdf", link: olBuddhismFolderLink },
+  { name: "Buddhism Grade 10 Unit 03 - susantha pushpakumara.pdf", link: olBuddhismFolderLink },
+  { name: "Buddhism Grade 10 Unit 04 - susantha pushpakumara.pdf", link: olBuddhismFolderLink },
+  { name: "Buddhism Grade 10 Unit 07 - susantha pushpakumara.pdf", link: olBuddhismFolderLink },
+  { name: "Buddism all in one pdf by WAY TO A9 - Amodya Sewmindi.pdf", link: olBuddhismFolderLink },
+  { name: "G.C.E. - OL - 2022 - Buddhism (11) - Marking Scheme - SM - Tharushi Ama.pdf", link: olBuddhismFolderLink },
+  { name: "G.C.E. - OL - 2022 - Buddhism (11) - SM - Tharushi Ama.pdf", link: olBuddhismFolderLink },
+  { name: "G11_බුද්ධාගම_ස්වයං_අධ්‍යයන_පත්‍රිකා_සංග්‍රහය - Sujeewa Pradeep.pdf", link: olBuddhismFolderLink },
+  { name: "image - Kehan paper craft.jpg", link: olBuddhismFolderLink },
+  { name: "IMG_20251130_110927 - Dilru -.jpg", link: olBuddhismFolderLink },
+  { name: "IMG_20251130_111020 - Dilru -.jpg", link: olBuddhismFolderLink },
+  { name: "IMG_20251130_111236_edit_11742889037650958 - Dilru -.jpg", link: olBuddhismFolderLink },
+  { name: "IMG_20251130_111648_edit_11743132114008730 - Dilru -.jpg", link: olBuddhismFolderLink },
+  { name: "IMG_20251130_112123_edit_11743406918421229 - Dilru -.jpg", link: olBuddhismFolderLink },
+  { name: "IMG_20251130_112401_edit_11743561517894920 - Dilru -.jpg", link: olBuddhismFolderLink },
+  { name: "IMG-20251125-WA0011 - Gamini jayasuriya.jpg", link: olBuddhismFolderLink },
+  { name: "IMG-20251125-WA0012 - Gamini jayasuriya.jpg", link: olBuddhismFolderLink },
+  { name: "IMG-20251125-WA0013 - Gamini jayasuriya.jpg", link: olBuddhismFolderLink },
+  { name: "IMG-20251125-WA0014 - Gamini jayasuriya.jpg", link: olBuddhismFolderLink },
+  { name: "IMG-20251125-WA0015 - Gamini jayasuriya.jpg", link: olBuddhismFolderLink },
+  { name: "IMG-20251125-WA0016 - Gamini jayasuriya.jpg", link: olBuddhismFolderLink },
+  { name: "IMG-20251125-WA0017 - Gamini jayasuriya.jpg", link: olBuddhismFolderLink },
+  { name: "IMG-20251125-WA0018 - Gamini jayasuriya.jpg", link: olBuddhismFolderLink },
+  { name: "IMG-20251125-WA0019 - Gamini jayasuriya.jpg", link: olBuddhismFolderLink },
+  { name: "IMG-20251125-WA0020 - Gamini jayasuriya.jpg", link: olBuddhismFolderLink }
+];
+
+// Data for O/L Citizenship Education
+const olCivicFolderLink = "https://drive.google.com/drive/folders/1W6QKzXiFiLaXmWTFznvuMU4-IQAt7jgt?usp=sharing";
+
+const olCivicFiles = [
+  { name: "1011 PURAWESI NOTES 2020 - Yashodya Nethmini Rathnayake.pdf", link: olCivicFolderLink },
+  { name: "Civic-Education SM - Adeesh Thejan Ranaweera.pdf", link: olCivicFolderLink }
+];
+
+// Data for O/L Commerce
+const olCommerceFolderLink = "https://drive.google.com/drive/folders/1jaOQxEpC4LmCxA2PdR79W9B2MNR3NFlE?usp=sharing";
+
+const olCommerceFiles = [
+  { name: "Business-and-Accounting-Short-Note-in-Sinhala-Medium-01 - ANJANA Chamodya.pdf", link: olCommerceFolderLink },
+  { name: "WhatsApp Image 2025-06-04 at 4.52.47 PM - ANJANA Chamodya.jpeg", link: olCommerceFolderLink },
+  { name: "WhatsApp Image 2025-06-04 at 4.52.47 PM (1) - ANJANA Chamodya.jpeg", link: olCommerceFolderLink },
+  { name: "WhatsApp Image 2025-06-04 at 4.52.48 PM - ANJANA Chamodya.jpeg", link: olCommerceFolderLink },
+  { name: "WhatsApp Image 2025-06-04 at 4.52.48 PM (1) - ANJANA Chamodya.jpeg", link: olCommerceFolderLink },
+  { name: "WhatsApp Image 2025-06-04 at 4.52.49 PM - ANJANA Chamodya.jpeg", link: olCommerceFolderLink },
+  { name: "WhatsApp Image 2025-06-04 at 4.52.49 PM (1) - ANJANA Chamodya.jpeg", link: olCommerceFolderLink },
+  { name: "WhatsApp Image 2025-06-04 at 4.52.50 PM - ANJANA Chamodya.jpeg", link: olCommerceFolderLink },
+  { name: "WhatsApp Image 2025-06-04 at 4.52.50 PM (1) - ANJANA Chamodya.jpeg", link: olCommerceFolderLink },
+  { name: "WhatsApp Image 2025-06-04 at 4.52.50 PM (2) - ANJANA Chamodya.jpeg", link: olCommerceFolderLink }
+];
+
+// Data for O/L English
+const olEnglishFolderLink = "https://drive.google.com/drive/folders/1J0WzluIX5K50h0wZUcWw4QnRota0OSn1?usp=sharing";
+
+const olEnglishFiles = [
+  { name: "2018-3rd-english - sl ace.pdf", link: olEnglishFolderLink },
+  { name: "english - sl ace.pdf", link: olEnglishFolderLink },
+  { name: "English Short notes - Amodya Sewmindi.pdf", link: olEnglishFolderLink },
+  { name: "EXPECTED ESSAY TOPICS - nalika dilrukshi.pdf", link: olEnglishFolderLink },
+  { name: "final - nalika dilrukshi.pdf", link: olEnglishFolderLink },
+  { name: "Grade-10-English-1st-Term-Test-Paper-2020-Southern-Province - sl ace.pdf", link: olEnglishFolderLink },
+  { name: "Grade-10-English-2nd-Term-Test-Paper-2019-Southern-Province - sl ace.pdf", link: olEnglishFolderLink },
+  { name: "Grade-11-english-3rd-NWP-sinhala-medium - nalika dilrukshi.pdf", link: olEnglishFolderLink },
+  { name: "IMG-20250911-WA0001 - nalika dilrukshi.jpg", link: olEnglishFolderLink },
+  { name: "IMG-20251028-WA0056 - nalika dilrukshi.jpg", link: olEnglishFolderLink },
+  { name: "OL English Support Papers by Ministry - nalika dilrukshi.pdf", link: olEnglishFolderLink },
+  { name: "Present Continuous Tense - ANJANA Chamodya.pdf", link: olEnglishFolderLink },
+  { name: "sg10_eng_tt3_wp2016 - sl ace.pdf", link: olEnglishFolderLink },
+  { name: "Simple Past Tense - ANJANA Chamodya.pdf", link: olEnglishFolderLink },
+  { name: "Simple Present Tense. - ANJANA Chamodya.pdf", link: olEnglishFolderLink },
+  { name: "Unit 7 Graphs - nalika dilrukshi.pdf", link: olEnglishFolderLink }
+];
+
+// Data for O/L English Literature
+const olEnglishLitFolderLink = "https://drive.google.com/drive/folders/1tu6w56PvrxdDi9wDwJZ5s15twnW2MCg7?usp=sharing";
+
+const olEnglishLitFiles = [
+  { name: "2016-NEW46EIII-11132019191038 - Lihini Sehara.pdf", link: olEnglishLitFolderLink },
+  { name: "2020-3rdTerm-G11-EnglishLiterature-Paper-III - Lihini Sehara.pdf", link: olEnglishLitFolderLink },
+  { name: "G.C.E-OL-23QP - Lihini Sehara.pdf", link: olEnglishLitFolderLink },
+  { name: "G.C.E-OL-Appreciation-of-English-Literary-Texts-2021-March - Lihini Sehara.pdf", link: olEnglishLitFolderLink },
+  { name: "G.C.E-OL-Appreciation-of-English-Literary-Texts-2022-Past-Paper - Lihini Sehara.pdf", link: olEnglishLitFolderLink },
+  { name: "Grade 10 Western Province 3rd Term  - Lihini Sehara.pdf", link: olEnglishLitFolderLink },
+  { name: "Grade-11-Appreciation-of-English-Literary-Texts-1st-Term-Test-Paper-2020-Richmond-College - Lihini Sehara.pdf", link: olEnglishLitFolderLink },
+  { name: "Vendor_of_Sweets_Themes_Summary_Clean-1 - Sujeewa Pradeep.pdf", link: olEnglishLitFolderLink },
+  { name: "wp-11-ms-2020-3rd - Lihini Sehara.pdf", link: olEnglishLitFolderLink }
+];
+
+// Data for O/L History
+const olHistoryFolderLink = "https://drive.google.com/drive/folders/1N_-O9vdovw5wPlEGC8BEV1hw0ptZMCz5?usp=sharing";
+
+const olHistoryFiles = [
+  { name: "1 වාරය 3 පාඩම - Brian Makalanda.pdf", link: olHistoryFolderLink },
+  { name: "1 ශ්‍රී ලංකාවේ පැරණි විද්‍යාව හා තාක්ෂණය-කියවීම් පත්‍රිකාව new - Ganga Lakmini.pdf", link: olHistoryFolderLink },
+  { name: "2 වාරය 16 පාඩම - Brian Makalanda.pdf", link: olHistoryFolderLink },
+  { name: "2 වාරය 10 පාඩම 2 - Brian Makalanda.pdf", link: olHistoryFolderLink },
+  { name: "04 පාඩම - බ්‍රිතාන්‍යයන් යටතේ ශ්‍රී ලංකාවේ දේශපාලන වෙනස් වීම් - 02 (1) - ANJANA Chamodya.pdf", link: olHistoryFolderLink },
+  { name: "10 ශ්‍රී ලංකාවේ දේශපාලන බලව විකාශනය වීම 01කියවීම් - Ganga Lakmini.pdf", link: olHistoryFolderLink },
+  { name: "10 - ANJANA Chamodya.pdf", link: olHistoryFolderLink },
+  { name: "10 ඉතිහාසය හැදෑරීමේ මූලාශ්‍රය 01 කියවීම් සටහන මූලාශ්‍රය වර්ගීකරණය - Ganga Lakmini.pdf", link: olHistoryFolderLink },
+  { name: "10 ශ්‍රී ලංකාව ජනාවාස වීම 01 කියවීම් - Ganga Lakmini.pdf", link: olHistoryFolderLink },
+  { name: "10 ශ්‍රී ලංකාව ජනාවාස වීම 02කියවීම් - Ganga Lakmini.pdf", link: olHistoryFolderLink },
+  { name: "10 ශ්‍රී ලංකාව ජනාවාස වීම 03කියවීම් - Ganga Lakmini.pdf", link: olHistoryFolderLink },
+  { name: "10 ශ්‍රේණිය-ඉතිහාසය-2 පාඩම-2 කොටස-පිළිතුරු - Reshana Gamage.pdf", link: olHistoryFolderLink },
+  { name: "DOC-20250314-WA0005. - ANJANA Chamodya.pdf", link: olHistoryFolderLink },
+  { name: "DOC-20250314-WA0008. (1) - ANJANA Chamodya.pdf", link: olHistoryFolderLink },
+  { name: "G10 2022-3t Western Pro.(SM) - Chandrajith K.G..pdf", link: olHistoryFolderLink },
+  { name: "G10 2023-3t-Royal College P1 (SM) - Chandrajith K.G..pdf", link: olHistoryFolderLink },
+  { name: "G10 2023-3t-Royal College P2 (SM) - Chandrajith K.G..pdf", link: olHistoryFolderLink },
+  { name: "G10 2024 3t Visaka V. (SM)P1 - Chandrajith K.G..pdf", link: olHistoryFolderLink },
+  { name: "G10 2024 3t Visaka V. (SM)P2 - Chandrajith K.G..pdf", link: olHistoryFolderLink },
+  { name: "Grade11history - Himansa Hirudini.pdf", link: olHistoryFolderLink },
+  { name: "History Grade 10 Unit 01 - Ikcp Ilukkumbura.pdf", link: olHistoryFolderLink },
+  { name: "HISTORY study pack - ANJANA Chamodya.pdf", link: olHistoryFolderLink },
+  { name: "history-paper-2023-with-answers - MY CHANNEL.pdf", link: olHistoryFolderLink },
+  { name: "IMG_20251130_111845_edit_11743271161374094 - Dilru -.jpg", link: olHistoryFolderLink },
+  { name: "IMG-20250130-WA0036 - ANJANA Chamodya.jpg", link: olHistoryFolderLink },
+  { name: "IMG-20250130-WA0037 - ANJANA Chamodya.jpg", link: olHistoryFolderLink },
+  { name: "IMG-20250130-WA0038 - ANJANA Chamodya.jpg", link: olHistoryFolderLink },
+  { name: "IMG-20250130-WA0040 - ANJANA Chamodya.jpg", link: olHistoryFolderLink },
+  { name: "IMG-20250130-WA0041 - ANJANA Chamodya.jpg", link: olHistoryFolderLink },
+  { name: "OL-History-PDF - MY CHANNEL.pdf", link: olHistoryFolderLink },
+  { name: "Scan 27 Nov 25 09·20·57 - Yenuli Ailapperuma.pdf", link: olHistoryFolderLink },
+  { name: "Short-Note-History-11 - MY CHANNEL.pdf", link: olHistoryFolderLink },
+  { name: "ඉති-3වාරය-10 ශ්‍රේ-9පාඩම-ඉගෙ.ආධා_ - Brian Makalanda.pdf", link: olHistoryFolderLink },
+  { name: "ඉතිහාසය රූප සටහන් අධ්‍යයනය - Thulakshana Shehan.pdf", link: olHistoryFolderLink }
+];
+
+// Data for O/L ICT
+const olIctFolderLink = "https://drive.google.com/drive/folders/1k5borDdWH1ZjmAGZAKaYJGueKIrDxLXV?usp=sharing";
+
+const olIctFiles = [
+  { name: "11 ශ්‍රේණිය තොරතුරු හා සංනිවේදන හා තාක්ෂණය කෙටි සටහන් 2 - Deevika Suwarnamali.pdf", link: olIctFolderLink },
+  { name: "11 ශ්‍රේණිය තොරතුරු හා සංනිවේදන හා තාක්ෂණය කෙටි සටහන් 3 - Deevika Suwarnamali.pdf", link: olIctFolderLink },
+  { name: "2023(2024) Sab P Grade 10 ICT 3rd ENG - Ruhansa Hirusari.pdf", link: olIctFolderLink },
+  { name: "241385 10 ICT - I (1) - Ruhansa Hirusari.pdf", link: olIctFolderLink },
+  { name: "Chapter 02 English - Dananjaya Alahapperuma.pdf", link: olIctFolderLink },
+  { name: "Chapter 2 Sinhala - Dananjaya Alahapperuma.pdf", link: olIctFolderLink },
+  { name: "Chapter 3 English - Dananjaya Alahapperuma.pdf", link: olIctFolderLink },
+  { name: "Chapter 3 Sinhala - Dananjaya Alahapperuma.pdf", link: olIctFolderLink },
+  { name: "Chapter 4 English - Dananjaya Alahapperuma.pdf", link: olIctFolderLink },
+  { name: "Chapter 4 Sinhala - Dananjaya Alahapperuma.pdf", link: olIctFolderLink },
+  { name: "Chapter 5 Sinhala - Dananjaya Alahapperuma.pdf", link: olIctFolderLink },
+  { name: "Chapter 5- English - Dananjaya Alahapperuma.pdf", link: olIctFolderLink },
+  { name: "Chapter 6 English - Dananjaya Alahapperuma.pdf", link: olIctFolderLink },
+  { name: "Chapter 6 Sinhala - Dananjaya Alahapperuma.pdf", link: olIctFolderLink },
+  { name: "Chapter 7 English - Dananjaya Alahapperuma.pdf", link: olIctFolderLink },
+  { name: "Chapter 7 Sinhala - Dananjaya Alahapperuma.pdf", link: olIctFolderLink },
+  { name: "Chapter 8 English - Dananjaya Alahapperuma.pdf", link: olIctFolderLink },
+  { name: "Chapter 8 Sinhala - Dananjaya Alahapperuma.pdf", link: olIctFolderLink },
+  { name: "Chapter 9 English - Dananjaya Alahapperuma.pdf", link: olIctFolderLink },
+  { name: "Chapter 9 Sinhala - Dananjaya Alahapperuma.pdf", link: olIctFolderLink },
+  { name: "chart elements excel - Ruhansa Hirusari.pdf", link: olIctFolderLink },
+  { name: "Grade 10 -unit 01 - susantha pushpakumara.pdf", link: olIctFolderLink },
+  { name: "Grade 10 -unit 03 - susantha pushpakumara.pdf", link: olIctFolderLink },
+  { name: "Grade 10 ICT Third Term Test English Medium Paper - Look Rich.pdf", link: olIctFolderLink },
+  { name: "Grade 10 ICT Third Term Test English Medium Paper - Ruhansa Hirusari.pdf", link: olIctFolderLink },
+  { name: "Grade-10-ICT-3rd-Term-Test-Paper-2020-English-Medium-–-North-Western-Province - Ruhansa Hirusari.pdf", link: olIctFolderLink },
+  { name: "ICT G10 T3 E 2023(2024) NCP - Ruhansa Hirusari.pdf", link: olIctFolderLink },
+  { name: "north-western-province-grade-10-information-and-communication-technology-ict-2019-3-term-test-paper - Ruhansa Hirusari.pdf", link: olIctFolderLink },
+  { name: "OL Grade 10 and 11 ICT short notes Sinhala medium - ANJANA Chamodya.pdf", link: olIctFolderLink },
+  { name: "OL-ICT-Short-Note-Book - ANJANA Chamodya.pdf", link: olIctFolderLink },
+  { name: "powerpoint tute - Ruhansa Hirusari.pdf", link: olIctFolderLink },
+  { name: "Programming 11 - ANJANA Chamodya.pdf", link: olIctFolderLink },
+  { name: "SHORT NOTE - E-Commerce - Pawani Nadeera.pdf", link: olIctFolderLink },
+  { name: "SHORT NOTE - Number system - Pawani Nadeera.pdf", link: olIctFolderLink },
+  { name: "SHORT NOTE - UNIT 1 - Pawani Nadeera.pdf", link: olIctFolderLink },
+  { name: "SHORT NOTE - UNIT 4 - Pawani Nadeera.pdf", link: olIctFolderLink },
+  { name: "SHORT NOTE - UNIT 5 - Pawani Nadeera.pdf", link: olIctFolderLink },
+  { name: "SHORT NOTE - UNIT 8 - Pawani Nadeera.pdf", link: olIctFolderLink },
+  { name: "SHORT NOTE - UNIT 13 - Pawani Nadeera.pdf", link: olIctFolderLink },
+  { name: "SHORT NOTE -PYTHON - Pawani Nadeera.pdf", link: olIctFolderLink },
+  { name: "SHORT NOTE -Webdesign - Pawani Nadeera.pdf", link: olIctFolderLink },
+  { name: "short note full syllabus redesign - ANJANA Chamodya.pdf", link: olIctFolderLink },
+  { name: "WP-G10-E-ICT-2022(2023 MARCH)-I&II - Ruhansa Hirusari.pdf", link: olIctFolderLink },
+  { name: "අන්තර්ජාලය හා විද්‍යුත් තැපෑල - ANJANA Chamodya.pdf", link: olIctFolderLink },
+  { name: "ඉලෙක්ට්‍රොනික සමර්පණ - ANJANA Chamodya.pdf", link: olIctFolderLink }
+];
+
+// Data for O/L Mathematics
+const olMathFolderLink = "https://drive.google.com/drive/folders/1VxVic12I9EbIiL39NP8a_rGblTKGtyjy?usp=sharing";
+
+const olMathFiles = [
+  { name: "1 මිනිතය -1 Edit 11-19 - nalika dilrukshi.pdf", link: olMathFolderLink },
+  { name: "3.දර්ශක හා ලඝුගණක ii-පිළිතුරු - Chamal Karawgodage Don.pdf", link: olMathFolderLink },
+  { name: "7 Mathematics S 2015 - Dithmi Sasena.pdf", link: olMathFolderLink },
+  { name: "10-maths-sin-s - Dinul Rashmitha.pdf", link: olMathFolderLink },
+  { name: "11-maths-sin-s - Dhananga Masakorala.pdf", link: olMathFolderLink },
+  { name: "11-maths-sin-s - nalika dilrukshi.pdf", link: olMathFolderLink },
+  { name: "2021-Grade-10-Maths-3rd-Term-Test-Paper-Southern-Province - Dinul Rashmitha.pdf", link: olMathFolderLink },
+  { name: "2022-Grade-10-3rd-tem-Maths.sm (1) - Dinul Rashmitha.pdf", link: olMathFolderLink },
+  { name: "17644837404467184932159915710522 - Thulani Nethmini.jpg", link: olMathFolderLink },
+  { name: "G 10 Maths (SM)Wp Last term 2024(2025) - Ruhansa Hirusari.pdf", link: olMathFolderLink },
+  { name: "G 10 Maths(SM) Wp Last term 2023(2024) - Ruhansa Hirusari.pdf", link: olMathFolderLink },
+  { name: "G 11 Maths(SM) Wp Last term 2024(2025) - nalika dilrukshi.pdf", link: olMathFolderLink },
+  { name: "G11_ජ්‍යාමිතිය, ත්‍රිකකෝණමිතිය, දිගංශය_(www.iscolee.blogspot.com) - Deevika Suwarnamali.pdf", link: olMathFolderLink },
+  { name: "GEMP කාර්ය පත්‍රිකා සංග්‍රහය ගණිත ශාඛාව අධ්‍යාපන අමාත්‍යාංශය ඉසුරුපාය - Deevika Suwarnamali.pdf", link: olMathFolderLink },
+  { name: "Grade_11_3rd_term_paper II_(sm)2025 Final - Suneetha Samarawickrama.pdf", link: olMathFolderLink },
+  { name: "Grade-10-Mathematics-1st-Term-Test-Paper-with-Answers-2020-Sinhala-Medium-Southern-Province - Chathura Dillshan.pdf", link: olMathFolderLink },
+  { name: "Grade-10-Mathematics-3rd-Term-Test-Paper-with-Answers-2020-Sinhala-Medium-North-western-Province - Dinul Rashmitha.pdf", link: olMathFolderLink },
+  { name: "Grade-10-Mathematics-3rd-Term-Test-Paper-with-Answers-2020-Sinhala-Medium-Southern-Province - Dinul Rashmitha.pdf", link: olMathFolderLink },
+  { name: "Grade-11-Maths-3rd-NWP-Sinhala-Medium - Malini Malini.pdf", link: olMathFolderLink },
+  { name: "Grdae-10-Mathamatics-Sinhala-Medium-NWP (1) - Dinul Rashmitha.pdf", link: olMathFolderLink },
+  { name: "ImageToPDF 29-11-2025 Nyasa - Mahinda Kumara.pdf", link: olMathFolderLink },
+  { name: "IMG-20250104-WA0012 - ANJANA Chamodya.jpg", link: olMathFolderLink },
+  { name: "IMG-20250104-WA0021 - ANJANA Chamodya.jpg", link: olMathFolderLink },
+  { name: "IMG-20250104-WA0022 - ANJANA Chamodya.jpg", link: olMathFolderLink },
+  { name: "IMG-20250104-WA0023 - ANJANA Chamodya.jpg", link: olMathFolderLink },
+  { name: "IMG-20250104-WA0024 - ANJANA Chamodya.jpg", link: olMathFolderLink },
+  { name: "IMG-20250104-WA0025 - ANJANA Chamodya.jpg", link: olMathFolderLink },
+  { name: "IMG-20250104-WA0026 - ANJANA Chamodya.jpg", link: olMathFolderLink },
+  { name: "IMG-20250104-WA0027 - ANJANA Chamodya.jpg", link: olMathFolderLink },
+  { name: "IMG-20250104-WA0028 - ANJANA Chamodya.jpg", link: olMathFolderLink },
+  { name: "Maths shortnote - T Master.zip", link: olMathFolderLink },
+  { name: "OL Maths Content - T Master.zip", link: olMathFolderLink },
+  { name: "OL Maths Model Paper - T Master.zip", link: olMathFolderLink },
+  { name: "OL-Mathematics-short-questions - nalika dilrukshi.pdf", link: olMathFolderLink },
+  { name: "Practicing_Paper_Grade11_Sinhala - nalika dilrukshi.pdf", link: olMathFolderLink },
+  { name: "shortnote-for-OL(2) (1) (1) - ANJANA Chamodya.pdf", link: olMathFolderLink },
+  { name: "southern-province-grade-10-mathematics-2024-3rd-term-test-paper-688b35cbf09b1 - Dhananga Masakorala.pdf", link: olMathFolderLink },
+  { name: "Western 2016 G 11 3rd - nalika dilrukshi.pdf", link: olMathFolderLink },
+  { name: "Western 2017 G 11 3rd - nalika dilrukshi.pdf", link: olMathFolderLink },
+  { name: "Western 2018 G 11 3rd - nalika dilrukshi.pdf", link: olMathFolderLink },
+  { name: "WhatsApp Image 2025-03-24 at 17.47.51 - Ridmi Dewmini.jpeg", link: olMathFolderLink },
+  { name: "WhatsApp Image 2025-03-24 at 17.48.07 - Ridmi Dewmini.jpeg", link: olMathFolderLink },
+  { name: "ගණිත හුරුව 2023(1) - nalika dilrukshi.pdf", link: olMathFolderLink },
+  { name: "ගණිතයට නව ප්‍රවේශයක් බස්නාහිර පළාත් අධ්‍යාපන දෙපාර්තමේන්තුව - Deevika Suwarnamali.pdf", link: olMathFolderLink },
+  { name: "ජ්‍යාමිතිය ප්‍රමේයයන් OL - nalika dilrukshi.pdf", link: olMathFolderLink },
+  { name: "ජ්‍යාමිතිය__(www.iscolee.blogspot.com) - Deevika Suwarnamali.pdf", link: olMathFolderLink },
+  { name: "වෘත්ත ආශ්‍රිත ජ්‍යාමිතික ප්‍රමේයන් - Deevika Suwarnamali.pdf", link: olMathFolderLink }
+];
+
+// Data for O/L Music
+const olMusicFolderLink = "https://drive.google.com/drive/folders/1RJwlt8dp4D22Y5eIs0AvcTHZeJZwZOxe?usp=sharing";
+
+const olMusicFiles = [
+  { name: "පෙරදිග_සංගීතය_කෙටි_සටහන්_අත්වැල - Thulakshana Shehan.pdf", link: olMusicFolderLink }
+];
+
+// Data for O/L Science
+const olScienceFolderLink = "https://drive.google.com/drive/folders/1z076QtuRG2Kq-syWnA7fwv6LOnGUM7GM?usp=sharing";
+
+const olScienceFiles = [
+  { name: "🔥Exam Boost 🔥 - ANJANA Chamodya.pdf", link: olScienceFolderLink },
+  { name: "01 Sathwa pataka ZOOM Paper - Manuli Hansika.pdf", link: olScienceFolderLink },
+  { name: "10-2 සරල රේඛිය චලිතය - Nilmini Katipearachchi.pdf", link: olScienceFolderLink },
+  { name: "10-20 ප්‍රවේණිය - Nilmini Katipearachchi.pdf", link: olScienceFolderLink },
+  { name: "10.19_current_electricity - Brian Makalanda.pdf", link: olScienceFolderLink },
+  { name: "10.20_inheritance - Brian Makalanda.pdf", link: olScienceFolderLink },
+  { name: "11 ශ්‍රේණිය විද්‍යාව 3 වාරය ප්‍රශ්න පත්‍ර සහ පිළිතුරු පොත අංක 01 - Sujeewa Pradeep.pdf", link: olScienceFolderLink },
+  { name: "14Ahara jirnaya CK science (epapere) - Samanthi Hettiarachchi.pdf", link: olScienceFolderLink },
+  { name: "17644678216766777348306482296722 - Upul Nuwan.jpg", link: olScienceFolderLink },
+  { name: "17644708095137619559358632473047 - Buddika Sandamali.jpg", link: olScienceFolderLink },
+  { name: "ahara jirna paddathiya - Ridmi Dewmini.pdf", link: olScienceFolderLink },
+  { name: "Amla bashma ha lawana - Hirudini Aloka.pdf", link: olScienceFolderLink },
+  { name: "Amla basma ha lawana - Manuli Hansika.pdf", link: olScienceFolderLink },
+  { name: "G 11 Prbasansleshanaya Past Papers - Manuli Hansika.pdf", link: olScienceFolderLink },
+  { name: "Grade 10 & 11 - Biology Mcq (1) - ANJANA Chamodya.pdf", link: olScienceFolderLink },
+  { name: "Grade 10 Science Unit 15 Sin. - Deevika Suwarnamali.pdf", link: olScienceFolderLink },
+  { name: "Grade 10 Science Unit 16 Sin. - Deevika Suwarnamali.pdf", link: olScienceFolderLink },
+  { name: "Grade_11_First_term_Short_note_11ශ්‍රේණිය_පළමු_වාර_කෙටි_සටහන් - ANJANA Chamodya.pdf", link: olScienceFolderLink },
+  { name: "Grade-11-Study-Pack-–-Art-02 - Usitha Harshana.pdf", link: olScienceFolderLink },
+  { name: "hydrocarbon - Manuli Hansika.pdf", link: olScienceFolderLink },
+  { name: "IMG_20251130_072923 - Upul Nuwan.jpg", link: olScienceFolderLink },
+  { name: "IMG_20251130_072928 - Upul Nuwan.jpg", link: olScienceFolderLink },
+  { name: "IMG_20251130_072933 - Upul Nuwan.jpg", link: olScienceFolderLink },
+  { name: "IMG_20251130_072940 - Upul Nuwan.jpg", link: olScienceFolderLink },
+  { name: "IMG_20251130_072945 - Upul Nuwan.jpg", link: olScienceFolderLink },
+  { name: "IMG_20251130_072951 - Upul Nuwan.jpg", link: olScienceFolderLink },
+  { name: "IMG_20251130_072954 - Upul Nuwan.jpg", link: olScienceFolderLink },
+  { name: "IMG_20251130_073000 - Upul Nuwan.jpg", link: olScienceFolderLink },
+  { name: "IMG_20251130_073004 - Upul Nuwan.jpg", link: olScienceFolderLink },
+  { name: "Jaywa Golaya-Grade 11 lesson 15 - 2 - Manuli Hansika.pdf", link: olScienceFolderLink },
+  { name: "Jaywa Golaya-Grade 11 lesson 15 - Manuli Hansika.pdf", link: olScienceFolderLink },
+  { name: "prakasha_vidyawa_full - ANJANA Chamodya.pdf", link: olScienceFolderLink },
+  { name: "Rudira Sansarana paddathiya roga - Manuli Hansika.pdf", link: olScienceFolderLink },
+  { name: "Science 1💓✍️💫🍃😚 - Nethmi Kaveesha.pdf", link: olScienceFolderLink },
+  { name: "Science SM - Amodya Sewmindi.pdf", link: olScienceFolderLink },
+  { name: "Sol_Sci_sss_P_I_II_2022(2023) - Deevika Suwarnamali.pdf", link: olScienceFolderLink },
+  { name: "southern-province-grade-10-science-2020-3rd-term-test-paper-6530f331e262e - Dhananga Masakorala.pdf", link: olScienceFolderLink },
+  { name: "Tharanga ha ewaye yedim - 02 - Manuli Hansika.pdf", link: olScienceFolderLink },
+  { name: "Unit-09-thapaya-B - Alex Bot.pdf", link: olScienceFolderLink },
+  { name: "WhatsApp Image 2025-03-19 at 10.59.30 PM - ANJANA Chamodya.jpeg", link: olScienceFolderLink },
+  { name: "WhatsApp Image 2025-03-19 at 10.59.31 PM - ANJANA Chamodya.jpeg", link: olScienceFolderLink },
+  { name: "WhatsApp Image 2025-03-19 at 10.59.31 PM (1) - ANJANA Chamodya.jpeg", link: olScienceFolderLink },
+  { name: "WhatsApp Image 2025-03-19 at 10.59.32 PM - ANJANA Chamodya.jpeg", link: olScienceFolderLink },
+  { name: "WhatsApp Image 2025-03-19 at 10.59.32 PM (1) - ANJANA Chamodya.jpeg", link: olScienceFolderLink },
+  { name: "widyuth upakarana POLL - Manuli Hansika.pdf", link: olScienceFolderLink },
+  { name: "ප්‍රකාශ විද්‍යාවPrakasha vidyawa Past Papers - Manuli Hansika.pdf", link: olScienceFolderLink }
+];
+
+// Data for O/L Sinhala
+const olSinhalaFolderLink = "https://drive.google.com/drive/folders/1sZH0F1MPAbV-Z0j6L68LgxTDH4sIKyBi?usp=sharing";
+
+const olSinhalaFiles = [
+  { name: "11_මග_විසිතුරු_සැළලිහිණි_සංදේශය_⚜️SL_EDUCATION_OUR_SCHOOL⚜️_ - ANJANA Chamodya.pdf", link: olSinhalaFolderLink },
+  { name: "11-sinhala-s - Dhananga Masakorala.pdf", link: olSinhalaFolderLink },
+  { name: "13_අපට_වැසිකිළියක්⚜️SL_EDUCATION_OUR_SCHOOL_⚜️_ - ANJANA Chamodya.pdf", link: olSinhalaFolderLink },
+  { name: "2016-ol-sinhala-language-literature-past-paper-sinhala-medium - ANJANA Chamodya.pdf", link: olSinhalaFolderLink },
+  { name: "2017-ol-sinhala-language-literature-marking-scheme - ANJANA Chamodya.pdf", link: olSinhalaFolderLink },
+  { name: "2018-ol-sinhala-language-literature-marking-scheme-sinhala-medium - ANJANA Chamodya.pdf", link: olSinhalaFolderLink },
+  { name: "2019-ol-sinhala-language-literature-marking-scheme-sinhala-medium - ANJANA Chamodya.pdf", link: olSinhalaFolderLink },
+  { name: "2020-ol-sinhala-language-past-paper-and-answers-2 - ANJANA Chamodya.pdf", link: olSinhalaFolderLink },
+  { name: "2021-OL-Sinhala-paper - ANJANA Chamodya.pdf", link: olSinhalaFolderLink },
+  { name: "20242025-ol-sinhala-language-past-paper - ANJANA Chamodya.pdf", link: olSinhalaFolderLink },
+  { name: "IMG_20251130_111741_edit_11743180503217983 - Dilru -.jpg", link: olSinhalaFolderLink },
+  { name: "ordinary-level-sinhala-language-paper-and-answers-20222023 - ANJANA Chamodya.pdf", link: olSinhalaFolderLink },
+  { name: "Sinhala විභක්ති - ANJANA Chamodya.pdf", link: olSinhalaFolderLink },
+  { name: "Sinhala සන්ධි - ANJANA Chamodya.pdf", link: olSinhalaFolderLink },
+  { name: "Unit 1 - susantha pushpakumara.pdf", link: olSinhalaFolderLink },
+  { name: "Unit 2 - susantha pushpakumara.pdf", link: olSinhalaFolderLink },
+  { name: "Unit 3 - susantha pushpakumara.pdf", link: olSinhalaFolderLink },
+  { name: "Unit 6 - susantha pushpakumara.pdf", link: olSinhalaFolderLink },
+  { name: "vichara-dara - ANJANA Chamodya.pdf", link: olSinhalaFolderLink },
+  { name: "අපටත්_වැසිකියක්_විචාරය_නැණ_පහන - Copy - ANJANA Chamodya.pdf", link: olSinhalaFolderLink },
+  { name: "දෑතේ_කරගැට_2[1] - ANJANA Chamodya.pdf", link: olSinhalaFolderLink },
+  { name: "වස්සානය_-[1] - ANJANA Chamodya.pdf", link: olSinhalaFolderLink },
+  { name: "සාමාන්‍ය_පෙළ_සාහිත්‍ය_කෙටි_සටහන - Senevirathne P.K.pdf", link: olSinhalaFolderLink },
+  { name: "සාහිත්_ය පාඩම් 3,5.6.15,16.17 - ANJANA Chamodya.pdf", link: olSinhalaFolderLink },
+  { name: "සියලු_පාඩම්_වල_විචාර_උද්ධෘත - ANJANA Chamodya.pdf", link: olSinhalaFolderLink }
+];
+
+// Data for O/L Sinhala Literature
+const olSinhalaLitFolderLink = "https://drive.google.com/drive/folders/1w6Oh-m5Ey33nspgnOFQUBRh-e1eT_qIN?usp=sharing";
+
+const olSinhalaLitFiles = [
+  { name: "Sinhala Literature 10 3 2024 - Nilmini Katipearachchi.pdf", link: olSinhalaLitFolderLink },
+  { name: "Copy of සාමාන්‍ය_පෙළ_සාහිත්‍ය_කෙටි_සටහන - Sujeewa Pradeep.pdf", link: olSinhalaLitFolderLink },
+  { name: "Sinhala sahithya Intros - Kusali sithumila444.pdf", link: olSinhalaLitFolderLink },
+  { name: "Wichara serama NEW - Kusali sithumila444.pdf", link: olSinhalaLitFolderLink }
+];
+
+// Data for O/L Tamil
+const olTamilFolderLink = "https://drive.google.com/drive/folders/1PSh5joa1sWoA8bjXsORmJw3bAcvpolbW?usp=sharing";
+
+const olTamilFiles = [
+  { name: "2nd Language Sinhala 10 3 2024 - Nilmini Katipearachchi.pdf", link: olTamilFolderLink }
+];
+
+// O/L Subjects with individual links
+const olSubjects = [
+  { 
+    name: "Art", 
+    link: olArtFolderLink, 
+    files: olArtFiles, 
+    special: true,
+    image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=600&q=80"
+  },
+  { 
+    name: "Buddhism", 
+    link: olBuddhismFolderLink, 
+    files: olBuddhismFiles, 
+    special: true,
+    image: "https://images.unsplash.com/photo-1605648916361-9bc12ad6a569?auto=format&fit=crop&w=600&q=80"
+  },
+  { 
+    name: "Citizenship Education", 
+    link: olCivicFolderLink, 
+    files: olCivicFiles, 
+    special: true,
+    image: "https://images.unsplash.com/photo-1555848962-6e79363ec58f?auto=format&fit=crop&w=600&q=80"
+  },
+  { 
+    name: "Commerce", 
+    link: olCommerceFolderLink, 
+    files: olCommerceFiles, 
+    special: true,
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80"
+  },
+  { 
+    name: "English", 
+    link: olEnglishFolderLink, 
+    files: olEnglishFiles, 
+    special: true,
+    image: "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=600&q=80"
+  },
+  { 
+    name: "English Literature", 
+    link: olEnglishLitFolderLink, 
+    files: olEnglishLitFiles, 
+    special: true,
+    image: "https://images.unsplash.com/photo-1474932430478-367dbb6832c1?auto=format&fit=crop&w=600&q=80"
+  },
+  { 
+    name: "History", 
+    link: olHistoryFolderLink, 
+    files: olHistoryFiles, 
+    special: true,
+    image: "https://images.unsplash.com/photo-1461360370896-922624d12aa1?auto=format&fit=crop&w=600&q=80"
+  },
+  { 
+    name: "ICT", 
+    link: olIctFolderLink, 
+    files: olIctFiles, 
+    special: true,
+    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80"
+  },
+  { 
+    name: "Mathematics", 
+    link: olMathFolderLink, 
+    files: olMathFiles, 
+    special: true,
+    image: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=600&q=80"
+  },
+  { 
+    name: "Music", 
+    link: olMusicFolderLink, 
+    files: olMusicFiles, 
+    special: true,
+    image: "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?auto=format&fit=crop&w=600&q=80"
+  },
+  { 
+    name: "Science", 
+    link: olScienceFolderLink, 
+    files: olScienceFiles, 
+    special: true,
+    image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=600&q=80"
+  },
+  { 
+    name: "Sinhala", 
+    link: olSinhalaFolderLink, 
+    files: olSinhalaFiles, 
+    special: true,
+    image: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&w=600&q=80"
+  },
+  { 
+    name: "Sinhala Literature", 
+    link: olSinhalaLitFolderLink, 
+    files: olSinhalaLitFiles, 
+    special: true,
+    image: "https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=600&q=80"
+  },
+  { 
+    name: "Tamil", 
+    link: olTamilFolderLink, 
+    files: olTamilFiles, 
+    special: true,
+    image: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=600&q=80"
+  }
 ];
 
 // Data for Primary (Grade 1-5)
@@ -415,25 +969,130 @@ const primaryEnvFiles = [
   { name: "පරිසරය grade 3 - 3 වාරය. - Samadhi Ruhunage", link: primaryEnvFolderLink }
 ];
 
+// Data for Grade 1
+const grade1FolderLink = "https://drive.google.com/drive/folders/1TAMXkC5T6prO-dVtuQiIoGRw0G6AnYO4?usp=sharing";
+
+const grade1Files = [
+  { name: "grade-1-mathematics-text-book-633aba649d309 - indude silva.pdf", link: grade1FolderLink }
+];
+
 // Data for Grade 2
 const grade2FolderLink = "https://drive.google.com/drive/folders/1h87fmDNiWGygkq9CCWTvIGvNRJ21ue6g?usp=sharing";
 
 const grade2Files = [
-  { name: "2 ශ්‍රේණිය ගණිතය -ක්‍රියාකාරකම් පත්‍රිකා අංක 2 නව(1) - Chamal Karawgodage Don", link: grade2FolderLink }
+  { name: "2 ශ්‍රේණිය ගණිතය -ක්‍රියාකාරකම් පත්‍රිකා අංක 2 නව(1) - Chamal Karawgodage Don.pdf", link: grade2FolderLink }
+];
+
+// Data for Grade 3
+const grade3FolderLink = "https://drive.google.com/drive/folders/1rL-Y4Vyh3omCBYdgQNmZR7WYJZYeFnxw?usp=sharing";
+
+const grade3Files = [
+  { name: "3 engWorksheets 137 - Trimasha Binurangi.pdf", link: grade3FolderLink },
+  { name: "5_6267283666360074655 - Trimasha Binurangi.pdf", link: grade3FolderLink },
+  { name: "G3English_1st_Richmond College-2018 - Trimasha Binurangi.pdf", link: grade3FolderLink },
+  { name: "Grade 3_English_1st Term - Trimasha Binurangi.pdf", link: grade3FolderLink },
+  { name: "Grade 4_English_First Term - Trimasha Binurangi.pdf", link: grade3FolderLink },
+  { name: "Grade 4_English_First Term-1 - Trimasha Binurangi.pdf", link: grade3FolderLink },
+  { name: "පරිසරය grade 3 - 3 වාරය. - Samadhi Ruhunage.pdf", link: grade3FolderLink }
+];
+
+// Data for Grade 4
+const grade4FolderLink = "https://drive.google.com/drive/folders/10vNd3RlYXv7b3ou15_vQS1w582c7DX31?usp=sharing";
+
+const grade4Files = [
+  { name: "4 buddhism - unit 06 - Nilmini Katipearachchi.pdf", link: grade4FolderLink },
+  { name: "4 English - Unit 01 - Nilmini Katipearachchi.pdf", link: grade4FolderLink },
+  { name: "4 English - Unit 03 - Nilmini Katipearachchi.pdf", link: grade4FolderLink },
+  { name: "4 sinhala - Unit 04 - Nilmini Katipearachchi.pdf", link: grade4FolderLink },
+  { name: "4 tamil- Unit 01 - Nilmini Katipearachchi.pdf", link: grade4FolderLink },
+  { name: "4 tamil- Unit 04 - Nilmini Katipearachchi.pdf", link: grade4FolderLink },
+  { name: "IMG_2980 - Mudipa Kishan.jpeg", link: grade4FolderLink }
+];
+
+// Data for Grade 6
+const grade6FolderLink = "https://drive.google.com/drive/folders/1C6CiRPpkrBD-HaTA28r4T8Qb43KKs59n?usp=sharing";
+
+const grade6Files = [
+  { name: "6-science-s - Rasika Kumari Girihagama.pdf", link: grade6FolderLink },
+  { name: "2018 Maths Grade 6 English medium 3rd term - Darshana Waduge.pdf", link: grade6FolderLink },
+  { name: "Grade 6 Science EM Unit 01 - Darshana Waduge.pdf", link: grade6FolderLink },
+  { name: "Grade 6 Science EM Unit 02 - Darshana Waduge.pdf", link: grade6FolderLink },
+  { name: "Grade 6 Sinhala essays - Rasika Kumari Girihagama.pdf", link: grade6FolderLink },
+  { name: "Grade-06-Science-3rd-Term-Test-Paper-2018-Sinhala-Medium-Southern-Province - Rasika Kumari Girihagama.pdf", link: grade6FolderLink },
+  { name: "Grade-06-Science-3rd-Term-Test-Paper-with-Answers-2020-Sinhala-Medium-Southern-Province - Rasika Kumari Girihagama.pdf", link: grade6FolderLink },
+  { name: "openart-image_vHs390ln_1764421946883_raw - Mudipa Kishan.jpg", link: grade6FolderLink },
+  { name: "Western Province grade 6 third term test paper 2024(2025) _1 - Rasika Kumari Girihagama.jpg", link: grade6FolderLink },
+  { name: "Western Province grade 6 third term test paper 2024(2025) _2 - Rasika Kumari Girihagama.jpg", link: grade6FolderLink },
+  { name: "Western Province grade 6 third term test paper 2024(2025) _3 - Rasika Kumari Girihagama.jpg", link: grade6FolderLink },
+  { name: "Western Province grade 6 third term test paper 2024(2025) _4 - Rasika Kumari Girihagama.jpg", link: grade6FolderLink },
+  { name: "Western Province grade 6 third term test paper 2024(2025) _5 - Rasika Kumari Girihagama.jpg", link: grade6FolderLink },
+  { name: "Western Province grade 6 third term test paper 2024(2025) _6 - Rasika Kumari Girihagama.jpg", link: grade6FolderLink },
+  { name: "Western Province grade 6 third term test paper 2024(2025) _7 - Rasika Kumari Girihagama.jpg", link: grade6FolderLink },
+  { name: "Western Province grade 6 third term test paper 2024(2025) _8 - Rasika Kumari Girihagama.jpg", link: grade6FolderLink }
+];
+
+// Data for Grade 7
+const grade7FolderLink = "https://drive.google.com/drive/folders/1tAjHlhSA2AWFwNXqIsuurxvGLKltXKEZ?usp=sharing";
+
+const grade7Files = [
+  { name: "Grade-07-Geography-3rd-Term-Test-Paper-2019-English-Medium-–-Central-Province - Kushmi Dahamsa.pdf", link: grade7FolderLink },
+  { name: "Grade-07-Health-3rd-Term-Test-Paper-2019-English-Medium-–-North-Western-Province - Kushmi Dahamsa.pdf", link: grade7FolderLink }
+];
+
+// Data for Grade 8
+const grade8FolderLink = "https://drive.google.com/drive/folders/1Jkf5-V4bRqRSKizoo__ojDinMUQQCnQA?usp=sharing";
+
+const grade8Files = [
+  { name: "8 unit 01 - Darshana Waduge.pdf", link: grade8FolderLink },
+  { name: "8 ශ්‍රේණිය இரண்டாம் மொழி தமிழ் Text Book_edudoc.lk_ - Nilmini Katipearachchi.pdf", link: grade8FolderLink },
+  { name: "8-1 Health EM - Darshana Waduge.pdf", link: grade8FolderLink },
+  { name: "8-2 health EM - Darshana Waduge.pdf", link: grade8FolderLink },
+  { name: "8-PTS- 1.3, 2.3, 3.3, 4.3 - Darshana Waduge.pdf", link: grade8FolderLink },
+  { name: "Civic 8_1 - Darshana Waduge.pdf", link: grade8FolderLink },
+  { name: "English - 08 - Nilmini Katipearachchi.pdf", link: grade8FolderLink },
+  { name: "Geo 8_2 - Darshana Waduge.pdf", link: grade8FolderLink },
+  { name: "Geo 8_3 - Darshana Waduge.pdf", link: grade8FolderLink }
+];
+
+// Data for Grade 9
+const grade9FolderLink = "https://drive.google.com/drive/folders/1q90hU-ONj4PgG2tcR6DX5BFUT3beQDpg?usp=sharing";
+
+const grade9Files = [
+  { name: "Unit 09 - Nilmini Katipearachchi.pdf", link: grade9FolderLink },
+  { name: "9 -6 veegeeya prakasha පළමු වාරය - Nilmini Katipearachchi.pdf", link: grade9FolderLink },
+  { name: "9-1 sankya rata පළමු වාරය - Nilmini Katipearachchi.pdf", link: grade9FolderLink },
+  { name: "9-2 dwimaya sankya පළමු වාරය - Nilmini Katipearachchi.pdf", link: grade9FolderLink },
+  { name: "9-3 baga පළමු වාරය - Nilmini Katipearachchi.pdf", link: grade9FolderLink },
+  { name: "9-4 pratishata පළමු වාරය - Nilmini Katipearachchi.pdf", link: grade9FolderLink },
+  { name: "9-5 පළමු වාරය dipada - Nilmini Katipearachchi.pdf", link: grade9FolderLink },
+  { name: "9-7 pratyaksha පළමු වාරය - Nilmini Katipearachchi.pdf", link: grade9FolderLink },
+  { name: "9-8 sarala reka maths පළමු වාරය - Nilmini Katipearachchi.pdf", link: grade9FolderLink },
+  { name: "9-9 drawa minum පළමු වාරය - Nilmini Katipearachchi.pdf", link: grade9FolderLink },
+  { name: "Document from Sarika Kodagoda - Sarika Kodagoda.pdf", link: grade9FolderLink },
+  { name: "Geography Grade 9 Unit 01 - Nilmini Katipearachchi.pdf", link: grade9FolderLink },
+  { name: "Science Grade 9 Unit 01 - Nilmini Katipearachchi.pdf", link: grade9FolderLink },
+  { name: "Science Grade 9 Unit 02 - Nilmini Katipearachchi.pdf", link: grade9FolderLink },
+  { name: "Science Grade 9 Unit 03 - Nilmini Katipearachchi.pdf", link: grade9FolderLink },
+  { name: "Science Grade 9 Unit 04 - Nilmini Katipearachchi.pdf", link: grade9FolderLink },
+  { name: "Science Grade 9 Unit 05 - Nilmini Katipearachchi.pdf", link: grade9FolderLink },
+  { name: "southern-province-grade-9-practical-technical-skills-2018-3-term-test-paper-61e7eac2372aa - Kosali Nishshanka.pdf", link: grade9FolderLink },
+  { name: "southern-province-grade-9-practical-technical-skills-2019-2nd-term-test-paper-6532368d902ab - Kosali Nishshanka.pdf", link: grade9FolderLink },
+  { name: "southern-province-grade-9-practical-technical-skills-2020-3-term-test-paper-61e93d575d1cc - Kosali Nishshanka.pdf", link: grade9FolderLink },
+  { name: "unit 01 - Nilmini Katipearachchi.pdf", link: grade9FolderLink },
+  { name: "unit 01 - Pushpika Nanayakkara.pdf", link: grade9FolderLink },
+  { name: "unit 1 - Pushpika Nanayakkara.pdf", link: grade9FolderLink },
+  { name: "Unit 02 - Nilmini Katipearachchi.pdf", link: grade9FolderLink },
+  { name: "unit 2 - Nilmini Katipearachchi.pdf", link: grade9FolderLink }
 ];
 
 const gradeConfig = {
   "1-5": {
     title: "Primary (Grade 1–5)",
     subjects: [
-      { name: "Mathematics", files: [], link: "#" },
-      { name: "English", files: [], link: "#" },
-      { name: "Sinhala", files: [], link: "#" },
-      { name: "Tamil", files: [], link: "#" },
       { 
-        name: "Environment", 
-        files: primaryEnvFiles, 
-        link: primaryEnvFolderLink,
+        name: "Grade 1", 
+        files: grade1Files, 
+        link: grade1FolderLink,
         special: true 
       },
       { 
@@ -441,29 +1100,59 @@ const gradeConfig = {
         files: grade2Files, 
         link: grade2FolderLink,
         special: true 
+      },
+      { 
+        name: "Grade 3", 
+        files: grade3Files, 
+        link: grade3FolderLink,
+        special: true 
+      },
+      { 
+        name: "Grade 4", 
+        files: grade4Files, 
+        link: grade4FolderLink,
+        special: true 
+      },
+      { 
+        name: "Grade 5", 
+        files: [], 
+        link: "#",
+        special: false 
       }
     ],
   },
   "6-9": {
     title: "Middle School (Grade 6–9)",
     subjects: [
-      { name: "Mathematics", files: [], link: "#" },
-      { name: "Science", files: [], link: "#" },
-      { name: "History", files: [], link: "#" },
-      { name: "Geography", files: [], link: "#" },
-      { name: "English", files: [], link: "#" }
+      { 
+        name: "Grade 6", 
+        files: grade6Files, 
+        link: grade6FolderLink, 
+        special: true 
+      },
+      { 
+        name: "Grade 7", 
+        files: grade7Files, 
+        link: grade7FolderLink, 
+        special: true 
+      },
+      { 
+        name: "Grade 8", 
+        files: grade8Files, 
+        link: grade8FolderLink, 
+        special: true 
+      },
+      { 
+        name: "Grade 9", 
+        files: grade9Files, 
+        link: grade9FolderLink, 
+        special: true 
+      }
     ],
   },
   ol: {
     title: "O/L (Ordinary Level)",
-    subjects: [
-      { 
-        name: "Ordinary Level Subjects", 
-        files: olFiles, 
-        link: olFolderLink, 
-        special: true 
-      }
-    ],
+    subjects: olSubjects,
   },
   al: {
     title: "A/L (Advanced Level)",
@@ -558,7 +1247,7 @@ const gradeConfig = {
           { 
             name: "Media Studies", 
             files: mediaStudiesFiles, 
-            link: "https://drive.google.com/drive/folders/1ctG24ct0CHLW3EMRubYDkSP2w3rg2aJ4?usp=sharing",
+            link: mediaStudiesFolderLink,
             special: true
           },
           { 
@@ -579,7 +1268,24 @@ const gradeConfig = {
             link: sinhalaFolderLink,
             special: true 
           },
-          { name: "History", files: [], link: "#" }
+          { 
+            name: "Japanese", 
+            files: japaneseFiles, 
+            link: japaneseFolderLink,
+            special: true 
+          },
+          { 
+            name: "History", 
+            files: historyFiles, 
+            link: historyFolderLink,
+            special: true 
+          },
+          { 
+            name: "Music", 
+            files: musicFiles, 
+            link: musicFolderLink,
+            special: true 
+          }
         ]
       },
       {
@@ -691,8 +1397,17 @@ export default function GradePage() {
     <div 
       key={subject.name} 
       className="grade-card" 
-      style={{ padding: '0', cursor: 'default' }}
+      style={{ padding: '0', cursor: 'default', overflow: 'hidden' }}
     >
+      {subject.image && (
+        <div style={{ 
+            height: '120px', 
+            width: '100%', 
+            backgroundImage: `url(${subject.image})`, 
+            backgroundSize: 'cover', 
+            backgroundPosition: 'center' 
+        }} />
+      )}
       <div style={{ padding: '1.5rem', borderBottom: '1px solid #eee' }}>
           <h3 style={{ fontSize: '1.2rem', marginBottom: '0.5rem' }}>{subject.name}</h3>
           {subject.special ? (
@@ -718,28 +1433,17 @@ export default function GradePage() {
             maxHeight: '300px', overflowY: 'auto', padding: '0' 
           }}>
             {displayFiles.map((f, i) => {
-              // If searching, show full name to avoid confusion. Otherwise, simplify.
-              const shouldShowFullName = !!searchQuery;
+              // Clean up the file name
+              let displayName = f.name;
+              
+              // 1. Remove text after " - " (e.g., "File - Name" -> "File")
+              displayName = displayName.split(" - ")[0];
+              
+              // 2. Remove text inside parentheses (e.g., "File (Sir Name)" -> "File")
+              displayName = displayName.replace(/\s*\(.*?\)\s*/g, "");
 
-              // For certain subjects, we normally strip the uploader's name for cleaner UI
-              const isStripSubject = (
-                subject.name === "Econ" || 
-                subject.name === "Business Studies" || 
-                subject.name === "IT" || 
-                subject.name === "SFT" || 
-                subject.name === "Geography" || 
-                subject.name === "Political Science" || 
-                subject.name === "Sinhala" ||
-                subject.name === "General English" ||
-                subject.name === "General Information Technology" ||
-                subject.name === "General Knowledge" ||
-                subject.name === "Environment" ||
-                subject.name === "Grade 2"
-              );
-
-              const displayName = (isStripSubject && !shouldShowFullName)
-                ? f.name.split(" - ")[0] 
-                : f.name;
+              // Trim any extra whitespace
+              displayName = displayName.trim();
 
               return (
                 <li key={i} style={{ 
@@ -1129,6 +1833,25 @@ export default function GradePage() {
           </>
         )}
         </main>
+
+        {/* Disclaimer Section */}
+        <div style={{ background: '#fff', padding: '3rem 1.5rem', borderTop: '1px solid #eee', marginTop: '2rem' }}>
+          <div style={{ 
+              maxWidth: '800px', 
+              margin: '0 auto', 
+              background: '#f9fafb', 
+              padding: '1.5rem', 
+              borderRadius: '12px', 
+              border: '1px solid #e5e7eb',
+              textAlign: 'center'
+          }}>
+            <h3 style={{ fontSize: '1rem', color: '#374151', marginBottom: '0.5rem' }}>⚠️ Disclaimer</h3>
+            <p style={{ fontSize: '0.9rem', color: '#6b7280', margin: 0, lineHeight: '1.5' }}>
+              The documents, papers, and short notes available on this website are sent by students and teachers from all over Sri Lanka. 
+              We do not claim ownership of any of these materials. All rights belong to their respective owners and authors.
+            </p>
+          </div>
+        </div>
 
         <footer className="site-footer">
           <p>© 2025 EduRelief SL. Built with ❤️ for our students.</p>

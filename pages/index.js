@@ -415,6 +415,26 @@ export default function Home() {
             }
           `}</style>
 
+        <section className="pro-section disclaimer-section" style={{ background: '#fff', padding: '4rem 0', borderTop: '1px solid #eee' }}>
+          <div className="container">
+            <div className="disclaimer-box" style={{ 
+                background: '#f9fafb', 
+                padding: '2rem', 
+                borderRadius: '16px', 
+                border: '1px solid #e5e7eb',
+                textAlign: 'center',
+                maxWidth: '800px',
+                margin: '0 auto'
+            }}>
+              <h3 style={{ fontSize: '1.2rem', color: '#374151', marginBottom: '1rem' }}>⚠️ Disclaimer</h3>
+              <p style={{ fontSize: '1rem', color: '#6b7280', margin: 0 }}>
+                The documents, papers, and short notes available on this website are sent by students and teachers from all over Sri Lanka. 
+                We do not claim ownership of any of these materials. All rights belong to their respective owners and authors.
+              </p>
+            </div>
+          </div>
+        </section>
+
         <footer className="site-footer">
           <p>© 2025 EduRelief SL. Built with ❤️ for our students.</p>
           <p style={{ marginTop: '0.5rem', fontSize: '0.85rem', color: 'rgba(255,255,255,0.4)' }}>
