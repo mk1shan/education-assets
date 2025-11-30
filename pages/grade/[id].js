@@ -1093,31 +1093,36 @@ const gradeConfig = {
         name: "Grade 1", 
         files: grade1Files, 
         link: grade1FolderLink,
-        special: true 
+        special: true,
+        image: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=600&q=80"
       },
       { 
         name: "Grade 2", 
         files: grade2Files, 
         link: grade2FolderLink,
-        special: true 
+        special: true,
+        image: "https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=600&q=80"
       },
       { 
         name: "Grade 3", 
         files: grade3Files, 
         link: grade3FolderLink,
-        special: true 
+        special: true,
+        image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=80"
       },
       { 
         name: "Grade 4", 
         files: grade4Files, 
         link: grade4FolderLink,
-        special: true 
+        special: true,
+        image: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=600&q=80"
       },
       { 
         name: "Grade 5", 
         files: [], 
         link: "#",
-        special: false 
+        special: false,
+        image: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=600&q=80"
       }
     ],
   },
@@ -1128,25 +1133,29 @@ const gradeConfig = {
         name: "Grade 6", 
         files: grade6Files, 
         link: grade6FolderLink, 
-        special: true 
+        special: true,
+        image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=600&q=80"
       },
       { 
         name: "Grade 7", 
         files: grade7Files, 
         link: grade7FolderLink, 
-        special: true 
+        special: true,
+        image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80"
       },
       { 
         name: "Grade 8", 
         files: grade8Files, 
         link: grade8FolderLink, 
-        special: true 
+        special: true,
+        image: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=600&q=80"
       },
       { 
         name: "Grade 9", 
         files: grade9Files, 
         link: grade9FolderLink, 
-        special: true 
+        special: true,
+        image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=600&q=80"
       }
     ],
   },
@@ -1155,175 +1164,195 @@ const gradeConfig = {
     subjects: olSubjects,
   },
   al: {
-    title: "A/L (Advanced Level)",
+    title: "Advanced Level",
     // Implementing folder structure with IMAGES
     streams: [
       {
-        title: "SCIENCE STREAM",
-        subtitle: "Physics, Chemistry, Biology...",
-        image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=600&q=80",
+        title: "Science Stream",
+        subtitle: "Physics, Chemistry, Biology & Combined Maths",
+        image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=800&q=80",
         subjects: [
           { 
             name: "Physics", 
             files: physicsFiles, 
             link: physicsFolderLink,
-            special: true
+            special: true,
+            image: "https://images.unsplash.com/photo-1636466497217-26a8cbeaf0aa?auto=format&fit=crop&w=600&q=80"
           },
           { 
             name: "Chemistry", 
             files: chemistryFiles, 
             link: chemistryFolderLink,
-            special: true 
+            special: true,
+            image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=600&q=80" 
           },
           { 
             name: "Biology", 
             files: biologyFiles, 
             link: biologyFolderLink,
-            special: true 
+            special: true,
+            image: "https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=600&q=80"
           }
         ]
       },
       {
-        title: "TECHNOLOGY STREAM",
-        subtitle: "ET, BST, SFT, ICT...",
-        image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80",
+        title: "Technology Stream",
+        subtitle: "SFT, ET, BST & ICT",
+        image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=800&q=80",
         subjects: [
           { 
             name: "IT", 
             files: ictFiles, 
             link: ictFolderLink,
-            special: true
+            special: true,
+            image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80"
           },
           { 
              name: "Engineering Tech", 
              files: etFiles, 
              link: etFolderLink,
-             special: true
+             special: true,
+             image: "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=600&q=80"
           },
           { 
             name: "SFT", 
             files: sftFiles, 
             link: sftFolderLink,
-            special: true
+            special: true,
+            image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=600&q=80"
           },
           { 
             name: "BST", 
             files: bstFiles, 
             link: bstFolderLink,
-            special: true
+            special: true,
+            image: "https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=600&q=80"
           }
         ]
       },
       {
-        title: "COMMERCE STREAM",
-        subtitle: "Accounting, Econ, Business Studies...",
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80",
+        title: "Commerce Stream",
+        subtitle: "Accounting, Business Studies & Economics",
+        image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80",
         subjects: [
           { 
             name: "Accounting", 
             files: accountingFiles, 
             link: accountingFolderLink,
-            special: true
+            special: true,
+            image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=600&q=80"
           },
           { 
             name: "Business Studies", 
             files: businessStudiesFiles, 
             link: businessStudiesFolderLink,
-            special: true 
+            special: true,
+            image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=600&q=80" 
           },
           { 
             name: "Econ", 
             files: econFiles, 
             link: econFolderLink,
-            special: true 
+            special: true,
+            image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=600&q=80"
           }
         ]
       },
       {
-        title: "ARTS STREAM",
-        subtitle: "Media Studies, Geography, History...",
-        image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=600&q=80",
+        title: "Arts Stream",
+        subtitle: "Languages, Humanities & Social Sciences",
+        image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=800&q=80",
         subjects: [
           { 
             name: "Media Studies", 
             files: mediaStudiesFiles, 
             link: mediaStudiesFolderLink,
-            special: true
+            special: true,
+            image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=600&q=80"
           },
           { 
              name: "Geography", 
              files: geoFiles, 
              link: geoFolderLink,
-             special: true
+             special: true,
+             image: "https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=600&q=80"
           },
           { 
             name: "Political Science", 
             files: polSciFiles, 
             link: polSciFolderLink,
-            special: true 
+            special: true,
+            image: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&w=600&q=80" 
           },
           { 
             name: "Sinhala", 
             files: sinhalaFiles, 
             link: sinhalaFolderLink,
-            special: true 
+            special: true,
+            image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=600&q=80"
           },
           { 
             name: "Japanese", 
             files: japaneseFiles, 
             link: japaneseFolderLink,
-            special: true 
+            special: true,
+            image: "https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?auto=format&fit=crop&w=600&q=80"
           },
           { 
             name: "History", 
             files: historyFiles, 
             link: historyFolderLink,
-            special: true 
+            special: true,
+            image: "https://images.unsplash.com/photo-1461360370896-922624d12aa1?auto=format&fit=crop&w=600&q=80"
           },
           { 
             name: "Music", 
             files: musicFiles, 
             link: musicFolderLink,
-            special: true 
+            special: true,
+            image: "https://images.unsplash.com/photo-1507838153414-b4b713384ebd?auto=format&fit=crop&w=600&q=80"
           }
         ]
       },
       {
-        title: "COMMON TEST",
+        title: "Common Test",
         subtitle: "General Knowledge & IQ",
-        image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=600&q=80",
+        image: "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?auto=format&fit=crop&w=800&q=80",
         subjects: [
            { 
              name: "General Knowledge", 
              files: commonTestFiles, 
              link: commonTestFolderLink,
-             special: true 
+             special: true,
+             image: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=600&q=80"
            }
         ]
       },
       {
-        title: "GENERAL ENGLISH",
-        subtitle: "Grammar, Reading, Writing",
-        image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=80",
+        title: "General English",
+        subtitle: "Grammar, Reading & Writing",
+        image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=800&q=80",
         subjects: [
            { 
              name: "General English", 
              files: generalEnglishFiles, 
              link: generalEnglishFolderLink,
-             special: true 
+             special: true,
+             image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=80"
            }
         ]
       },
       {
         title: "GIT",
         subtitle: "Information Technology Basics",
-        image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80",
+        image: "https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&w=800&q=80",
         subjects: [
            { 
              name: "General Information Technology", 
              files: gitFiles, 
              link: gitFolderLink,
-             special: true
+             special: true,
+             image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=600&q=80"
            }
         ]
       }
@@ -1396,53 +1425,51 @@ export default function GradePage() {
     return (
     <div 
       key={subject.name} 
-      className="grade-card" 
-      style={{ padding: '0', cursor: 'default', overflow: 'hidden' }}
+      className="grade-card"
     >
       {subject.image && (
-        <div style={{ 
-            height: '120px', 
-            width: '100%', 
-            backgroundImage: `url(${subject.image})`, 
-            backgroundSize: 'cover', 
-            backgroundPosition: 'center' 
-        }} />
+        <div className="grade-card-image">
+           <img src={subject.image} alt={subject.name} />
+           <div className="grade-card-overlay" />
+        </div>
       )}
-      <div style={{ padding: '1.5rem', borderBottom: '1px solid #eee' }}>
-          <h3 style={{ fontSize: '1.2rem', marginBottom: '0.5rem' }}>{subject.name}</h3>
-          {subject.special ? (
-            <span style={{ 
-              background: '#dcfce7', color: '#166534', 
-              padding: '0.2rem 0.6rem', borderRadius: '12px', 
-              fontSize: '0.75rem', fontWeight: '600' 
-            }}>
-              UPDATED
-            </span>
+      <div className="grade-card-content">
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.5rem' }}>
+            <h3 style={{ fontSize: '1.2rem', margin: 0 }}>{subject.name}</h3>
+            {subject.special ? (
+                <span style={{ 
+                background: '#dcfce7', color: '#166534', 
+                padding: '0.2rem 0.6rem', borderRadius: '12px', 
+                fontSize: '0.75rem', fontWeight: '600', whiteSpace: 'nowrap'
+                }}>
+                UPDATED
+                </span>
+            ) : (
+                <span style={{ fontSize: '0.85rem', color: 'var(--gray)' }}>No files</span>
+            )}
+          </div>
+          
+          {displayFiles && displayFiles.length > 0 ? (
+             <p style={{ fontSize: '0.9rem', color: 'var(--gray)' }}>
+               {displayFiles.length} resources available
+             </p>
           ) : (
-            <span style={{ fontSize: '0.85rem', color: 'var(--gray)' }}>No files yet</span>
+             <p style={{ fontSize: '0.9rem', color: 'var(--gray)' }}>
+               Check back later for updates.
+             </p>
           )}
       </div>
 
       {displayFiles && displayFiles.length > 0 && (
-        <div style={{ padding: '0', background: '#f9fafb' }}>
-          <p style={{ padding: '1rem 1.5rem 0.5rem', fontSize: '0.85rem', fontWeight: '600', color: 'var(--gray)' }}>
-            {displayFiles.length} Lessons Available:
-          </p>
+        <div style={{ padding: '0', background: '#f9fafb', borderTop: '1px solid #eee', maxHeight: '250px', overflowY: 'auto' }}>
           <ul style={{ 
-            listStyle: 'none', fontSize: '0.9rem', color: '#4b5563', 
-            maxHeight: '300px', overflowY: 'auto', padding: '0' 
+            listStyle: 'none', fontSize: '0.9rem', color: '#4b5563', margin: 0, padding: 0 
           }}>
             {displayFiles.map((f, i) => {
               // Clean up the file name
               let displayName = f.name;
-              
-              // 1. Remove text after " - " (e.g., "File - Name" -> "File")
               displayName = displayName.split(" - ")[0];
-              
-              // 2. Remove text inside parentheses (e.g., "File (Sir Name)" -> "File")
               displayName = displayName.replace(/\s*\(.*?\)\s*/g, "");
-
-              // Trim any extra whitespace
               displayName = displayName.trim();
 
               return (
@@ -1453,18 +1480,24 @@ export default function GradePage() {
                       alignItems: 'center',
                       justifyContent: 'space-between',
                       gap: '0.5rem',
-                      background: 'white'
-                }}>
-                  <span style={{ flex: 1 }}>{displayName}</span>
+                      background: 'white',
+                      transition: 'background 0.2s'
+                }}
+                className="file-item"
+                >
+                  <span style={{ flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                    📄 {displayName}
+                  </span>
                   <button 
                     onClick={() => handleFileDownload(f.link)}
                     style={{
-                        background: '#eff6ff', border: '1px solid #dbeafe', color: '#2563eb',
+                        background: 'var(--light)', border: '1px solid #e2e8f0', color: 'var(--primary-dark)',
                         padding: '0.3rem 0.8rem', borderRadius: '6px', fontSize: '0.75rem',
-                        cursor: 'pointer', fontWeight: '600', whiteSpace: 'nowrap'
+                        cursor: 'pointer', fontWeight: '600', whiteSpace: 'nowrap',
+                        display: 'flex', alignItems: 'center', gap: '4px'
                     }}
                   >
-                    Open Folder
+                    View
                   </button>
                 </li>
               );
@@ -1473,18 +1506,18 @@ export default function GradePage() {
         </div>
       )}
 
-      <div style={{ padding: '1.5rem', marginTop: 'auto', borderTop: '1px solid #eee' }}>
+      <div style={{ padding: '1.5rem', marginTop: 'auto', borderTop: '1px solid #eee', background: 'white' }}>
         {subject.link && subject.link !== "#" ? (
           <button 
             onClick={() => handleSubjectClick(subject)}
             className={`btn ${subject.special ? 'btn-primary' : 'btn-outline'}`}
-            style={{ width: '100%', justifyContent: 'center', display: 'flex' }}
+            style={{ width: '100%', justifyContent: 'center', display: 'flex', padding: '0.75rem' }}
           >
             Open Full Folder
           </button>
         ) : (
-            <p style={{ fontSize: '0.8rem', color: 'var(--gray)', textAlign: 'center' }}>
-              Select individual files above to download.
+            <p style={{ fontSize: '0.8rem', color: 'var(--gray)', textAlign: 'center', fontStyle: 'italic' }}>
+              Select individual files above.
             </p>
         )}
       </div>
@@ -1500,120 +1533,201 @@ export default function GradePage() {
       <style jsx>{`
         .hero-modern {
             position: relative;
-            height: 40vh;
-            min-height: 400px;
+            height: 50vh;
+            min-height: 450px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
             overflow: hidden;
-            margin-bottom: 3rem;
-            border-radius: 0 0 2rem 2rem;
+            margin-bottom: 4rem;
+            border-radius: 0 0 3rem 3rem;
+            background: #0f172a;
+            box-shadow: 0 20px 40px -10px rgba(0,0,0,0.3);
         }
         .hero-modern-bg {
             position: absolute;
             top: 0; left: 0; right: 0; bottom: 0;
-            background: url('https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=2000&q=80') center/cover no-repeat;
+            background: url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=2000&q=80') center/cover no-repeat;
             z-index: 0;
+            opacity: 0.6;
+            transform: scale(1.1);
+            animation: subtleZoom 20s infinite alternate;
+        }
+        @keyframes subtleZoom {
+            from { transform: scale(1.1); }
+            to { transform: scale(1.2); }
         }
         .hero-modern-overlay {
             position: absolute;
             top: 0; left: 0; right: 0; bottom: 0;
-            background: linear-gradient(to bottom, rgba(22, 163, 74, 0.8), rgba(22, 101, 52, 0.9));
+            background: linear-gradient(to bottom, rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.9));
             z-index: 1;
-            backdrop-filter: blur(2px);
+            backdrop-filter: blur(4px);
         }
         .hero-modern-content {
             position: relative;
             z-index: 2;
             text-align: center;
-            max-width: 800px;
+            max-width: 900px;
             padding: 2rem;
+            animation: fadeInUp 1s cubic-bezier(0.2, 0.8, 0.2, 1);
         }
         .hero-modern h1 {
-            font-size: 3.5rem;
-            font-weight: 800;
-            margin-bottom: 1rem;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
-            letter-spacing: -1px;
+            font-family: 'Merriweather', serif;
+            font-size: clamp(3rem, 6vw, 5rem);
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(to right, #fff, #cbd5e1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            letter-spacing: -2px;
+            line-height: 1.1;
         }
         .hero-modern p {
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             opacity: 0.9;
             max-width: 600px;
             margin: 0 auto;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+            line-height: 1.6;
         }
         
         .folder-list-container {
-            max-width: 1100px;
+            max-width: 1200px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2.5rem;
             padding: 1rem;
         }
 
         .folder-card {
-            background: white;
-            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 24px;
             display: flex;
             flex-direction: column;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            border: 1px solid rgba(0,0,0,0.05);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
+            transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+            border: 1px solid rgba(255,255,255,0.6);
+            box-shadow: 
+                0 4px 6px -1px rgba(0, 0, 0, 0.02), 
+                0 2px 4px -1px rgba(0, 0, 0, 0.02),
+                inset 0 0 0 1px rgba(255,255,255,0.5);
             cursor: pointer;
             overflow: hidden;
             height: 100%;
+            backdrop-filter: blur(20px);
+            position: relative;
         }
         
         .folder-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 25px 30px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            transform: translateY(-12px) scale(1.01);
+            box-shadow: 
+                0 25px 50px -12px rgba(0, 0, 0, 0.1), 
+                0 10px 20px -5px rgba(0, 0, 0, 0.05);
+            background: rgba(255, 255, 255, 0.95);
+            border-color: rgba(255,255,255,1);
         }
 
         .card-image-header {
-            height: 160px;
+            height: 220px;
             width: 100%;
             background-size: cover;
             background-position: center;
             position: relative;
+            overflow: hidden;
+        }
+        
+        /* Zoom effect on image hover */
+        .folder-card:hover .card-image-header {
+             /* We can't animate background-size smoothly on all browsers easily, 
+                so we rely on the container transform or pseudo-element */
         }
 
         .card-image-overlay {
             position: absolute;
             top: 0; left: 0; right: 0; bottom: 0;
-            background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.4));
+            background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+            opacity: 0.6;
+            transition: opacity 0.3s;
+        }
+        
+        .folder-card:hover .card-image-overlay {
+            opacity: 0.3;
         }
         
         .card-content {
-            padding: 1.5rem;
+            padding: 2rem;
             flex-grow: 1;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            text-align: center;
+            align-items: flex-start;
+            text-align: left;
         }
 
         .folder-title {
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: #1f2937;
-            margin-bottom: 0.5rem;
+            font-family: 'Merriweather', serif;
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: #1e293b;
+            margin-bottom: 0.75rem;
+            letter-spacing: -0.5px;
         }
 
         .folder-subtitle {
-            font-size: 0.9rem;
-            color: #6b7280;
-            line-height: 1.4;
+            font-size: 0.95rem;
+            color: #64748b;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+        
+        .card-arrow {
+            margin-top: auto;
+            align-self: flex-end;
+            color: #10b981;
+            opacity: 0;
+            transform: translateX(-10px);
+            transition: all 0.3s ease;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding-top: 1.5rem;
+        }
+        
+        .folder-card:hover .card-arrow {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .file-item:hover {
+            background: #f8fafc !important;
+            transform: translateX(4px);
+        }
+        
+        .grade-card {
+            background: white;
+            border-radius: 20px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+        .grade-card:hover {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            transform: translateY(-4px);
+            border-color: #cbd5e1;
         }
 
         /* Animation for items appearing */
         @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
+            from { opacity: 0; transform: translateY(30px); }
             to { opacity: 1; transform: translateY(0); }
         }
         .animate-fade-in {
-            animation: fadeInUp 0.5s ease forwards;
+            animation: fadeInUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+            opacity: 0; /* Start hidden */
         }
       `}</style>
 
@@ -1818,6 +1932,13 @@ export default function GradePage() {
                             {stream.subtitle && (
                                 <p className="folder-subtitle">{stream.subtitle}</p>
                             )}
+                            <div className="card-arrow">
+                                Explore Stream 
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
                         </div>
                       </div>
                     ))}
