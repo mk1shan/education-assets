@@ -47,8 +47,9 @@ export default function Home() {
           <div className="nav-content">
             <div className="brand">
               <div className="brand-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                <svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="0">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
               <span className="brand-name">EduRelief SL</span>
@@ -163,9 +164,53 @@ export default function Home() {
                   We built this platform to support students affected by the recent floods. 
                   While education is vital, your life and safety are our top priority. 
                 </p>
-                <div className="safety-box">
-                  <p><strong>⚠️ Emergency Note:</strong> Please follow official weather guidelines and help your neighbors.</p>
+                
+                {/* Emergency Contacts Grid */}
+                <div className="emergency-grid">
+                    <div className="emergency-card">
+                        <span className="em-icon">🚑</span>
+                        <div className="em-details">
+                            <strong>Suwa Seriya / සුව සැරිය</strong>
+                            <span>1990</span>
+                        </div>
+                    </div>
+                    <div className="emergency-card">
+                        <span className="em-icon">🆘</span>
+                        <div className="em-details">
+                            <strong>Disaster Mgmt / ආපදා කළමනාකරණ</strong>
+                            <span>117 / 0112 136 136</span>
+                        </div>
+                    </div>
+                    <div className="emergency-card">
+                        <span className="em-icon">⛈️</span>
+                        <div className="em-details">
+                            <strong>Met Dept / කාලගුණ විද්‍යා</strong>
+                            <span>0112 694 841</span>
+                        </div>
+                    </div>
+                    <div className="emergency-card">
+                        <span className="em-icon">👮</span>
+                        <div className="em-details">
+                            <strong>Police Emergency / පොලිස් හදිසි</strong>
+                            <span>119</span>
+                        </div>
+                    </div>
+                    <div className="emergency-card">
+                        <span className="em-icon">🏠</span>
+                        <div className="em-details">
+                            <strong>NBRO / ගොඩනැගිලි පර්යේෂණ</strong>
+                            <span>0112 588 946</span>
+                        </div>
+                    </div>
+                    <div className="emergency-card">
+                        <span className="em-icon">💧</span>
+                        <div className="em-details">
+                            <strong>Irrigation / වාරිමාර්ග</strong>
+                            <span>0112 488 505</span>
+                        </div>
+                    </div>
                 </div>
+
               </div>
               <div className="image-column">
                 {/* New image: Umbrella/Protection theme */}
@@ -291,6 +336,47 @@ export default function Home() {
             }
             .safety-box p { font-size: 1rem; color: #7f1d1d; margin: 0; }
 
+            /* Emergency Grid */
+            .emergency-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 1rem;
+                margin-top: 2rem;
+            }
+            
+            .emergency-card {
+                background: white;
+                padding: 0.75rem 1rem;
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                gap: 0.75rem;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+                border: 1px solid rgba(0,0,0,0.05);
+            }
+            
+            .em-icon {
+                font-size: 1.5rem;
+            }
+            
+            .em-details {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .em-details strong {
+                font-size: 0.8rem;
+                color: #4b5563;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+            }
+            
+            .em-details span {
+                font-size: 0.95rem;
+                font-weight: 700;
+                color: #ef4444;
+            }
+
             /* Images */
             .image-column {
               position: relative;
@@ -331,6 +417,9 @@ export default function Home() {
 
         <footer className="site-footer">
           <p>© 2025 EduRelief SL. Built with ❤️ for our students.</p>
+          <p style={{ marginTop: '0.5rem', fontSize: '0.85rem', color: 'rgba(255,255,255,0.4)' }}>
+            Contact: 076 101 3045 (Teshan)
+          </p>
         </footer>
       </div>
     </>

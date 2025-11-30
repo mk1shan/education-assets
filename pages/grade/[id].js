@@ -103,11 +103,21 @@ const chemistryFiles = [
   { name: "ශක්ති විද්‍යාව MCQ POINT COLLECTION", link: chemistryFolderLink }
 ];
 
+// Data for Biology (Science Stream)
+const biologyFolderLink = "https://drive.google.com/drive/folders/1IKg9SL7rOlZyxMixfD_VXbTZVbZJ76IC?usp=sharing";
+
+const biologyFiles = [
+  { name: "DEFINITIONS SM Final done - Hansika Nishshanka", link: biologyFolderLink },
+  { name: "Practical Handbook - Buddhika Lakshan", link: biologyFolderLink }
+];
+
 // Data for Physics (Science Stream)
 const physicsFolderLink = "https://drive.google.com/drive/folders/16QP9eM-iwEsGPHbWnx6VRhzbCqTAl5CL?usp=drive_link";
+const physicsNewFolderLink = "https://drive.google.com/drive/folders/18cz_Hc-6nqGKdzB9YRJNCCCYd11muECr?usp=sharing";
 
 const physicsFiles = [
-  { name: "Amith Pussella Sirs' Notes", link: physicsFolderLink },
+  { name: "DocScanner 5 Aug 2025 23-54 - Amandi Herath", link: physicsNewFolderLink },
+  { name: "Liner Motion 2027 Final - Bumashi Sharindi", link: physicsNewFolderLink },
   { name: "EM_Phy-Classified EQs (1991-2020)", link: physicsFolderLink },
   { name: "EM_Phy-Classified MCQs (1991-2022)", link: physicsFolderLink },
   { name: "EM_Phy-Classified SEQs (1991-2022)", link: physicsFolderLink },
@@ -476,7 +486,12 @@ const gradeConfig = {
             link: chemistryFolderLink,
             special: true 
           },
-          { name: "Biology", files: [], link: "#" }
+          { 
+            name: "Biology", 
+            files: biologyFiles, 
+            link: biologyFolderLink,
+            special: true 
+          }
         ]
       },
       {
@@ -902,6 +917,12 @@ export default function GradePage() {
         <nav className="nav">
           <div className="nav-content">
             <Link href="/" className="brand">
+              <div style={{ color: '#10b981', width: '24px', height: '24px', display: 'flex', alignItems: 'center' }}>
+                <svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="0">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </div>
               <span className="brand-name">EduRelief SL</span>
             </Link>
             <div className="nav-links">
@@ -1111,6 +1132,9 @@ export default function GradePage() {
 
         <footer className="site-footer">
           <p>© 2025 EduRelief SL. Built with ❤️ for our students.</p>
+          <p style={{ marginTop: '0.5rem', fontSize: '0.85rem', color: 'rgba(255,255,255,0.4)' }}>
+            Contact: 076 101 3045 (Teshan)
+          </p>
         </footer>
       </div>
     </>
