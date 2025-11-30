@@ -34,6 +34,7 @@ const mediaStudiesFiles = [
 
 // Data for Accounting (Commerce Stream)
 const accountingFolderLink = "https://drive.google.com/drive/folders/1Zhl9U1-xMQWvDVXFfmSlM0LstF-MMXfj?usp=sharing";
+const accountingFolderLink2 = "https://drive.google.com/drive/folders/1GYmwfru9373j1G63IZGZIpgefbPxkXg8?usp=sharing";
 
 const accountingFiles = [
   { name: "1 ව්_යුහගත පිළිතුරු - Pawani Akarsha.pdf", link: accountingFolderLink },
@@ -84,11 +85,169 @@ const accountingFiles = [
   { name: "Copy of 10. හවුල් ව්‍යාපාර .pdf", link: accountingFolderLink },
   { name: "Copy of 13. අනුපාත විශ්ලේෂණය .pdf", link: accountingFolderLink },
   { name: "Copy of 14_01_කළමනාකරණ_ගිණුම්කරණය_තීරණ_ගැනීමේ_ක්_රියාවලියට_සම්බන්ධ_කරගැනීම.pdf", link: accountingFolderLink },
-  { name: "Copy of 14_03_ශ්‍රම_කාලය_සම්බන්ධයෙන්_වාර්තා_කරයි_1.pdf", link: accountingFolderLink }
+  { name: "Copy of 14_03_ශ්‍රම_කාලය_සම්බන්ධයෙන්_වාර්තා_කරයි_1.pdf", link: accountingFolderLink },
+  // New folder files
+  { name: "2024-AL-ACCOUNTING-PART-I-PAPER-SINHALA-MEDIUM-alevelapi.com-pdf.pdf", link: accountingFolderLink2 },
+  { name: "accounting.pdf", link: accountingFolderLink2 },
+  { name: "COMPANY - STRUCTURE.pdf", link: accountingFolderLink2 },
+  { name: "ගිණුම්කරණය .pdf", link: accountingFolderLink2 },
+  { name: "සංකල්ප.pdf", link: accountingFolderLink2 }
+];
+
+// Data for Accounting English Medium (Commerce Stream)
+const accountingEMFolderLink = "https://drive.google.com/drive/folders/1jqD0Xk4MVF881wMPsRWnvJjXMg9U4mi3?usp=sharing";
+
+const accountingEMFiles = [
+  { name: "1. CHAPTER 01.pdf", link: accountingEMFolderLink },
+  { name: "1) Unit 02 - Accounting Equations.pdf", link: accountingEMFolderLink },
+  { name: "2. Accounting Equation.pdf", link: accountingEMFolderLink },
+  { name: "2. CHAPTER 02.pdf", link: accountingEMFolderLink },
+  { name: "2) Unit 04 - Prime Entry.pdf", link: accountingEMFolderLink },
+  { name: "3. CHAPTER 3.pdf", link: accountingEMFolderLink },
+  { name: "3. Prime entry books.pdf", link: accountingEMFolderLink },
+  { name: "3) Unit 05 - Accounting Concepts.pdf", link: accountingEMFolderLink },
+  { name: "4. CHAPTER 04 - Part 01.pdf", link: accountingEMFolderLink },
+  { name: "4. CHAPTER 04 - Part 02.pdf", link: accountingEMFolderLink },
+  { name: "4) Unit 06 - Sole Trade.pdf", link: accountingEMFolderLink },
+  { name: "5) Unit 07 - Manufacturing Accounts.pdf", link: accountingEMFolderLink },
+  { name: "6. ADDITIONAL QUESTIONS - sole traders.pdf", link: accountingEMFolderLink },
+  { name: "6) Unit 08 - Non-Profit Organizations.pdf", link: accountingEMFolderLink },
+  { name: "7. UNIT 07 - MANUFACTURING ACCOUNTS.pdf", link: accountingEMFolderLink },
+  { name: "7) Unit 09 - Incomplete Records.pdf", link: accountingEMFolderLink },
+  { name: "8) Unit 10 - Partnership Accounts.pdf", link: accountingEMFolderLink },
+  { name: "9. UNIT 09.pdf", link: accountingEMFolderLink },
+  { name: "9) Unit 11 - Accounting Standards.pdf", link: accountingEMFolderLink },
+  { name: "10) Unit 12 - Limited Company.pdf", link: accountingEMFolderLink },
+  { name: "10) Unit 15 - Marginal Costing.pdf", link: accountingEMFolderLink },
+  { name: "11a. LKAS 01.pdf", link: accountingEMFolderLink },
+  { name: "11b. LKAS 02.pdf", link: accountingEMFolderLink },
+  { name: "11c. LKAS 16.pdf", link: accountingEMFolderLink },
+  { name: "11d. LKAS 10.pdf", link: accountingEMFolderLink },
+  { name: "11e. LKAS 07.pdf", link: accountingEMFolderLink },
+  { name: "11f. LKAS 17.pdf", link: accountingEMFolderLink },
+  { name: "11g. ADDITIONAL QUESTIONS - CO accs.pdf", link: accountingEMFolderLink },
+  { name: "12) Unit 14 - Cost and Management Accounting.pdf", link: accountingEMFolderLink },
+  { name: "13. unit 13 - ACC RATIOS.pdf", link: accountingEMFolderLink },
+  { name: "2019-Advanced-Level-Exam-Accounting-Model-Paper-EM.pdf", link: accountingEMFolderLink },
+  { name: "2025-07-17, 1925 Microsoft Lens.pdf", link: accountingEMFolderLink },
+  { name: "2025-10-10, 1028 Microsoft Lens.pdf", link: accountingEMFolderLink },
+  { name: "Accounting short note (Revised).pdf", link: accountingEMFolderLink },
+  { name: "AL Accounting Notes.pdf", link: accountingEMFolderLink },
+  { name: "AL Accounting(Unit-1 to 16)Short Notes.pdf", link: accountingEMFolderLink },
+  { name: "Ratios part 2.pdf", link: accountingEMFolderLink },
+  { name: "Sole traders - Part 1.pdf", link: accountingEMFolderLink },
+  { name: "Sole traders II.pdf", link: accountingEMFolderLink }
+];
+
+// Data for Accounting Notes (Commerce Stream)
+const accountingNotesFolderLink = "https://drive.google.com/drive/folders/1PT4hjBkEBsqV4g9z4EUo8jC2y8wSlbm6?usp=sharing";
+
+const accountingNotesFiles = [
+  { name: "accounting ratios.pdf", link: accountingNotesFolderLink },
+  { name: "Accounting short note (Revised).pdf", link: accountingNotesFolderLink },
+  { name: "Accounting short note for MCQ paper.pdf - English Medium", link: accountingNotesFolderLink },
+  { name: "Copy of 5_6208314534185140461.pdf", link: accountingNotesFolderLink },
+  { name: "Copy of 5_6255727799152148765.pdf", link: accountingNotesFolderLink },
+  { name: "Copy of 5_6271758962152964440.pdf", link: accountingNotesFolderLink },
+  { name: "Copy of 5_6278042830019494281.pdf", link: accountingNotesFolderLink },
+  { name: "Copy of 5_6314248751489745218.pdf", link: accountingNotesFolderLink },
+  { name: "Copy of 12.05. LKAS 10 .pdf", link: accountingNotesFolderLink },
+  { name: "Copy of 28 LKAS 02 තොග ප්_රමිතය.pdf", link: accountingNotesFolderLink },
+  { name: "Copy of Accounting concept..pdf", link: accountingNotesFolderLink },
+  { name: "Copy of Accounting_Ratios_chathura_NalandaAdmin_කොමස්_පන්තිය_ෆේස්බුක්_පිටුව.pdf", link: accountingNotesFolderLink },
+  { name: "Copy of accounting.pdf", link: accountingNotesFolderLink },
+  { name: "Copy of accounting(1)_removed_removed (1).pdf", link: accountingNotesFolderLink },
+  { name: "Copy of accounting(1)_removed_removed.pdf", link: accountingNotesFolderLink },
+  { name: "Copy of BOL NAYA GELAPIMA Edit Page.pdf", link: accountingNotesFolderLink },
+  { name: "Copy of Cash Flow Statements.pdf", link: accountingNotesFolderLink },
+  { name: "Copy of DOC-20250920-WA0060..pdf", link: accountingNotesFolderLink },
+  { name: "Copy of DOC-20250920-WA0061..pdf", link: accountingNotesFolderLink },
+  { name: "Copy of DOC-20250920-WA0062..pdf", link: accountingNotesFolderLink },
+  { name: "Copy of DOC-20250920-WA0063..pdf", link: accountingNotesFolderLink },
+  { name: "Copy of DOC-20250920-WA0064..pdf", link: accountingNotesFolderLink },
+  { name: "Copy of DOC-20250920-WA0065..pdf", link: accountingNotesFolderLink },
+  { name: "Copy of DOC-20250920-WA0066..pdf", link: accountingNotesFolderLink },
+  { name: "Copy of DOC-20250920-WA0067..pdf", link: accountingNotesFolderLink },
+  { name: "Copy of DOC-20250922-WA0026..pdf", link: accountingNotesFolderLink },
+  { name: "Copy of DOC-20250922-WA0028..pdf", link: accountingNotesFolderLink },
+  { name: "Copy of Fundamental_Concepts_of_Management_Accounts_Revision_Tute_01.pdf", link: accountingNotesFolderLink },
+  { name: "Copy of LKAS 02 තොග -05.pdf", link: accountingNotesFolderLink },
+  { name: "Copy of lkAS 1 a.pdf", link: accountingNotesFolderLink },
+  { name: "Copy of LKAS 08(1).pdf", link: accountingNotesFolderLink },
+  { name: "Copy of LKAS 16 - Revaluation_AL_CP.pdf", link: accountingNotesFolderLink },
+  { name: "Copy of LKAS 16 (Study material 8).pdf", link: accountingNotesFolderLink },
+  { name: "Copy of LKAS 16 01.pdf", link: accountingNotesFolderLink },
+  { name: "Copy of lkas 37.pdf", link: accountingNotesFolderLink },
+  { name: "Copy of lkas37 new111(1)-pages-deleted (1).pdf", link: accountingNotesFolderLink },
+  { name: "Copy of null-1.pdf", link: accountingNotesFolderLink },
+  { name: "Copy of null-2.pdf", link: accountingNotesFolderLink },
+  { name: "Copy of null-3.pdf", link: accountingNotesFolderLink },
+  { name: "Copy of null-4.pdf", link: accountingNotesFolderLink },
+  { name: "Copy of null-5.pdf", link: accountingNotesFolderLink },
+  { name: "Copy of null-6.pdf", link: accountingNotesFolderLink },
+  { name: "Copy of null-7.pdf", link: accountingNotesFolderLink },
+  { name: "Copy of null-8.pdf", link: accountingNotesFolderLink },
+  { name: "Copy of Prime Entry.pdf", link: accountingNotesFolderLink },
+  { name: "Copy of Revaluation of Property, Plant and Equipment.pdf", link: accountingNotesFolderLink },
+  { name: "Copy of samithi sanwidhaana 2 new.pdf", link: accountingNotesFolderLink },
+  { name: "Copy of SLFRS 16 - Leases (Short Note).pdf", link: accountingNotesFolderLink },
+  { name: "Copy of SLFRS 16 Sinahala.pdf", link: accountingNotesFolderLink }
+];
+
+// Data for Accounting Papers (Commerce Stream)
+const accountingPapersFolderLink = "https://drive.google.com/drive/folders/1c121V4qDSC-Mgn_EcwUF6Kq1FCuV7XTW?usp=sharing";
+
+const accountingPapersFiles = [
+  { name: "2022-AL-Accounting-Past-Paper-English-Medium.pdf", link: accountingPapersFolderLink },
+  { name: "Accounting Equation - AL Sums.pdf", link: accountingPapersFolderLink },
+  { name: "Accounting-and-Its-Need-Part-I.pdf", link: accountingPapersFolderLink },
+  { name: "Accounting-Equation-Part-I.pdf", link: accountingPapersFolderLink },
+  { name: "Accounting-Equation-Part-II.pdf", link: accountingPapersFolderLink },
+  { name: "AL2021-Accounting.pdf", link: accountingPapersFolderLink },
+  { name: "central province - Accounting 132024 (2).pdf", link: accountingPapersFolderLink },
+  { name: "Copy of 5_6251167523136341024.pdf", link: accountingPapersFolderLink },
+  { name: "Copy of 12 කළමනාකරණය MANAGEMENT.pdf", link: accountingPapersFolderLink },
+  { name: "Copy of 2020 Royal College Accounting Prototype Paper Part-2.pdf", link: accountingPapersFolderLink },
+  { name: "Copy of 2020.09.23 තක්ෂිලා paper II.pdf", link: accountingPapersFolderLink },
+  { name: "Copy of 2020.09.24 විෂාඛා Paper II.pdf", link: accountingPapersFolderLink },
+  { name: "Copy of acc (2).pdf", link: accountingPapersFolderLink },
+  { name: "Copy of acc (3).pdf", link: accountingPapersFolderLink },
+  { name: "Copy of acc (4).pdf", link: accountingPapersFolderLink },
+  { name: "Copy of acc (5).pdf", link: accountingPapersFolderLink },
+  { name: "Copy of acc (7).pdf", link: accountingPapersFolderLink },
+  { name: "Copy of acc (8).pdf", link: accountingPapersFolderLink },
+  { name: "Copy of Acco_G13_I,II Ans_2020.pdf", link: accountingPapersFolderLink },
+  { name: "Copy of Acco_G13_I,IIpp_2019_Dakunu palath.pdf", link: accountingPapersFolderLink },
+  { name: "Copy of account ආදර්ශ.pdf", link: accountingPapersFolderLink },
+  { name: "Copy of Accounting Gampaha 13 - I.pdf", link: accountingPapersFolderLink },
+  { name: "Copy of ananda college account .pdf", link: accountingPapersFolderLink },
+  { name: "Copy of Company_Accounts_Q_2_Answer-1.pdf", link: accountingPapersFolderLink },
+  { name: "Copy of Company_Accounts_Q_2-1.pdf", link: accountingPapersFolderLink },
+  { name: "Copy of DOC-20250920-WA0073..pdf", link: accountingPapersFolderLink },
+  { name: "Copy of DOC-20250920-WA0074..pdf", link: accountingPapersFolderLink },
+  { name: "Copy of DOC-20250920-WA0075..pdf", link: accountingPapersFolderLink },
+  { name: "Copy of DOC-20250920-WA0076..pdf", link: accountingPapersFolderLink },
+  { name: "Copy of DOC-20250922-WA0025..pdf", link: accountingPapersFolderLink },
+  { name: "Copy of grade 13 2nd term test accounting.pdf", link: accountingPapersFolderLink },
+  { name: "Copy of Japura Acc Model Paper 2018.pdf", link: accountingPapersFolderLink },
+  { name: "Copy of LKAS - 02.pdf", link: accountingPapersFolderLink },
+  { name: "Copy of money 2022.pdf", link: accountingPapersFolderLink },
+  { name: "Copy of Sg province Account paper.pdf", link: accountingPapersFolderLink },
+  { name: "Copy of SM_Acco_T2_G12_I,II pp_2020.pdf", link: accountingPapersFolderLink },
+  { name: "Copy of SM_Acco_T2_G13_I,II pp_2020.pdf", link: accountingPapersFolderLink },
+  { name: "Copy of කළුතර account ii.pdf", link: accountingPapersFolderLink },
+  { name: "Copy of ගිණුම්කරණ_සංකල්ප_සම්මන්ත්‍රණ.pdf", link: accountingPapersFolderLink },
+  { name: "Copy of දකුණු_පළාත්_2023_12_ශ්‍රේණිය_අවසාන_වාර_පරීක්ෂණය_1.pdf", link: accountingPapersFolderLink },
+  { name: "Copy of නොමිලේ_සම්මන්ත්‍රණය_SL_Accounting_2022.pdf", link: accountingPapersFolderLink },
+  { name: "Copy of මතුගම acc 1.pdf", link: accountingPapersFolderLink },
+  { name: "Copy of විශාකා_විද්_යාලය_කොලඹ_account_.pdf", link: accountingPapersFolderLink },
+  { name: "Copy of ශුද්ධ_වූ_පවුලේ_බාලිකා_මහ_විදුහල_2024_AL_G12Acc_Part_1.pdf", link: accountingPapersFolderLink },
+  { name: "Copy of ශුද්ධ_වූ_පවුලේ_බාලිකා_මහ_විදුහල_2024_AL_G12Acc_Part_2.pdf", link: accountingPapersFolderLink }
 ];
 
 // Data for Chemistry (Science Stream)
 const chemistryFolderLink = "https://drive.google.com/drive/folders/1okhr3Ogphw4OZ_2JaPzd4WOC7uN3tqGB?usp=sharing";
+const chemistryFolderLink2 = "https://drive.google.com/drive/folders/1NkaE02aJyxRqm2iMqc47d0v23vsog7HV?usp=sharing";
 
 const chemistryFiles = [
   { name: "විද්‍යුත් රසායනය Note Tute (Anushka Idunil Sir)", link: chemistryFolderLink },
@@ -103,20 +262,55 @@ const chemistryFiles = [
   { name: "චාලක රසායනය විවරණය", link: chemistryFolderLink },
   { name: "පරමාණුක ව්යුහය Short Note (Amila Dasanayake)", link: chemistryFolderLink },
   { name: "ප්‍රතික්‍රියා short note", link: chemistryFolderLink },
-  { name: "ශක්ති විද්‍යාව MCQ POINT COLLECTION", link: chemistryFolderLink }
+  { name: "ශක්ති විද්‍යාව MCQ POINT COLLECTION", link: chemistryFolderLink },
+  // New folder files
+  { name: "AL Chemistry Resource Book Unit 1,2,3.pdf", link: chemistryFolderLink2 },
+  { name: "AL Chemistry Resource Book Unit 4,5.pdf", link: chemistryFolderLink2 },
+  { name: "Chemistry 2(1).pdf", link: chemistryFolderLink2 },
+  { name: "Classified MCQs - Chemistry - Unit 1-2-3.pdf", link: chemistryFolderLink2 },
+  { name: "Inoganic Short Note.pdf", link: chemistryFolderLink2 },
+  { name: "sOMAL Chemistry Practical Hand book.pdf", link: chemistryFolderLink2 },
+  { name: "Unit 3A (Chemical Calculations) Theory Book 1.pdf", link: chemistryFolderLink2 },
+  { name: "Zahira_Collage_Chemistry_1st_Term_Test_paper_2019_Grade_12_English.pdf", link: chemistryFolderLink2 },
+  { name: "චාලක රසායනය Full note with questions.pdf", link: chemistryFolderLink2 },
+  { name: "චාලක රසායනය short note.pdf", link: chemistryFolderLink2 },
+  { name: "ධර්මරාජ_විද්‍යාලය_නුවර _Chemistry_2_term_test_12_grade_.pdf", link: chemistryFolderLink2 }
 ];
 
 // Data for Biology (Science Stream)
 const biologyFolderLink = "https://drive.google.com/drive/folders/1IKg9SL7rOlZyxMixfD_VXbTZVbZJ76IC?usp=sharing";
 
 const biologyFiles = [
-  { name: "DEFINITIONS SM Final done - Hansika Nishshanka", link: biologyFolderLink },
-  { name: "Practical Handbook - Buddhika Lakshan", link: biologyFolderLink }
+  { name: "DEFINITIONS SM Final done - Hansika Nishshanka.pdf", link: biologyFolderLink },
+  { name: "Practical Handbook - Buddhika Lakshan.pdf", link: biologyFolderLink },
+  { name: "Biology_2021_විවරණය_හිරාන්_අමරසේකර_සර්_@ANYyScienceStudentHelpbot - Viraj Gamage.pdf", link: biologyFolderLink },
+  { name: "2020-Sinhala - Kushmi Dahamsa.pdf", link: biologyFolderLink },
+  { name: "2022-AL-English-Past-Paper - Gagani Apsara.pdf", link: biologyFolderLink },
+  { name: "2024-AL-Common-General-Test-Paper-Sinhala-Medium - Gagani Apsara.pdf", link: biologyFolderLink },
+  { name: "2025 AL FAST TRACK Unit-9 MICROBIOLOGY - Ayali Ashinsa.pdf", link: biologyFolderLink },
+  { name: "20232024-AL-General-English-Marking-Scheme - Gagani Apsara.pdf", link: biologyFolderLink },
+  { name: "20232024-AL-General-English-Paper-English-Medium - Gagani Apsara.pdf", link: biologyFolderLink },
+  { name: "Bio නිර්වචන SM_256776_144735 - Lasithma Malthika.pdf", link: biologyFolderLink },
+  { name: "Biology Grade 13 - Resource Book Unit 5 - Viraj Gamage.pdf", link: biologyFolderLink },
+  { name: "Biology Grade 13 -Resource Book Unit 8 - Viraj Gamage.pdf", link: biologyFolderLink },
+  { name: "biology pictures - 02 - Lasithma Malthika.pdf", link: biologyFolderLink },
+  { name: "ImageToPDF 30-11-2025 07.43.01 - Dinuli Sahasra.pdf", link: biologyFolderLink },
+  { name: "sALOM Biology Practical Handbook - Imasha Nethmini.pdf", link: biologyFolderLink },
+  { name: "අන්තරාසර්ග පද්ධතිය - Vandana Samanpriya.pdf", link: biologyFolderLink },
+  { name: "අස්ති පද්ධතිය - Vandana Samanpriya.pdf", link: biologyFolderLink },
+  { name: "අස්ථි පද්ධතිය Short Note - Lasithma Malthika.pdf", link: biologyFolderLink },
+  { name: "පරිණාමය Short Note 01 - Lasithma Malthika.pdf", link: biologyFolderLink },
+  { name: "පරිසරය SM - Vandana Samanpriya.pdf", link: biologyFolderLink },
+  { name: "ප්‍රතිශක්තිය - Vandana Samanpriya.pdf", link: biologyFolderLink },
+  { name: "ප්‍රතිශක්තිය Short Note - Lasithma Malthika.pdf", link: biologyFolderLink },
+  { name: "ශ්වසන පද්ධතිය - Vandana Samanpriya.pdf", link: biologyFolderLink },
+  { name: "ස්නායු පද්ධතිය SM - Vandana Samanpriya.pdf", link: biologyFolderLink }
 ];
 
 // Data for Physics (Science Stream)
 const physicsFolderLink = "https://drive.google.com/drive/folders/16QP9eM-iwEsGPHbWnx6VRhzbCqTAl5CL?usp=drive_link";
 const physicsNewFolderLink = "https://drive.google.com/drive/folders/18cz_Hc-6nqGKdzB9YRJNCCCYd11muECr?usp=sharing";
+const physicsFolderLink3 = "https://drive.google.com/drive/folders/1mH3gK009r3VaysUaBln8qFVmoPEswdHE?usp=sharing";
 
 const physicsFiles = [
   { name: "DocScanner 5 Aug 2025 23-54 - Amandi Herath", link: physicsNewFolderLink },
@@ -130,7 +324,33 @@ const physicsFiles = [
   { name: "EM_Phy-Reviews (2000-2023)", link: physicsFolderLink },
   { name: "SM_Phy-Past Papers (1980-2023)", link: physicsFolderLink },
   { name: "SM_Phy-Reviews (1995-2024)", link: physicsFolderLink },
-  { name: "MCQ ANALYSIS I...pdf", link: physicsFolderLink }
+  { name: "MCQ ANALYSIS I...pdf", link: physicsFolderLink },
+  // New folder files
+  { name: "Past papers", link: physicsFolderLink3 },
+  { name: "short note", link: physicsFolderLink3 },
+  { name: "part 01 දෛශික.pdf", link: physicsFolderLink3 },
+  { name: "part 02 _ සරල රේඛීය චලිතය.pdf", link: physicsFolderLink3 },
+  { name: "part 04 - ආනත ප්‍රක්ෂිප්ත.pdf", link: physicsFolderLink3 },
+  { name: "part 05 _ සාපේක්ෂ ප්‍රවේගය.pdf", link: physicsFolderLink3 },
+  { name: "part 6 - චලිත ප්‍රස්ථාර.pdf", link: physicsFolderLink3 },
+  { name: "part_07_චලිතය_පිළිබඳ_නිව්ටන්_නියම.pdf", link: physicsFolderLink3 },
+  { name: "ධාරා විද්‍යුතය theory + Questions.pdf", link: physicsFolderLink3 }
+];
+
+// Data for Combined Maths (Science Stream)
+const combinedMathsFolderLink = "https://drive.google.com/drive/folders/1egPHQmVpwEpQFvJWmm7vXof8NULn7mYC?usp=sharing";
+
+const combinedMathsFiles = [
+  { name: "CM_ගුරුත්ව කේන්ද්‍රය shortnote.pdf", link: combinedMathsFolderLink },
+  { name: "CM_දෛශික short note.pdf", link: combinedMathsFolderLink },
+  { name: "REVISION_2021_STATICS_01_COMPLETE_.pdf", link: combinedMathsFolderLink },
+  { name: "REVISION_2021_STATICS_02_COMPLETE_MODULE.pdf", link: combinedMathsFolderLink },
+  { name: "REVISION_2021_TRIGONOMETRY_COMPLETE_MODULE.pdf", link: combinedMathsFolderLink },
+  { name: "Work-and-Energy-REVISION-2021.pdf", link: combinedMathsFolderLink },
+  { name: "ආවේගය හා ගැටුම් tute.pdf", link: combinedMathsFolderLink },
+  { name: "ගණිත අභ්‍යුහනය මූලධර්මය.pdf", link: combinedMathsFolderLink },
+  { name: "සරල ශ්‍රේණි tute.pdf", link: combinedMathsFolderLink },
+  { name: "සාපේක්ෂ ත්වරණය tute.pdf", link: combinedMathsFolderLink }
 ];
 
 // Data for Economics (Commerce Stream)
@@ -433,6 +653,135 @@ const musicFiles = [
   { name: "grade-13-oriental-music-teacher-guide-619dd89168782 - Yesuru Banuka.pdf", link: musicFolderLink },
   { name: "sGr12OM OrienMusic - Yesuru Banuka.pdf", link: musicFolderLink },
   { name: "sGr12TG Orient Music - Yesuru Banuka.pdf", link: musicFolderLink }
+];
+
+// Data for French (Arts Stream)
+const frenchFolderLink = "https://drive.google.com/drive/folders/1tIAkd23W46CPJ3sEqbH6HMWZWJJJaz0l?usp=sharing";
+
+const frenchFiles = [
+  { name: "French grammer", link: frenchFolderLink },
+  { name: "GCE A/L French past papers", link: frenchFolderLink },
+  { name: "20242025-OL-French-Past-Paper-and-Answers (1).pdf", link: frenchFolderLink },
+  { name: "Adverbs of Quantity and Intensity.pdf", link: frenchFolderLink },
+  { name: "Comparatives in French.pdf", link: frenchFolderLink },
+  { name: "conquerir and such verbs.pdf", link: frenchFolderLink },
+  { name: "Document 4.pdf", link: frenchFolderLink },
+  { name: "Dont - Relative Pronoun (1).pdf", link: frenchFolderLink },
+  { name: "Dont - Relative Pronoun.pdf", link: frenchFolderLink },
+  { name: "Faire expressions.pdf", link: frenchFolderLink },
+  { name: "fiche apprenant covid 19 fle.pdf", link: frenchFolderLink },
+  { name: "French Answers.pdf", link: frenchFolderLink },
+  { name: "french lit texts.pdf", link: frenchFolderLink },
+  { name: "French Question Forms.pdf", link: frenchFolderLink },
+  { name: "French Relative Pronouns - Summary (1).pdf", link: frenchFolderLink },
+  { name: "French Relative Pronouns - Summary.pdf", link: frenchFolderLink },
+  { name: "French verbs short notes.pdf .pdf", link: frenchFolderLink },
+  { name: "French Verbs with Their Correct Prepositions.pdf", link: frenchFolderLink },
+  { name: "Fri, Apr 3, 2020, 5_05 AM.pdf", link: frenchFolderLink },
+  { name: "General Certificate of Education (Ordinary Level) Examination - 2015 December - French.pdf", link: frenchFolderLink },
+  { name: "General Certificate of Education (Ordinary Level) Examination - 2016 December - French (New syllabus).pdf", link: frenchFolderLink },
+  { name: "General Certificate of Education (Ordinary Level) Examination - 2017 December - French (New syllabus).pdf", link: frenchFolderLink },
+  { name: "General Certificate of Education (Ordinary Level) Examination - 2018 December - French.pdf", link: frenchFolderLink },
+  { name: "General Certificate of Education (Ordinary Level) Examination - 2019 December - French.pdf", link: frenchFolderLink },
+  { name: "How to form a Participe présent _ Participe présent vs Gérondif.pdf", link: frenchFolderLink },
+  { name: "IMG_8437.JPG", link: frenchFolderLink },
+  { name: "IMG_8443.JPG", link: frenchFolderLink },
+  { name: "IMG_8448.JPG", link: frenchFolderLink },
+  { name: "IMG_8449.JPG", link: frenchFolderLink },
+  { name: "IMG_8450.JPG", link: frenchFolderLink },
+  { name: "IMG_8451.JPG", link: frenchFolderLink },
+  { name: "IMG-20251129-WA0003.jpg", link: frenchFolderLink },
+  { name: "Irregular Past Participles with the meanings.pdf", link: frenchFolderLink },
+  { name: "Le Superlatif.pdf", link: frenchFolderLink },
+  { name: "le_gerondif.pdf", link: frenchFolderLink },
+  { name: "le.participe passe.pdf", link: frenchFolderLink },
+  { name: "le.present continu.pdf", link: frenchFolderLink },
+  { name: "Les Adverbes.pdf", link: frenchFolderLink },
+  { name: "Les pronoms relatifs Qui, Que, Dont et Ou exercices.pdf", link: frenchFolderLink },
+  { name: "Movable Adjectives.pdf", link: frenchFolderLink },
+  { name: "negation.pdf", link: frenchFolderLink },
+  { name: "NOUNS with TWO GENDERS.pdf", link: frenchFolderLink },
+  { name: "Prepositions of Time.pdf", link: frenchFolderLink },
+  { name: "Prepositions with mode of transportation in French.pdf", link: frenchFolderLink },
+  { name: "Proceeding Direct Object Rule.pdf", link: frenchFolderLink },
+  { name: "pronoms_relatifs_simples3 (2).pdf", link: frenchFolderLink },
+  { name: "Reflexive (Pronominal) Verbs vs. Reciprocal Verbs.pdf", link: frenchFolderLink },
+  { name: "Savoir and Connaitre.pdf", link: frenchFolderLink },
+  { name: "Self Learning Kit French AL_241201_091626.pdf", link: frenchFolderLink },
+  { name: "The Imperative Form in French.pdf", link: frenchFolderLink }
+];
+
+// Data for GRC (Greek and Roman Classics) (Arts Stream)
+const grcFolderLink = "https://drive.google.com/drive/folders/1yviYxnz-29c7m56tCmyXnjND-XOK9FI3?usp=sharing";
+
+const grcFiles = [
+  { name: "Alcestis", link: grcFolderLink },
+  { name: "Past papers", link: grcFolderLink },
+  { name: "Philoctetes", link: grcFolderLink },
+  { name: "Short Notes", link: grcFolderLink },
+  { name: "Text Books - Mukherjee", link: grcFolderLink },
+  { name: "The Mother in law by Terence", link: grcFolderLink },
+  { name: "Works and Days", link: grcFolderLink },
+  { name: "A Study OfRoman History.pdf", link: grcFolderLink },
+  { name: "Alcestis.pdf", link: grcFolderLink },
+  { name: "cato the old age (1).pdf", link: grcFolderLink },
+  { name: "Philoctetes.pdf", link: grcFolderLink },
+  { name: "The Mother in Law.pdf", link: grcFolderLink },
+  { name: "the-voyage-of-argo-the-argonautica-apollonius-rieu--annas-archive.pdf", link: grcFolderLink },
+  { name: "Wasps.pdf", link: grcFolderLink },
+  { name: "Works and Days.pdf", link: grcFolderLink }
+];
+
+// Data for ICT Notes (Arts Stream)
+const ictNotesFolderLink = "https://drive.google.com/drive/folders/16z9fg6YEKrPv2cg-PT5beBAbxG45hfAW?usp=sharing";
+
+const ictNotesFiles = [
+  { name: "ADDERS (Half and Full).jpg", link: ictNotesFolderLink },
+  { name: "AL ICT Operating System.pdf", link: ictNotesFolderLink },
+  { name: "AL ICT(Unit-1 to 13)Short Notes.pdf", link: ictNotesFolderLink },
+  { name: "Applications of ICT.pdf", link: ictNotesFolderLink },
+  { name: "basics 1.pdf", link: ictNotesFolderLink },
+  { name: "Boolean Rules.pdf", link: ictNotesFolderLink },
+  { name: "Computer Networks.pdf", link: ictNotesFolderLink },
+  { name: "CSS Styles Format [IntInlEx] Syntax.pdf", link: ictNotesFolderLink },
+  { name: "CSS Basics Syntax.pdf", link: ictNotesFolderLink },
+  { name: "CSS Internal Style Selector Types [ElClGrId].pdf", link: ictNotesFolderLink },
+  { name: "Database | FULL SUMMARY.pdf", link: ictNotesFolderLink },
+  { name: "ER Summary.pdf", link: ictNotesFolderLink },
+  { name: "GCE Advanced Level_ICT_AGENT TECHNOLOGY.pdf", link: ictNotesFolderLink },
+  { name: "GCE Advanced Level_ICT_E COMMERCE.pdf", link: ictNotesFolderLink },
+  { name: "GCE Advanced Level_ICT_INTERNET OF THINGS.pdf", link: ictNotesFolderLink },
+  { name: "GCE Advanced Level_ICT_OPERATING SYSTEM.pdf", link: ictNotesFolderLink },
+  { name: "GCE Advanced Level_ICT_PYTHON- English mediam.pdf", link: ictNotesFolderLink },
+  { name: "GCE Advanced Level_Tamil_DATA COMMUNICATIONS & COMPUTER NETWORK.pdf", link: ictNotesFolderLink },
+  { name: "History of Computer.pdf", link: ictNotesFolderLink },
+  { name: "HTML (1).pdf", link: ictNotesFolderLink },
+  { name: "HTML Basics Syntax .pdf", link: ictNotesFolderLink },
+  { name: "HTML Basics.pdf", link: ictNotesFolderLink },
+  { name: "HTML CheatSheet.jpg", link: ictNotesFolderLink },
+  { name: "HTML Forms Syntax.pdf", link: ictNotesFolderLink },
+  { name: "HTML summary form.pdf", link: ictNotesFolderLink },
+  { name: "HTML Summary.pdf", link: ictNotesFolderLink },
+  { name: "HTML-1.pdf", link: ictNotesFolderLink },
+  { name: "html.pdf", link: ictNotesFolderLink },
+  { name: "HTML.pdf", link: ictNotesFolderLink },
+  { name: "ICT (Gr.12) - Teachers Guide.pdf", link: ictNotesFolderLink },
+  { name: "ICT and Business Transformation.pdf", link: ictNotesFolderLink },
+  { name: "Important theory units.pdf", link: ictNotesFolderLink },
+  { name: "Internet Protocols.pptx", link: ictNotesFolderLink },
+  { name: "Introduction to Internet of Things.pdf", link: ictNotesFolderLink },
+  { name: "IOT Cheatsheet -khalifa niyas.pdf", link: ictNotesFolderLink },
+  { name: "IOT-Unit_11(AL ICT)Tute.pdf", link: ictNotesFolderLink },
+  { name: "Ip Notes English.pdf", link: ictNotesFolderLink },
+  { name: "IT short notes ( GR10 - 08).pdf", link: ictNotesFolderLink },
+  { name: "KEY TERMS AND DEFINITIONS UNITS 1-7.pdf", link: ictNotesFolderLink },
+  { name: "Lesson 7.pdf", link: ictNotesFolderLink },
+  { name: "Lesson 11.pdf", link: ictNotesFolderLink },
+  { name: "logic gate summary.pdf", link: ictNotesFolderLink },
+  { name: "Logic Gates | SR Latches & Adders.pdf", link: ictNotesFolderLink },
+  { name: "Logic Gates-1.pdf", link: ictNotesFolderLink },
+  { name: "Logic Gates.pdf", link: ictNotesFolderLink },
+  { name: "Network 1.pdf", link: ictNotesFolderLink }
 ];
 
 // Data for General English (Common Stream)
@@ -1176,6 +1525,7 @@ const gradeConfig = {
             name: "Physics", 
             files: physicsFiles, 
             link: physicsFolderLink,
+            links: [physicsFolderLink, physicsNewFolderLink, physicsFolderLink3], // Multiple folder links
             special: true,
             image: "https://images.unsplash.com/photo-1636466497217-26a8cbeaf0aa?auto=format&fit=crop&w=600&q=80"
           },
@@ -1183,6 +1533,7 @@ const gradeConfig = {
             name: "Chemistry", 
             files: chemistryFiles, 
             link: chemistryFolderLink,
+            links: [chemistryFolderLink, chemistryFolderLink2], // Multiple folder links
             special: true,
             image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=600&q=80" 
           },
@@ -1192,6 +1543,13 @@ const gradeConfig = {
             link: biologyFolderLink,
             special: true,
             image: "https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=600&q=80"
+          },
+          { 
+            name: "Combined Maths", 
+            files: combinedMathsFiles, 
+            link: combinedMathsFolderLink,
+            special: true,
+            image: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=600&q=80"
           }
         ]
       },
@@ -1239,6 +1597,32 @@ const gradeConfig = {
             name: "Accounting", 
             files: accountingFiles, 
             link: accountingFolderLink,
+            links: [accountingFolderLink, accountingFolderLink2], // Multiple folder links
+            subsections: [
+              {
+                name: "Sinhala Medium",
+                files: accountingFiles,
+                links: [accountingFolderLink, accountingFolderLink2]
+              },
+              {
+                name: "English Medium",
+                files: accountingEMFiles,
+                link: accountingEMFolderLink,
+                links: [accountingEMFolderLink]
+              },
+              {
+                name: "Accounting Notes",
+                files: accountingNotesFiles,
+                link: accountingNotesFolderLink,
+                links: [accountingNotesFolderLink]
+              },
+              {
+                name: "Accounting Papers",
+                files: accountingPapersFiles,
+                link: accountingPapersFolderLink,
+                links: [accountingPapersFolderLink]
+              }
+            ],
             special: true,
             image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=600&q=80"
           },
@@ -1310,7 +1694,28 @@ const gradeConfig = {
             files: musicFiles, 
             link: musicFolderLink,
             special: true,
-            image: "https://images.unsplash.com/photo-1507838153414-b4b713384ebd?auto=format&fit=crop&w=600&q=80"
+            image: "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?auto=format&fit=crop&w=600&q=80"
+          },
+          { 
+            name: "French", 
+            files: frenchFiles, 
+            link: frenchFolderLink,
+            special: true,
+            image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80"
+          },
+          { 
+            name: "GRC", 
+            files: grcFiles, 
+            link: grcFolderLink,
+            special: true,
+            image: "https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?auto=format&fit=crop&w=600&q=80"
+          },
+          { 
+            name: "ICT Notes", 
+            files: ictNotesFiles, 
+            link: ictNotesFolderLink,
+            special: true,
+            image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80"
           }
         ]
       },
@@ -1412,12 +1817,172 @@ export default function GradePage() {
      }
   };
 
+  // Helper function to render file list
+  const renderFileList = (files, query, subjectMatches) => {
+    const displayFiles = files ? files.filter(f => 
+        !query || subjectMatches || f.name.toLowerCase().includes(query)
+    ) : [];
+
+    if (displayFiles.length === 0) return null;
+
+    return (
+      <ul style={{ 
+        listStyle: 'none', fontSize: '0.9rem', color: '#4b5563', margin: 0, padding: 0 
+      }}>
+        {displayFiles.map((f, i) => {
+          // Clean up the file name
+          let displayName = f.name;
+          displayName = displayName.split(" - ")[0];
+          displayName = displayName.replace(/\s*\(.*?\)\s*/g, "");
+          displayName = displayName.trim();
+
+          return (
+            <li key={i} style={{ 
+                  padding: '0.75rem 1.5rem', 
+                  borderBottom: '1px solid #eee',
+                  display: 'flex', 
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  gap: '0.5rem',
+                  background: 'white',
+                  transition: 'background 0.2s'
+            }}
+            className="file-item"
+            >
+              <span style={{ flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                📄 {displayName}
+              </span>
+              <button 
+                onClick={() => handleFileDownload(f.link)}
+                style={{
+                    background: 'var(--light)', border: '1px solid #e2e8f0', color: 'var(--primary-dark)',
+                    padding: '0.3rem 0.8rem', borderRadius: '6px', fontSize: '0.75rem',
+                    cursor: 'pointer', fontWeight: '600', whiteSpace: 'nowrap',
+                    display: 'flex', alignItems: 'center', gap: '4px'
+                }}
+              >
+                View
+              </button>
+            </li>
+          );
+        })}
+      </ul>
+    );
+  };
+
   // Render Subject Card
   const renderSubjectCard = (subject) => {
     const query = searchQuery.toLowerCase();
     const subjectMatches = subject.name.toLowerCase().includes(query);
     
-    // If subject matches, show all files. If not, show only matching files.
+    // If subject has subsections, render them separately
+    if (subject.subsections && subject.subsections.length > 0) {
+      const totalFiles = subject.subsections.reduce((sum, sub) => sum + (sub.files ? sub.files.length : 0), 0);
+      
+      return (
+        <div 
+          key={subject.name} 
+          className="grade-card"
+        >
+          {subject.image && (
+            <div className="grade-card-image">
+               <img src={subject.image} alt={subject.name} />
+               <div className="grade-card-overlay" />
+            </div>
+          )}
+          <div className="grade-card-content">
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.5rem' }}>
+                <h3 style={{ fontSize: '1.2rem', margin: 0 }}>{subject.name}</h3>
+                {subject.special ? (
+                    <span style={{ 
+                    background: '#dcfce7', color: '#166534', 
+                    padding: '0.2rem 0.6rem', borderRadius: '12px', 
+                    fontSize: '0.75rem', fontWeight: '600', whiteSpace: 'nowrap'
+                    }}>
+                    UPDATED
+                    </span>
+                ) : (
+                    <span style={{ fontSize: '0.85rem', color: 'var(--gray)' }}>No files</span>
+                )}
+              </div>
+              
+              <p style={{ fontSize: '0.9rem', color: 'var(--gray)' }}>
+                {totalFiles} resources available
+              </p>
+          </div>
+
+          <div style={{ padding: '0', background: '#f9fafb', borderTop: '1px solid #eee', maxHeight: '400px', overflowY: 'auto' }}>
+            {subject.subsections.map((subsection, subIndex) => {
+              const subDisplayFiles = subsection.files ? subsection.files.filter(f => 
+                  !query || subjectMatches || f.name.toLowerCase().includes(query)
+              ) : [];
+              
+              if (subDisplayFiles.length === 0 && query) return null;
+
+              return (
+                <div key={subIndex} style={{ borderBottom: subIndex < subject.subsections.length - 1 ? '2px solid #e5e7eb' : 'none' }}>
+                  <div style={{ 
+                    padding: '0.75rem 1.5rem', 
+                    background: '#f3f4f6', 
+                    borderBottom: '1px solid #e5e7eb',
+                    fontWeight: '600',
+                    fontSize: '0.9rem',
+                    color: '#374151'
+                  }}>
+                    {subsection.name}
+                  </div>
+                  {renderFileList(subsection.files, query, subjectMatches)}
+                </div>
+              );
+            })}
+          </div>
+
+          <div style={{ padding: '1.5rem', marginTop: 'auto', borderTop: '1px solid #eee', background: 'white' }}>
+            {subject.subsections.map((subsection, subIndex) => {
+              if (subsection.links && subsection.links.length > 0) {
+                return (
+                  <div key={subIndex} style={{ marginBottom: subIndex < subject.subsections.length - 1 ? '0.75rem' : '0' }}>
+                    <div style={{ fontSize: '0.75rem', color: '#6b7280', marginBottom: '0.5rem', fontWeight: '600' }}>
+                      {subsection.name}:
+                    </div>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                      {subsection.links.map((link, linkIndex) => (
+                        <button 
+                          key={linkIndex}
+                          onClick={() => window.open(link, "_blank")}
+                          className={`btn ${subject.special ? 'btn-primary' : 'btn-outline'}`}
+                          style={{ width: '100%', justifyContent: 'center', display: 'flex', padding: '0.75rem', fontSize: '0.85rem' }}
+                        >
+                          Open {subsection.name} Folder {subsection.links.length > 1 ? `(${linkIndex + 1})` : ''}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                );
+              } else if (subsection.link && subsection.link !== "#") {
+                return (
+                  <div key={subIndex} style={{ marginBottom: subIndex < subject.subsections.length - 1 ? '0.75rem' : '0' }}>
+                    <div style={{ fontSize: '0.75rem', color: '#6b7280', marginBottom: '0.5rem', fontWeight: '600' }}>
+                      {subsection.name}:
+                    </div>
+                    <button 
+                      onClick={() => window.open(subsection.link, "_blank")}
+                      className={`btn ${subject.special ? 'btn-primary' : 'btn-outline'}`}
+                      style={{ width: '100%', justifyContent: 'center', display: 'flex', padding: '0.75rem', fontSize: '0.85rem' }}
+                    >
+                      Open {subsection.name} Folder
+                    </button>
+                  </div>
+                );
+              }
+              return null;
+            })}
+          </div>
+        </div>
+      );
+    }
+
+    // Original rendering for subjects without subsections
     const displayFiles = subject.files ? subject.files.filter(f => 
         !searchQuery || subjectMatches || f.name.toLowerCase().includes(query)
     ) : [];
@@ -1462,52 +2027,27 @@ export default function GradePage() {
 
       {displayFiles && displayFiles.length > 0 && (
         <div style={{ padding: '0', background: '#f9fafb', borderTop: '1px solid #eee', maxHeight: '250px', overflowY: 'auto' }}>
-          <ul style={{ 
-            listStyle: 'none', fontSize: '0.9rem', color: '#4b5563', margin: 0, padding: 0 
-          }}>
-            {displayFiles.map((f, i) => {
-              // Clean up the file name
-              let displayName = f.name;
-              displayName = displayName.split(" - ")[0];
-              displayName = displayName.replace(/\s*\(.*?\)\s*/g, "");
-              displayName = displayName.trim();
-
-              return (
-                <li key={i} style={{ 
-                      padding: '0.75rem 1.5rem', 
-                      borderBottom: '1px solid #eee',
-                      display: 'flex', 
-                      alignItems: 'center',
-                      justifyContent: 'space-between',
-                      gap: '0.5rem',
-                      background: 'white',
-                      transition: 'background 0.2s'
-                }}
-                className="file-item"
-                >
-                  <span style={{ flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                    📄 {displayName}
-                  </span>
-                  <button 
-                    onClick={() => handleFileDownload(f.link)}
-                    style={{
-                        background: 'var(--light)', border: '1px solid #e2e8f0', color: 'var(--primary-dark)',
-                        padding: '0.3rem 0.8rem', borderRadius: '6px', fontSize: '0.75rem',
-                        cursor: 'pointer', fontWeight: '600', whiteSpace: 'nowrap',
-                        display: 'flex', alignItems: 'center', gap: '4px'
-                    }}
-                  >
-                    View
-                  </button>
-                </li>
-              );
-            })}
-          </ul>
+          {renderFileList(subject.files, query, subjectMatches)}
         </div>
       )}
 
       <div style={{ padding: '1.5rem', marginTop: 'auto', borderTop: '1px solid #eee', background: 'white' }}>
-        {subject.link && subject.link !== "#" ? (
+        {subject.links && subject.links.length > 0 ? (
+          // Multiple folder links
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+            {subject.links.map((link, index) => (
+              <button 
+                key={index}
+                onClick={() => window.open(link, "_blank")}
+                className={`btn ${subject.special ? 'btn-primary' : 'btn-outline'}`}
+                style={{ width: '100%', justifyContent: 'center', display: 'flex', padding: '0.75rem' }}
+              >
+                Open Full Folder {subject.links.length > 1 ? `(${index + 1})` : ''}
+              </button>
+            ))}
+          </div>
+        ) : subject.link && subject.link !== "#" ? (
+          // Single folder link
           <button 
             onClick={() => handleSubjectClick(subject)}
             className={`btn ${subject.special ? 'btn-primary' : 'btn-outline'}`}
