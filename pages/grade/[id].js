@@ -32,9 +32,39 @@ const mediaStudiesFiles = [
   { name: "mediaසියලු නිර්වචන _220213_115145 - Chamathka Ganeshan.pdf", link: mediaStudiesFolderLink }
 ];
 
+// Data for Media Studies - Note Kokka
+const mediaStudiesNoteKokkaFolderLink = "https://drive.google.com/drive/folders/1OoBk93u1NmMoeX1q6AK5fKqh3lopCHPa?usp=sharing";
+const mediaStudiesNoteKokkaFolderLink2 = "https://drive.google.com/drive/folders/1GiDkzRW1FcZeY895WJpZN8a61At2JMoF?usp=drive_link";
+
+const mediaStudiesNoteKokkaFiles = [
+  { name: "5_6199651842847146992 (1).pdf", link: mediaStudiesNoteKokkaFolderLink },
+  { name: "5_6199651842847146995.pdf", link: mediaStudiesNoteKokkaFolderLink },
+  { name: "5_6224235831922524824.pdf", link: mediaStudiesNoteKokkaFolderLink },
+  { name: "6.pdf", link: mediaStudiesNoteKokkaFolderLink },
+  { name: "7(1).pdf", link: mediaStudiesNoteKokkaFolderLink },
+  { name: "8(1).pdf", link: mediaStudiesNoteKokkaFolderLink },
+  { name: "9(1).pdf", link: mediaStudiesNoteKokkaFolderLink },
+  { name: "10(1).pdf", link: mediaStudiesNoteKokkaFolderLink },
+  { name: "11(1).pdf", link: mediaStudiesNoteKokkaFolderLink },
+  { name: "12(1).pdf", link: mediaStudiesNoteKokkaFolderLink },
+  { name: "mediaසියලු නිර්වචන _220213_115145.pdf", link: mediaStudiesNoteKokkaFolderLink },
+  // New folder files
+  { name: "a¦+a+ûa¦+a+Æa¦Ü a+âa¦¦a+èa¦¦a+Æa+Ça+Öa+èa¦»a¦¦ a+Ça¦+a+èa¦£ a+âa+èa+Ça¦+a+ûa¦¦ a+äa+Å a¦åa¦Üa+ÿa¦¡a+Æ .pdf", link: mediaStudiesNoteKokkaFolderLink2 },
+  { name: "a+âa+Æa¦¦a¦+a+Å a¦+a+Åa¦¦a+è_a¦¦ a¦ëa¦¡a+Æa+äa+Åa+âa¦¦ - History of Cinema.pdf", link: mediaStudiesNoteKokkaFolderLink2 },
+  { name: "a+âa¦¦a+èa¦¦a+Æa+Ça+Öa+èa¦»a¦¦a¦¦a+Öa+è a¦¦a+Æa¦+a+èa+Ça¦áa¦¦ a¦¦a+Éa+äa+Éa¦»a+Æa¦+a+Æ a¦Üa+Æa¦+a+ôa¦+.pdf", link: mediaStudiesNoteKokkaFolderLink2 },
+  { name: "a¦+a+äa¦óa¦¦ a+âa¦+a+èa¦¦a¦¦a+èa¦¦a¦¡a+Å a+äa+Å a+âa+Æa¦»a+èa¦¦a+Æ a¦Üa¦+a¦+a¦½a+Åa¦Üa¦+a¦½a¦¦.txt", link: mediaStudiesNoteKokkaFolderLink2 },
+  { name: "a¦¦a+èGÇìa¦+a¦óa+Å a¦£a+öa+Ça¦¦a+èa+Ça+Æa¦»a+öa¦+a+Æ .pdf", link: mediaStudiesNoteKokkaFolderLink2 },
+  { name: "a¦¦a¦+a¦»a+Åa¦¦a+ô a+âa¦¦a+èa¦¦a+Æa+Ça+Öa+èa¦»a¦¦ a¦Üa+è.pdf", link: mediaStudiesNoteKokkaFolderLink2 },
+  { name: "communication approaches (3).pdf", link: mediaStudiesNoteKokkaFolderLink2 },
+  { name: "comunication concept.pdf", link: mediaStudiesNoteKokkaFolderLink2 },
+  { name: "Media Short note Book-1.pdf", link: mediaStudiesNoteKokkaFolderLink2 },
+  { name: "s12tim42.pdf", link: mediaStudiesNoteKokkaFolderLink2 }
+];
+
 // Data for Accounting (Commerce Stream)
 const accountingFolderLink = "https://drive.google.com/drive/folders/1Zhl9U1-xMQWvDVXFfmSlM0LstF-MMXfj?usp=sharing";
 const accountingFolderLink2 = "https://drive.google.com/drive/folders/1GYmwfru9373j1G63IZGZIpgefbPxkXg8?usp=sharing";
+const accountingFolderLink3 = "https://drive.google.com/drive/folders/1gYi4nVTyiF4qbDKlaVfrwM67_I5APbd7?usp=drive_link";
 
 const accountingFiles = [
   { name: "1 ව්_යුහගත පිළිතුරු - Pawani Akarsha.pdf", link: accountingFolderLink },
@@ -591,6 +621,24 @@ const geoFiles = [
   { name: "IMG_20251130_105416 - Samadi Paramitha.jpg", link: geoFolderLink }
 ];
 
+// Data for Geography Note Kokka (Arts Stream)
+const geoNoteKokkaFolderLink = "https://drive.google.com/drive/folders/198Z48q-hl9n4H-Ej18ORerWnvNoHK4ox?usp=drive_link";
+
+const geoNoteKokkaFiles = [
+  { name: "♨️ප්‍රායෝගික_භූගෝල_විද්‍යාව.pdf", link: geoNoteKokkaFolderLink },
+  { name: "♨️භෞතික_භූගෝල_විද්‍යාව.pdf", link: geoNoteKokkaFolderLink },
+  { name: "♨️මානුෂ_භූගෝල_විද්‍යාව.pdf", link: geoNoteKokkaFolderLink },
+  { name: "2025Geo_Answer_Sheet_අධ්‍යාපන_අමාත්‍යාංශය_251102_234407.pdf", link: geoNoteKokkaFolderLink },
+  { name: "2025Geo_අධ්‍යාපන_අමාත්‍යාංශය_251104_213509.pdf", link: geoNoteKokkaFolderLink },
+  { name: "Geography Papers AL..pdf", link: geoNoteKokkaFolderLink },
+  { name: "geography සිතියම් pdf.pdf", link: geoNoteKokkaFolderLink },
+  { name: "GIS (2).pdf", link: geoNoteKokkaFolderLink },
+  { name: "GIS.pdf", link: geoNoteKokkaFolderLink },
+  { name: "නවීන_සිතියම්_විද්‍යාව_SADU.pdf", link: geoNoteKokkaFolderLink },
+  { name: "සිතියම් පොත.pdf", link: geoNoteKokkaFolderLink },
+  { name: "සිතියම් ලකුනු කිරිම.pdf", link: geoNoteKokkaFolderLink }
+];
+
 // Data for Political Science (Arts Stream)
 const polSciFolderLink = "https://drive.google.com/drive/folders/1-UlfuKhBchmQVKnx6yRCH6S2TMWXLkRM?usp=sharing";
 
@@ -732,6 +780,13 @@ const grcFiles = [
   { name: "Works and Days.pdf", link: grcFolderLink }
 ];
 
+// Data for Home Science (Arts Stream) - Note Kokka
+const homeScienceNoteKokkaFileLink = "https://drive.google.com/file/d/1hHQDeHsUQlkY5mpoHVGwkrRkimGn8r5F/view";
+
+const homeScienceNoteKokkaFiles = [
+  { name: "Home Science Resource", link: homeScienceNoteKokkaFileLink }
+];
+
 // Data for ICT Notes (Arts Stream)
 const ictNotesFolderLink = "https://drive.google.com/drive/folders/16z9fg6YEKrPv2cg-PT5beBAbxG45hfAW?usp=sharing";
 
@@ -849,8 +904,37 @@ const olArtFiles = [
   { name: "HIGHLIGHTED ART BOOK g10 - ANJANA Chamodya.pdf", link: olArtFolderLink }
 ];
 
+// Data for O/L Art Note Kokka
+const olArtNoteKokkaFolderLink = "https://drive.google.com/drive/folders/1EpXAL5maqmLVze_Xt_mz_8glhMB0p4X8?usp=drive_link";
+
+const olArtNoteKokkaFiles = [
+  { name: "English (1).pdf", link: olArtNoteKokkaFolderLink },
+  { name: "Sinhala (1).pdf", link: olArtNoteKokkaFolderLink }
+];
+
+// Data for O/L Dancing Note Kokka
+const olDancingNoteKokkaFolderLink = "https://drive.google.com/drive/folders/194l24EKiCHjv5bMZ0ST1BuEvHzuxJTA_?usp=drive_link";
+
+const olDancingNoteKokkaFiles = [
+  { name: "English.pdf", link: olDancingNoteKokkaFolderLink },
+  { name: "Sinhala.pdf", link: olDancingNoteKokkaFolderLink }
+];
+
+// Data for O/L Drama Note Kokka
+const olDramaNoteKokkaFolderLink = "https://drive.google.com/drive/folders/1cX4sa-CgS_3dn4Xl9nE6j0Xbx8AjN-Wz?usp=drive_link";
+
+const olDramaNoteKokkaFiles = [
+  { name: "Drama English 01.pdf", link: olDramaNoteKokkaFolderLink },
+  { name: "Drama English 02.pdf", link: olDramaNoteKokkaFolderLink },
+  { name: "Drama English 03.pdf", link: olDramaNoteKokkaFolderLink },
+  { name: "Drama sinhala 01.pdf", link: olDramaNoteKokkaFolderLink },
+  { name: "Drama sinhala 02.pdf", link: olDramaNoteKokkaFolderLink },
+  { name: "Drama sinhala 03.pdf", link: olDramaNoteKokkaFolderLink }
+];
+
 // Data for O/L Buddhism
 const olBuddhismFolderLink = "https://drive.google.com/drive/folders/14i20AbDN0wJVMTvqBWLuKGrf3udoUK0q?usp=sharing";
+const olBuddhismFolderLink2 = "https://drive.google.com/drive/folders/1ugSyoGAdnrGbzVtI7YxO3jo-ZXYgLPHA?usp=drive_link";
 
 const olBuddhismFiles = [
   { name: "1 - ANJANA Chamodya.pdf", link: olBuddhismFolderLink },
@@ -894,7 +978,27 @@ const olBuddhismFiles = [
   { name: "IMG-20251125-WA0017 - Gamini jayasuriya.jpg", link: olBuddhismFolderLink },
   { name: "IMG-20251125-WA0018 - Gamini jayasuriya.jpg", link: olBuddhismFolderLink },
   { name: "IMG-20251125-WA0019 - Gamini jayasuriya.jpg", link: olBuddhismFolderLink },
-  { name: "IMG-20251125-WA0020 - Gamini jayasuriya.jpg", link: olBuddhismFolderLink }
+  { name: "IMG-20251125-WA0020 - Gamini jayasuriya.jpg", link: olBuddhismFolderLink },
+  // New folder files
+  { name: "IMG-20251130-WA0001.jpg", link: olBuddhismFolderLink2 },
+  { name: "IMG-20251130-WA0002.jpg", link: olBuddhismFolderLink2 },
+  { name: "IMG-20251130-WA0003.jpg", link: olBuddhismFolderLink2 },
+  { name: "IMG-20251130-WA0005.jpg", link: olBuddhismFolderLink2 },
+  { name: "IMG-20251130-WA0006.jpg", link: olBuddhismFolderLink2 },
+  { name: "IMG-20251130-WA0007.jpg", link: olBuddhismFolderLink2 },
+  { name: "IMG-20251130-WA0008.jpg", link: olBuddhismFolderLink2 },
+  { name: "IMG-20251130-WA0012.jpg", link: olBuddhismFolderLink2 },
+  { name: "IMG-20251130-WA0013.jpg", link: olBuddhismFolderLink2 },
+  { name: "IMG-20251130-WA0014.jpg", link: olBuddhismFolderLink2 },
+  { name: "IMG-20251130-WA0015.jpg", link: olBuddhismFolderLink2 }
+];
+
+// Data for O/L Buddhism Note Kokka
+const olBuddhismNoteKokkaFolderLink = "https://drive.google.com/drive/folders/1l-xmiXN3Zs0VuastTjMRQ4qHEPMwRi9H?usp=sharing";
+
+const olBuddhismNoteKokkaFiles = [
+  { name: "English.pdf", link: olBuddhismNoteKokkaFolderLink },
+  { name: "Sinhala.pdf", link: olBuddhismNoteKokkaFolderLink }
 ];
 
 // Data for O/L Citizenship Education
@@ -903,6 +1007,14 @@ const olCivicFolderLink = "https://drive.google.com/drive/folders/1W6QKzXiFiLaXm
 const olCivicFiles = [
   { name: "1011 PURAWESI NOTES 2020 - Yashodya Nethmini Rathnayake.pdf", link: olCivicFolderLink },
   { name: "Civic-Education SM - Adeesh Thejan Ranaweera.pdf", link: olCivicFolderLink }
+];
+
+// Data for O/L Citizenship Education Note Kokka
+const olCivicNoteKokkaFolderLink = "https://drive.google.com/drive/folders/1koT9bejsVkbzeq-q4qDTAOJ9jxoB138Q?usp=drive_link";
+
+const olCivicNoteKokkaFiles = [
+  { name: "English.pdf", link: olCivicNoteKokkaFolderLink },
+  { name: "Sinhala.pdf", link: olCivicNoteKokkaFolderLink }
 ];
 
 // Data for O/L Commerce
@@ -919,6 +1031,14 @@ const olCommerceFiles = [
   { name: "WhatsApp Image 2025-06-04 at 4.52.50 PM - ANJANA Chamodya.jpeg", link: olCommerceFolderLink },
   { name: "WhatsApp Image 2025-06-04 at 4.52.50 PM (1) - ANJANA Chamodya.jpeg", link: olCommerceFolderLink },
   { name: "WhatsApp Image 2025-06-04 at 4.52.50 PM (2) - ANJANA Chamodya.jpeg", link: olCommerceFolderLink }
+];
+
+// Data for O/L Commerce Note Kokka
+const olCommerceNoteKokkaFolderLink = "https://drive.google.com/drive/folders/1QbEMXRs2yGTcfcP1F3_-zQjhh3HT6C5M?usp=drive_link";
+
+const olCommerceNoteKokkaFiles = [
+  { name: "English.pdf", link: olCommerceNoteKokkaFolderLink },
+  { name: "Sinhala.pdf", link: olCommerceNoteKokkaFolderLink }
 ];
 
 // Data for O/L English
@@ -956,6 +1076,13 @@ const olEnglishLitFiles = [
   { name: "Grade-11-Appreciation-of-English-Literary-Texts-1st-Term-Test-Paper-2020-Richmond-College - Lihini Sehara.pdf", link: olEnglishLitFolderLink },
   { name: "Vendor_of_Sweets_Themes_Summary_Clean-1 - Sujeewa Pradeep.pdf", link: olEnglishLitFolderLink },
   { name: "wp-11-ms-2020-3rd - Lihini Sehara.pdf", link: olEnglishLitFolderLink }
+];
+
+// Data for O/L English Literature Note Kokka
+const olEnglishLitNoteKokkaFolderLink = "https://drive.google.com/drive/folders/1QpsmVWtNsZOH0AbHQ82cQ9XSxZJZMrSU?usp=sharing";
+
+const olEnglishLitNoteKokkaFiles = [
+  { name: "English Litreature.pdf", link: olEnglishLitNoteKokkaFolderLink }
 ];
 
 // Data for O/L History
@@ -996,6 +1123,14 @@ const olHistoryFiles = [
   { name: "Short-Note-History-11 - MY CHANNEL.pdf", link: olHistoryFolderLink },
   { name: "ඉති-3වාරය-10 ශ්‍රේ-9පාඩම-ඉගෙ.ආධා_ - Brian Makalanda.pdf", link: olHistoryFolderLink },
   { name: "ඉතිහාසය රූප සටහන් අධ්‍යයනය - Thulakshana Shehan.pdf", link: olHistoryFolderLink }
+];
+
+// Data for O/L History Note Kokka
+const olHistoryNoteKokkaFolderLink = "https://drive.google.com/drive/folders/1_sc6TBV4gPTpEaLjeuFbeBFTazWExNcM?usp=sharing";
+
+const olHistoryNoteKokkaFiles = [
+  { name: "English.pdf", link: olHistoryNoteKokkaFolderLink },
+  { name: "Sinhala.pdf", link: olHistoryNoteKokkaFolderLink }
 ];
 
 // Data for O/L ICT
@@ -1049,6 +1184,14 @@ const olIctFiles = [
   { name: "ඉලෙක්ට්‍රොනික සමර්පණ - ANJANA Chamodya.pdf", link: olIctFolderLink }
 ];
 
+// Data for O/L ICT Note Kokka
+const olIctNoteKokkaFolderLink = "https://drive.google.com/drive/folders/1qGSWbYaBQX21U7Io-Z1AvkgUy1s6BH0q?usp=sharing";
+
+const olIctNoteKokkaFiles = [
+  { name: "ICT English.pdf", link: olIctNoteKokkaFolderLink },
+  { name: "ICT Sinhala.pdf", link: olIctNoteKokkaFolderLink }
+];
+
 // Data for O/L Mathematics
 const olMathFolderLink = "https://drive.google.com/drive/folders/1VxVic12I9EbIiL39NP8a_rGblTKGtyjy?usp=sharing";
 
@@ -1100,6 +1243,14 @@ const olMathFiles = [
   { name: "ජ්‍යාමිතිය ප්‍රමේයයන් OL - nalika dilrukshi.pdf", link: olMathFolderLink },
   { name: "ජ්‍යාමිතිය__(www.iscolee.blogspot.com) - Deevika Suwarnamali.pdf", link: olMathFolderLink },
   { name: "වෘත්ත ආශ්‍රිත ජ්‍යාමිතික ප්‍රමේයන් - Deevika Suwarnamali.pdf", link: olMathFolderLink }
+];
+
+// Data for O/L Mathematics Note Kokka
+const olMathNoteKokkaFolderLink = "https://drive.google.com/drive/folders/1QCMmECDdBoyO2To_ZvdkMVjFUAQm7q1V?usp=sharing";
+
+const olMathNoteKokkaFiles = [
+  { name: "English.pdf", link: olMathNoteKokkaFolderLink },
+  { name: "Sinhala.pdf", link: olMathNoteKokkaFolderLink }
 ];
 
 // Data for O/L Music
@@ -1161,6 +1312,14 @@ const olScienceFiles = [
   { name: "ප්‍රකාශ විද්‍යාවPrakasha vidyawa Past Papers - Manuli Hansika.pdf", link: olScienceFolderLink }
 ];
 
+// Data for O/L Science Note Kokka
+const olScienceNoteKokkaFolderLink = "https://drive.google.com/drive/folders/1nF5SevLFhWIbOlmJcYVoB6tQC-glhik4?usp=sharing";
+
+const olScienceNoteKokkaFiles = [
+  { name: "English.pdf", link: olScienceNoteKokkaFolderLink },
+  { name: "Sinhala.pdf", link: olScienceNoteKokkaFolderLink }
+];
+
 // Data for O/L Sinhala
 const olSinhalaFolderLink = "https://drive.google.com/drive/folders/1sZH0F1MPAbV-Z0j6L68LgxTDH4sIKyBi?usp=sharing";
 
@@ -1194,12 +1353,33 @@ const olSinhalaFiles = [
 
 // Data for O/L Sinhala Literature
 const olSinhalaLitFolderLink = "https://drive.google.com/drive/folders/1w6Oh-m5Ey33nspgnOFQUBRh-e1eT_qIN?usp=sharing";
+const olSinhalaLitAudioFolderLink = "https://drive.google.com/drive/folders/11Mp1Qde-q4KOshPDmqyJ5SeitWozZ1dG?usp=sharing";
 
 const olSinhalaLitFiles = [
   { name: "Sinhala Literature 10 3 2024 - Nilmini Katipearachchi.pdf", link: olSinhalaLitFolderLink },
   { name: "Copy of සාමාන්‍ය_පෙළ_සාහිත්‍ය_කෙටි_සටහන - Sujeewa Pradeep.pdf", link: olSinhalaLitFolderLink },
   { name: "Sinhala sahithya Intros - Kusali sithumila444.pdf", link: olSinhalaLitFolderLink },
   { name: "Wichara serama NEW - Kusali sithumila444.pdf", link: olSinhalaLitFolderLink }
+];
+
+// Data for O/L Sinhala Literature Audio
+const olSinhalaLitAudioFiles = [
+  { name: "01 stharakan mantranaya.mp3", link: olSinhalaLitAudioFolderLink },
+  { name: "02 guththila wena nada.mp3", link: olSinhalaLitAudioFolderLink },
+  { name: "03 hana heeya pana.mp3", link: olSinhalaLitAudioFolderLink },
+  { name: "04 baddegama.mp3", link: olSinhalaLitAudioFolderLink },
+  { name: "05 muni siripa.mp3", link: olSinhalaLitAudioFolderLink },
+  { name: "06 gangawe sangeethaya.mp3", link: olSinhalaLitAudioFolderLink },
+  { name: "08 angulmal damanaya.mp3", link: olSinhalaLitAudioFolderLink },
+  { name: "09 uggasena situputh.mp3", link: olSinhalaLitAudioFolderLink },
+  { name: "10 keeragalaya vajambei.mp3", link: olSinhalaLitAudioFolderLink },
+  { name: "11 maga visithuru.mp3", link: olSinhalaLitAudioFolderLink },
+  { name: "12 kurahan isimuwa.mp3", link: olSinhalaLitAudioFolderLink },
+  { name: "13 apata vasikiliyak.mp3", link: olSinhalaLitAudioFolderLink },
+  { name: "14 diyamanthi malaya.mp3", link: olSinhalaLitAudioFolderLink },
+  { name: "15 dathe karagata.mp3", link: olSinhalaLitAudioFolderLink },
+  { name: "16 vassanaya.mp3", link: olSinhalaLitAudioFolderLink },
+  { name: "Sinhabahu Drama Audio - Part 1 of 2.mp3", link: olSinhalaLitAudioFolderLink }
 ];
 
 // Data for O/L Tamil
@@ -1209,33 +1389,120 @@ const olTamilFiles = [
   { name: "2nd Language Sinhala 10 3 2024 - Nilmini Katipearachchi.pdf", link: olTamilFolderLink }
 ];
 
+// Data for O/L Tamil Note Kokka
+const olTamilNoteKokkaFolderLink = "https://drive.google.com/drive/folders/18G0oyAzj_Hzhd4iOnbwSJQmJGypbREUx?usp=sharing";
+
+const olTamilNoteKokkaFiles = [
+  { name: "Tamil Grammar.pdf", link: olTamilNoteKokkaFolderLink }
+];
+
+// Data for O/L Geography Note Kokka
+const olGeographyNoteKokkaFolderLink = "https://drive.google.com/drive/folders/1y2HNu2_O36iEY3qAi596EoIsg0gTZTkv?usp=sharing";
+
+const olGeographyNoteKokkaFiles = [
+  { name: "English.pdf", link: olGeographyNoteKokkaFolderLink },
+  { name: "Sinhala.pdf", link: olGeographyNoteKokkaFolderLink }
+];
+
+// Data for O/L Health & Physical Education Note Kokka
+const olHealthNoteKokkaFolderLink = "https://drive.google.com/drive/folders/1IaMA6v-UwWVYiE20Qgx2fZKhbzq470Qk?usp=drive_link";
+
+const olHealthNoteKokkaFiles = [
+  { name: "English.pdf", link: olHealthNoteKokkaFolderLink },
+  { name: "Sinhala.pdf", link: olHealthNoteKokkaFolderLink }
+];
+
 // O/L Subjects with individual links
 const olSubjects = [
   { 
     name: "Art", 
     link: olArtFolderLink, 
-    files: olArtFiles, 
+    files: olArtFiles,
+    subsections: [
+      {
+        name: "Main Resources",
+        files: olArtFiles,
+        link: olArtFolderLink,
+        links: [olArtFolderLink]
+      },
+      {
+        name: "Note Kokka",
+        files: olArtNoteKokkaFiles,
+        link: olArtNoteKokkaFolderLink,
+        links: [olArtNoteKokkaFolderLink],
+        color: "#fef3c7", // Yellow color for this section
+        credits: "Credits to Note Kokka"
+      }
+    ],
     special: true,
     image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=600&q=80"
   },
   { 
     name: "Buddhism", 
     link: olBuddhismFolderLink, 
-    files: olBuddhismFiles, 
+    files: olBuddhismFiles,
+    links: [olBuddhismFolderLink, olBuddhismFolderLink2], // Multiple folder links
+    subsections: [
+      {
+        name: "Main Resources",
+        files: olBuddhismFiles,
+        links: [olBuddhismFolderLink, olBuddhismFolderLink2]
+      },
+      {
+        name: "Note Kokka",
+        files: olBuddhismNoteKokkaFiles,
+        link: olBuddhismNoteKokkaFolderLink,
+        links: [olBuddhismNoteKokkaFolderLink],
+        color: "#fef3c7", // Yellow color for this section
+        credits: "Credits to Note Kokka"
+      }
+    ],
     special: true,
     image: "https://images.unsplash.com/photo-1605648916361-9bc12ad6a569?auto=format&fit=crop&w=600&q=80"
   },
   { 
     name: "Citizenship Education", 
     link: olCivicFolderLink, 
-    files: olCivicFiles, 
+    files: olCivicFiles,
+    subsections: [
+      {
+        name: "Main Resources",
+        files: olCivicFiles,
+        link: olCivicFolderLink,
+        links: [olCivicFolderLink]
+      },
+      {
+        name: "Note Kokka",
+        files: olCivicNoteKokkaFiles,
+        link: olCivicNoteKokkaFolderLink,
+        links: [olCivicNoteKokkaFolderLink],
+        color: "#fef3c7", // Yellow color for this section
+        credits: "Credits to Note Kokka"
+      }
+    ],
     special: true,
     image: "https://images.unsplash.com/photo-1555848962-6e79363ec58f?auto=format&fit=crop&w=600&q=80"
   },
   { 
     name: "Commerce", 
     link: olCommerceFolderLink, 
-    files: olCommerceFiles, 
+    files: olCommerceFiles,
+    subsections: [
+      {
+        name: "Main Resources",
+        files: olCommerceFiles,
+        link: olCommerceFolderLink,
+        links: [olCommerceFolderLink]
+      },
+      {
+        name: "Note Kokka",
+        files: olCommerceNoteKokkaFiles,
+        link: olCommerceNoteKokkaFolderLink,
+        links: [olCommerceNoteKokkaFolderLink],
+        color: "#fef3c7", // Yellow color for this section
+        credits: "Credits to Note Kokka"
+      }
+    ],
     special: true,
     image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80"
   },
@@ -1249,28 +1516,92 @@ const olSubjects = [
   { 
     name: "English Literature", 
     link: olEnglishLitFolderLink, 
-    files: olEnglishLitFiles, 
+    files: olEnglishLitFiles,
+    subsections: [
+      {
+        name: "Main Resources",
+        files: olEnglishLitFiles,
+        link: olEnglishLitFolderLink,
+        links: [olEnglishLitFolderLink]
+      },
+      {
+        name: "Note Kokka",
+        files: olEnglishLitNoteKokkaFiles,
+        link: olEnglishLitNoteKokkaFolderLink,
+        links: [olEnglishLitNoteKokkaFolderLink],
+        color: "#fef3c7", // Yellow color for this section
+        credits: "Credits to Note Kokka"
+      }
+    ],
     special: true,
     image: "https://images.unsplash.com/photo-1474932430478-367dbb6832c1?auto=format&fit=crop&w=600&q=80"
   },
   { 
     name: "History", 
     link: olHistoryFolderLink, 
-    files: olHistoryFiles, 
+    files: olHistoryFiles,
+    subsections: [
+      {
+        name: "Main Resources",
+        files: olHistoryFiles,
+        link: olHistoryFolderLink,
+        links: [olHistoryFolderLink]
+      },
+      {
+        name: "Note Kokka",
+        files: olHistoryNoteKokkaFiles,
+        link: olHistoryNoteKokkaFolderLink,
+        links: [olHistoryNoteKokkaFolderLink],
+        color: "#fef3c7", // Yellow color for this section
+        credits: "Credits to Note Kokka"
+      }
+    ],
     special: true,
     image: "https://images.unsplash.com/photo-1461360370896-922624d12aa1?auto=format&fit=crop&w=600&q=80"
   },
   { 
     name: "ICT", 
     link: olIctFolderLink, 
-    files: olIctFiles, 
+    files: olIctFiles,
+    subsections: [
+      {
+        name: "Main Resources",
+        files: olIctFiles,
+        link: olIctFolderLink,
+        links: [olIctFolderLink]
+      },
+      {
+        name: "Note Kokka",
+        files: olIctNoteKokkaFiles,
+        link: olIctNoteKokkaFolderLink,
+        links: [olIctNoteKokkaFolderLink],
+        color: "#fef3c7", // Yellow color for this section
+        credits: "Credits to Note Kokka"
+      }
+    ],
     special: true,
     image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80"
   },
   { 
     name: "Mathematics", 
     link: olMathFolderLink, 
-    files: olMathFiles, 
+    files: olMathFiles,
+    subsections: [
+      {
+        name: "Main Resources",
+        files: olMathFiles,
+        link: olMathFolderLink,
+        links: [olMathFolderLink]
+      },
+      {
+        name: "Note Kokka",
+        files: olMathNoteKokkaFiles,
+        link: olMathNoteKokkaFolderLink,
+        links: [olMathNoteKokkaFolderLink],
+        color: "#fef3c7", // Yellow color for this section
+        credits: "Credits to Note Kokka"
+      }
+    ],
     special: true,
     image: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=600&q=80"
   },
@@ -1284,7 +1615,23 @@ const olSubjects = [
   { 
     name: "Science", 
     link: olScienceFolderLink, 
-    files: olScienceFiles, 
+    files: olScienceFiles,
+    subsections: [
+      {
+        name: "Main Resources",
+        files: olScienceFiles,
+        link: olScienceFolderLink,
+        links: [olScienceFolderLink]
+      },
+      {
+        name: "Note Kokka",
+        files: olScienceNoteKokkaFiles,
+        link: olScienceNoteKokkaFolderLink,
+        links: [olScienceNoteKokkaFolderLink],
+        color: "#fef3c7", // Yellow color for this section
+        credits: "Credits to Note Kokka"
+      }
+    ],
     special: true,
     image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=600&q=80"
   },
@@ -1298,16 +1645,114 @@ const olSubjects = [
   { 
     name: "Sinhala Literature", 
     link: olSinhalaLitFolderLink, 
-    files: olSinhalaLitFiles, 
+    files: olSinhalaLitFiles,
+    subsections: [
+      {
+        name: "Notes & Papers",
+        files: olSinhalaLitFiles,
+        link: olSinhalaLitFolderLink,
+        links: [olSinhalaLitFolderLink]
+      },
+      {
+        name: "Audio Files (MP3)",
+        files: olSinhalaLitAudioFiles,
+        link: olSinhalaLitAudioFolderLink,
+        links: [olSinhalaLitAudioFolderLink]
+      }
+    ],
     special: true,
     image: "https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=600&q=80"
   },
   { 
     name: "Tamil", 
     link: olTamilFolderLink, 
-    files: olTamilFiles, 
+    files: olTamilFiles,
+    subsections: [
+      {
+        name: "Main Resources",
+        files: olTamilFiles,
+        link: olTamilFolderLink,
+        links: [olTamilFolderLink]
+      },
+      {
+        name: "Note Kokka",
+        files: olTamilNoteKokkaFiles,
+        link: olTamilNoteKokkaFolderLink,
+        links: [olTamilNoteKokkaFolderLink],
+        color: "#fef3c7", // Yellow color for this section
+        credits: "Credits to Note Kokka"
+      }
+    ],
     special: true,
     image: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=600&q=80"
+  },
+  { 
+    name: "Geography", 
+    link: "#", 
+    files: [],
+    subsections: [
+      {
+        name: "Note Kokka",
+        files: olGeographyNoteKokkaFiles,
+        link: olGeographyNoteKokkaFolderLink,
+        links: [olGeographyNoteKokkaFolderLink],
+        color: "#fef3c7", // Yellow color for this section
+        credits: "Credits to Note Kokka"
+      }
+    ],
+    special: true,
+    image: "https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=600&q=80"
+  },
+  { 
+    name: "Health & Physical Education", 
+    link: "#", 
+    files: [],
+    subsections: [
+      {
+        name: "Note Kokka",
+        files: olHealthNoteKokkaFiles,
+        link: olHealthNoteKokkaFolderLink,
+        links: [olHealthNoteKokkaFolderLink],
+        color: "#fef3c7", // Yellow color for this section
+        credits: "Credits to Note Kokka"
+      }
+    ],
+    special: true,
+    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&q=80"
+  },
+  { 
+    name: "Dancing", 
+    link: "#", 
+    files: [],
+    subsections: [
+      {
+        name: "Note Kokka",
+        files: olDancingNoteKokkaFiles,
+        link: olDancingNoteKokkaFolderLink,
+        links: [olDancingNoteKokkaFolderLink],
+        color: "#fef3c7", // Yellow color for this section
+        credits: "Credits to Note Kokka"
+      }
+    ],
+    special: true,
+    image: "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80"
+  },
+  { 
+    name: "Drama", 
+    link: "#", 
+    files: [],
+    subsections: [
+      {
+        name: "Note Kokka",
+        files: olDramaNoteKokkaFiles,
+        link: olDramaNoteKokkaFolderLink,
+        links: [olDramaNoteKokkaFolderLink],
+        color: "#fef3c7", // Yellow color for this section
+        credits: "Credits to Note Kokka"
+      }
+    ],
+    special: true,
+    image: "https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&fit=crop&w=600&q=80"
   }
 ];
 
@@ -1597,7 +2042,7 @@ const gradeConfig = {
             name: "Accounting", 
             files: accountingFiles, 
             link: accountingFolderLink,
-            links: [accountingFolderLink, accountingFolderLink2], // Multiple folder links
+            links: [accountingFolderLink, accountingFolderLink2, accountingFolderLink3], // Multiple folder links
             subsections: [
               {
                 name: "Sinhala Medium",
@@ -1621,6 +2066,14 @@ const gradeConfig = {
                 files: accountingPapersFiles,
                 link: accountingPapersFolderLink,
                 links: [accountingPapersFolderLink]
+              },
+              {
+                name: "Note Kokka",
+                files: [],
+                link: accountingFolderLink3,
+                links: [accountingFolderLink3],
+                color: "#fef3c7", // Yellow color for this section
+                credits: "Credits to Note Kokka"
               }
             ],
             special: true,
@@ -1651,6 +2104,23 @@ const gradeConfig = {
             name: "Media Studies", 
             files: mediaStudiesFiles, 
             link: mediaStudiesFolderLink,
+            links: [mediaStudiesFolderLink, mediaStudiesNoteKokkaFolderLink, mediaStudiesNoteKokkaFolderLink2],
+            subsections: [
+              {
+                name: "Main Resources",
+                files: mediaStudiesFiles,
+                link: mediaStudiesFolderLink,
+                links: [mediaStudiesFolderLink]
+              },
+              {
+                name: "Note Kokka",
+                files: mediaStudiesNoteKokkaFiles,
+                link: mediaStudiesNoteKokkaFolderLink,
+                links: [mediaStudiesNoteKokkaFolderLink, mediaStudiesNoteKokkaFolderLink2],
+                color: "#fef3c7", // Yellow color for this section
+                credits: "Credits to Note Kokka"
+              }
+            ],
             special: true,
             image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=600&q=80"
           },
@@ -1658,6 +2128,22 @@ const gradeConfig = {
              name: "Geography", 
              files: geoFiles, 
              link: geoFolderLink,
+             subsections: [
+               {
+                 name: "Main Resources",
+                 files: geoFiles,
+                 link: geoFolderLink,
+                 links: [geoFolderLink]
+               },
+               {
+                 name: "Note Kokka",
+                 files: geoNoteKokkaFiles,
+                 link: geoNoteKokkaFolderLink,
+                 links: [geoNoteKokkaFolderLink],
+                 color: "#fef3c7", // Yellow color for this section
+                 credits: "Credits to Note Kokka"
+               }
+             ],
              special: true,
              image: "https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=600&q=80"
           },
@@ -1716,6 +2202,23 @@ const gradeConfig = {
             link: ictNotesFolderLink,
             special: true,
             image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80"
+          },
+          { 
+            name: "Home Science", 
+            files: homeScienceNoteKokkaFiles, 
+            link: homeScienceNoteKokkaFileLink,
+            subsections: [
+              {
+                name: "Note Kokka",
+                files: homeScienceNoteKokkaFiles,
+                link: homeScienceNoteKokkaFileLink,
+                links: [homeScienceNoteKokkaFileLink],
+                color: "#fef3c7", // Yellow color for this section
+                credits: "Credits to Note Kokka"
+              }
+            ],
+            special: true,
+            image: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=600&q=80"
           }
         ]
       },
@@ -1923,13 +2426,26 @@ export default function GradePage() {
                 <div key={subIndex} style={{ borderBottom: subIndex < subject.subsections.length - 1 ? '2px solid #e5e7eb' : 'none' }}>
                   <div style={{ 
                     padding: '0.75rem 1.5rem', 
-                    background: '#f3f4f6', 
+                    background: subsection.color || '#f3f4f6', 
                     borderBottom: '1px solid #e5e7eb',
                     fontWeight: '600',
                     fontSize: '0.9rem',
-                    color: '#374151'
+                    color: '#374151',
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center'
                   }}>
-                    {subsection.name}
+                    <span>{subsection.name}</span>
+                    {subsection.credits && (
+                      <span style={{ 
+                        fontSize: '0.75rem', 
+                        fontWeight: '500', 
+                        color: '#6b7280',
+                        fontStyle: 'italic'
+                      }}>
+                        {subsection.credits}
+                      </span>
+                    )}
                   </div>
                   {renderFileList(subsection.files, query, subjectMatches)}
                 </div>
