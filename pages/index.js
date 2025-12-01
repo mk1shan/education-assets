@@ -78,6 +78,7 @@ export default function Home() {
           <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
             <a href="#" className="nav-link active" onClick={() => setIsMenuOpen(false)}>Home</a>
             <a href="#grades" className="nav-link" onClick={() => setIsMenuOpen(false)}>Grades</a>
+            <Link href="/feedback" className="nav-link" onClick={() => setIsMenuOpen(false)}>Feedback</Link>
           </div>
         </nav>
 
