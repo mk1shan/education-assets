@@ -1417,7 +1417,7 @@ const olSubjects = [
   { 
     name: "Art", 
     link: olArtFolderLink, 
-    files: olArtFiles,
+    files: olArtFiles, 
     subsections: [
       {
         name: "Main Resources",
@@ -1440,7 +1440,7 @@ const olSubjects = [
   { 
     name: "Buddhism", 
     link: olBuddhismFolderLink, 
-    files: olBuddhismFiles,
+    files: olBuddhismFiles, 
     links: [olBuddhismFolderLink, olBuddhismFolderLink2], // Multiple folder links
     subsections: [
       {
@@ -1463,7 +1463,7 @@ const olSubjects = [
   { 
     name: "Citizenship Education", 
     link: olCivicFolderLink, 
-    files: olCivicFiles,
+    files: olCivicFiles, 
     subsections: [
       {
         name: "Main Resources",
@@ -1486,7 +1486,7 @@ const olSubjects = [
   { 
     name: "Commerce", 
     link: olCommerceFolderLink, 
-    files: olCommerceFiles,
+    files: olCommerceFiles, 
     subsections: [
       {
         name: "Main Resources",
@@ -1516,7 +1516,7 @@ const olSubjects = [
   { 
     name: "English Literature", 
     link: olEnglishLitFolderLink, 
-    files: olEnglishLitFiles,
+    files: olEnglishLitFiles, 
     subsections: [
       {
         name: "Main Resources",
@@ -1539,7 +1539,7 @@ const olSubjects = [
   { 
     name: "History", 
     link: olHistoryFolderLink, 
-    files: olHistoryFiles,
+    files: olHistoryFiles, 
     subsections: [
       {
         name: "Main Resources",
@@ -1562,7 +1562,7 @@ const olSubjects = [
   { 
     name: "ICT", 
     link: olIctFolderLink, 
-    files: olIctFiles,
+    files: olIctFiles, 
     subsections: [
       {
         name: "Main Resources",
@@ -1585,7 +1585,7 @@ const olSubjects = [
   { 
     name: "Mathematics", 
     link: olMathFolderLink, 
-    files: olMathFiles,
+    files: olMathFiles, 
     subsections: [
       {
         name: "Main Resources",
@@ -1615,7 +1615,7 @@ const olSubjects = [
   { 
     name: "Science", 
     link: olScienceFolderLink, 
-    files: olScienceFiles,
+    files: olScienceFiles, 
     subsections: [
       {
         name: "Main Resources",
@@ -1645,7 +1645,7 @@ const olSubjects = [
   { 
     name: "Sinhala Literature", 
     link: olSinhalaLitFolderLink, 
-    files: olSinhalaLitFiles,
+    files: olSinhalaLitFiles, 
     subsections: [
       {
         name: "Notes & Papers",
@@ -1666,7 +1666,7 @@ const olSubjects = [
   { 
     name: "Tamil", 
     link: olTamilFolderLink, 
-    files: olTamilFiles,
+    files: olTamilFiles, 
     subsections: [
       {
         name: "Main Resources",
@@ -2552,16 +2552,16 @@ export default function GradePage() {
           // Multiple folder links
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
             {subject.links.map((link, index) => (
-              <button 
+                  <button 
                 key={index}
                 onClick={() => window.open(link, "_blank")}
                 className={`btn ${subject.special ? 'btn-primary' : 'btn-outline'}`}
                 style={{ width: '100%', justifyContent: 'center', display: 'flex', padding: '0.75rem' }}
               >
                 Open Full Folder {subject.links.length > 1 ? `(${index + 1})` : ''}
-              </button>
+                  </button>
             ))}
-          </div>
+        </div>
         ) : subject.link && subject.link !== "#" ? (
           // Single folder link
           <button 

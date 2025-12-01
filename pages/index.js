@@ -57,6 +57,7 @@ export default function Home() {
             <div className="nav-links">
               <a href="#" className="nav-link active">Home</a>
               <a href="#grades" className="nav-link">Grades</a>
+              <Link href="/feedback" className="nav-link">Feedback</Link>
             </div>
             <button 
               className="mobile-menu-btn"
