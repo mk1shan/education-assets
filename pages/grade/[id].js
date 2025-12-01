@@ -2659,6 +2659,177 @@ export default function GradePage() {
             gap: 2.5rem;
             padding: 1rem;
         }
+        
+        @media (max-width: 768px) {
+            .folder-list-container {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+                padding: 1rem 0.75rem;
+            }
+            
+            .hero-modern {
+                height: 40vh;
+                min-height: 300px;
+                margin-bottom: 2rem;
+                border-radius: 0 0 2rem 2rem;
+            }
+            
+            .hero-modern-content {
+                padding: 1.5rem 1rem;
+            }
+            
+            .hero-modern h1 {
+                font-size: clamp(2rem, 8vw, 3rem);
+                margin-bottom: 1rem;
+            }
+            
+            .hero-modern p {
+                font-size: 1rem;
+                padding: 0 0.5rem;
+            }
+            
+            .card-content {
+                padding: 1.5rem;
+            }
+            
+            .folder-title {
+                font-size: 1.25rem;
+            }
+            
+            .folder-subtitle {
+                font-size: 0.875rem;
+            }
+            
+            .card-image-header {
+                height: 180px;
+            }
+            
+            .search-container {
+                margin-top: -20px !important;
+                padding: 0 1rem !important;
+            }
+            
+            .search-input {
+                padding: 0.75rem 1rem !important;
+                padding-left: 2.5rem !important;
+                font-size: 0.9rem !important;
+            }
+            
+            .search-icon {
+                left: 0.9rem !important;
+                width: 18px !important;
+                height: 18px !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .folder-list-container {
+                padding: 0.5rem;
+                gap: 1rem;
+            }
+            
+            .hero-modern {
+                min-height: 250px;
+            }
+            
+            .hero-modern-content {
+                padding: 1rem 0.75rem;
+            }
+            
+            .card-content {
+                padding: 1rem;
+            }
+            
+            .card-image-header {
+                height: 150px;
+            }
+            
+            .grade-card-content {
+                padding: 1rem !important;
+            }
+            
+            .file-item {
+                padding: 0.5rem 1rem !important;
+                font-size: 0.85rem !important;
+            }
+            
+            .file-item span {
+                font-size: 0.8rem !important;
+            }
+            
+            .file-item button {
+                padding: 0.25rem 0.6rem !important;
+                font-size: 0.7rem !important;
+            }
+            
+            /* Smaller headings on very small screens */
+            h2[style*="fontSize"][style*="2.5rem"] {
+                font-size: 1.5rem !important;
+            }
+            
+            h2[style*="fontSize"][style*="2rem"] {
+                font-size: 1.25rem !important;
+            }
+            
+            /* Search results grid */
+            .grades-grid[style*="gridTemplateColumns"] {
+                grid-template-columns: 1fr !important;
+            }
+        }
+        
+        /* Mobile styles for grade cards */
+        @media (max-width: 768px) {
+            .grade-card {
+                margin: 0;
+            }
+            
+            .grade-card-content {
+                padding: 1.25rem !important;
+            }
+            
+            .grade-card-content h3 {
+                font-size: 1.1rem !important;
+            }
+            
+            .file-item {
+                padding: 0.6rem 1rem !important;
+                flex-wrap: wrap;
+            }
+            
+            .file-item span {
+                min-width: 0;
+                flex: 1 1 auto;
+                word-break: break-word;
+                white-space: normal !important;
+                margin-bottom: 0.25rem;
+            }
+            
+            .file-item button {
+                flex-shrink: 0;
+            }
+            
+            /* Stream selector buttons */
+            button[style*="padding"][style*="1rem"] {
+                padding: 0.75rem 1rem !important;
+                font-size: 0.9rem !important;
+            }
+            
+            /* Stream title and headings */
+            h2[style*="fontSize"][style*="2.5rem"] {
+                font-size: 1.75rem !important;
+            }
+            
+            h2[style*="fontSize"][style*="2rem"] {
+                font-size: 1.5rem !important;
+            }
+            
+            /* Back button */
+            button[style*="Back to Streams"] {
+                padding: 0.5rem 1rem !important;
+                font-size: 0.85rem !important;
+                margin-bottom: 1.5rem !important;
+            }
+        }
 
         .folder-card {
             background: rgba(255, 255, 255, 0.8);
