@@ -1964,6 +1964,28 @@ const grade6Files = [
   { name: "Western Province grade 6 third term test paper 2024(2025) _8 - Rasika Kumari Girihagama.jpg", link: grade6FolderLink }
 ];
 
+// Data for Grade 6 Tamil
+const grade6TamilFolderLink = "https://drive.google.com/drive/folders/1wC-pyJ7zZZZ0NfXuTrPSEJn8rBOqfA25?usp=sharing";
+
+const grade6TamilFiles = [
+  { name: "Grade 6 Tamil lesson 1 .pdf", link: grade6TamilFolderLink },
+  { name: "Grade 6 Tamil lesson 2 .pdf", link: grade6TamilFolderLink },
+  { name: "Grade 6 Tamil lesson 3 .pdf", link: grade6TamilFolderLink },
+  { name: "Grade 6 Tamil lesson 4 .pdf", link: grade6TamilFolderLink },
+  { name: "Grade 6 Tamil lesson 5 .pdf", link: grade6TamilFolderLink },
+  { name: "Grade 6 Tamil lesson 6.pdf", link: grade6TamilFolderLink },
+  { name: "Grade 6 Tamil lesson 7.pdf", link: grade6TamilFolderLink },
+  { name: "Grade 6 Tamil lesson 8.pdf", link: grade6TamilFolderLink },
+  { name: "Grade 6 Tamil lesson 9.pdf", link: grade6TamilFolderLink },
+  { name: "Grade 6 Tamil lesson 10 .pdf", link: grade6TamilFolderLink },
+  { name: "Grade 6 Tamil lesson 11 .pdf", link: grade6TamilFolderLink },
+  { name: "Grade 6 Tamil lesson 12.pdf", link: grade6TamilFolderLink },
+  { name: "Grade 6 Tamil lesson 13 .pdf", link: grade6TamilFolderLink },
+  { name: "Grade 6 Tamil lesson 14.pdf", link: grade6TamilFolderLink },
+  { name: "Grade 6 Tamil lesson 15.pdf", link: grade6TamilFolderLink },
+  { name: "Tamil 6-11 ශ්‍රේණි සඳහා අමතර දැනුම Part 2.pdf", link: grade6TamilFolderLink }
+];
+
 // Data for Grade 7
 const grade7FolderLink = "https://drive.google.com/drive/folders/1tAjHlhSA2AWFwNXqIsuurxvGLKltXKEZ?usp=sharing";
 
@@ -2065,7 +2087,23 @@ const gradeConfig = {
       { 
         name: "Grade 6", 
         files: grade6Files, 
-        link: grade6FolderLink, 
+        link: grade6FolderLink,
+        subsections: [
+          {
+            name: "Main Resources",
+            files: grade6Files,
+            link: grade6FolderLink,
+            links: [grade6FolderLink]
+          },
+          {
+            name: "Tamil Lessons",
+            files: grade6TamilFiles,
+            link: grade6TamilFolderLink,
+            links: [grade6TamilFolderLink],
+            color: "#dbeafe", // Light blue color for this section
+            credits: "Credits to Shahini Silva"
+          }
+        ],
         special: true,
         image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=600&q=80"
       },
