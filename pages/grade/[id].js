@@ -307,6 +307,30 @@ const chemistryFiles = [
   { name: "ධර්මරාජ_විද්‍යාලය_නුවර _Chemistry_2_term_test_12_grade_.pdf", link: chemistryFolderLink2 }
 ];
 
+// Data for Chemistry Term Test Papers
+const chemistryTermTestFolderLink = "https://drive.google.com/drive/folders/1Z0B81-8AIQzUnmYLdFuukIOEdwOwx05d?usp=sharing";
+
+const chemistryTermTestFiles = [
+  { name: "Ananda College - Colombo", link: chemistryTermTestFolderLink },
+  { name: "Bandaranayake College - Gampaha", link: chemistryTermTestFolderLink },
+  { name: "D.S. Senanayake College - Colombo", link: chemistryTermTestFolderLink },
+  { name: "Devi Balika College - Colombo", link: chemistryTermTestFolderLink },
+  { name: "Dharmaraja College - Kandy", link: chemistryTermTestFolderLink },
+  { name: "Mahanama College - Colombo", link: chemistryTermTestFolderLink },
+  { name: "Maliyadewa Girls College - Kurunegala", link: chemistryTermTestFolderLink },
+  { name: "Musaeus College - Colombo", link: chemistryTermTestFolderLink },
+  { name: "Nalanda College - Colombo", link: chemistryTermTestFolderLink },
+  { name: "Rahula College - Matara", link: chemistryTermTestFolderLink },
+  { name: "Rathnawali Balika College - Gampaha", link: chemistryTermTestFolderLink },
+  { name: "Royal College - Colombo", link: chemistryTermTestFolderLink },
+  { name: "Sanghamiththa Girls College - Galle", link: chemistryTermTestFolderLink },
+  { name: "Seewali College - Rathnapura", link: chemistryTermTestFolderLink },
+  { name: "Sirimawo Bandaranayake College - Colombo", link: chemistryTermTestFolderLink },
+  { name: "Thakshila College - Horana", link: chemistryTermTestFolderLink },
+  { name: "Thurstan College - Colombo", link: chemistryTermTestFolderLink },
+  { name: "Visaka College - Colombo", link: chemistryTermTestFolderLink }
+];
+
 // Data for Biology (Science Stream)
 const biologyFolderLink = "https://drive.google.com/drive/folders/1IKg9SL7rOlZyxMixfD_VXbTZVbZJ76IC?usp=sharing";
 
@@ -335,6 +359,30 @@ const biologyFiles = [
   { name: "ප්‍රතිශක්තිය Short Note - Lasithma Malthika.pdf", link: biologyFolderLink },
   { name: "ශ්වසන පද්ධතිය - Vandana Samanpriya.pdf", link: biologyFolderLink },
   { name: "ස්නායු පද්ධතිය SM - Vandana Samanpriya.pdf", link: biologyFolderLink }
+];
+
+// Data for Biology Term Test Papers
+const biologyTermTestFolderLink = "https://drive.google.com/drive/folders/1ZcBmPgw9o--tQ8jxshFunESnYpow8aa7?usp=sharing";
+
+const biologyTermTestFiles = [
+  { name: "Ananda College - Colombo", link: biologyTermTestFolderLink },
+  { name: "Bandaranayake College - Gampaha", link: biologyTermTestFolderLink },
+  { name: "D.S. Senanayake College - Colombo", link: biologyTermTestFolderLink },
+  { name: "Devi Balika College - Colombo", link: biologyTermTestFolderLink },
+  { name: "Dharmaraja College - Kandy", link: biologyTermTestFolderLink },
+  { name: "Isipathana College - Colombo", link: biologyTermTestFolderLink },
+  { name: "Mahanama College - Colombo", link: biologyTermTestFolderLink },
+  { name: "Maliyadewa Girls College - Kurunegala", link: biologyTermTestFolderLink },
+  { name: "Musaeus College - Colombo", link: biologyTermTestFolderLink },
+  { name: "Nalanda College - Colombo", link: biologyTermTestFolderLink },
+  { name: "Rahula College - Matara", link: biologyTermTestFolderLink },
+  { name: "Rathnawali Balika College - Gampaha", link: biologyTermTestFolderLink },
+  { name: "Royal College - Colombo", link: biologyTermTestFolderLink },
+  { name: "Sanghamiththa Girls College - Galle", link: biologyTermTestFolderLink },
+  { name: "Seewali College - Rathnapura", link: biologyTermTestFolderLink },
+  { name: "Sirimawo Bandaranayake College - Colombo", link: biologyTermTestFolderLink },
+  { name: "Thurstan College - Colombo", link: biologyTermTestFolderLink },
+  { name: "Visaka College - Colombo", link: biologyTermTestFolderLink }
 ];
 
 // Data for Physics (Science Stream)
@@ -367,6 +415,31 @@ const physicsFiles = [
   { name: "ධාරා විද්‍යුතය theory + Questions.pdf", link: physicsFolderLink3 }
 ];
 
+// Data for Physics Term Test Papers
+const physicsTermTestFolderLink = "https://drive.google.com/drive/folders/1IqCkQU0smHv2KTCyZgWcsd22VcFKmx9g?usp=sharing";
+
+const physicsTermTestFiles = [
+  { name: "Ananda College - Colombo", link: physicsTermTestFolderLink },
+  { name: "Bandaranayake College - Gampaha", link: physicsTermTestFolderLink },
+  { name: "D.S. Senanayake College - Colombo", link: physicsTermTestFolderLink },
+  { name: "Devi Balika College - Colombo", link: physicsTermTestFolderLink },
+  { name: "Dharmaraja College - Kandy", link: physicsTermTestFolderLink },
+  { name: "Isipathana College - Colombo", link: physicsTermTestFolderLink },
+  { name: "Mahanama College - Colombo", link: physicsTermTestFolderLink },
+  { name: "Maliyadewa Girls College - Kurunegala", link: physicsTermTestFolderLink },
+  { name: "Musaeus College - Colombo", link: physicsTermTestFolderLink },
+  { name: "Nalanda College - Colombo", link: physicsTermTestFolderLink },
+  { name: "Rahula College - Matara", link: physicsTermTestFolderLink },
+  { name: "Rathnawali Balika College - Gampaha", link: physicsTermTestFolderLink },
+  { name: "Royal College - Colombo", link: physicsTermTestFolderLink },
+  { name: "Sanghamiththa Girls College - Galle", link: physicsTermTestFolderLink },
+  { name: "Seewali College - Rathnapura", link: physicsTermTestFolderLink },
+  { name: "Sirimawo Bandaranayake College - Colombo", link: physicsTermTestFolderLink },
+  { name: "Thakshila College - Horana", link: physicsTermTestFolderLink },
+  { name: "Thurstan College - Colombo", link: physicsTermTestFolderLink },
+  { name: "Visaka College - Colombo", link: physicsTermTestFolderLink }
+];
+
 // Data for Combined Maths (Science Stream)
 const combinedMathsFolderLink = "https://drive.google.com/drive/folders/1egPHQmVpwEpQFvJWmm7vXof8NULn7mYC?usp=sharing";
 
@@ -381,6 +454,28 @@ const combinedMathsFiles = [
   { name: "ගණිත අභ්‍යුහනය මූලධර්මය.pdf", link: combinedMathsFolderLink },
   { name: "සරල ශ්‍රේණි tute.pdf", link: combinedMathsFolderLink },
   { name: "සාපේක්ෂ ත්වරණය tute.pdf", link: combinedMathsFolderLink }
+];
+
+// Data for Combined Maths Term Test Papers
+const combinedMathsTermTestFolderLink = "https://drive.google.com/drive/folders/1UK2XuSrrBgxgfQU3087Bs556k_I5C0SB?usp=sharing";
+
+const combinedMathsTermTestFiles = [
+  { name: "Ananda College - Colombo", link: combinedMathsTermTestFolderLink },
+  { name: "Bandaranayake College - Gampaha", link: combinedMathsTermTestFolderLink },
+  { name: "Devi Balika College - Colombo", link: combinedMathsTermTestFolderLink },
+  { name: "Dharmapala College - Kandy", link: combinedMathsTermTestFolderLink },
+  { name: "Isipathana College - Colombo", link: combinedMathsTermTestFolderLink },
+  { name: "Mahanama College - Colombo", link: combinedMathsTermTestFolderLink },
+  { name: "Maliyadewa Girls College - Kurunegala", link: combinedMathsTermTestFolderLink },
+  { name: "Musaeus College - Colombo", link: combinedMathsTermTestFolderLink },
+  { name: "Nalanda College - Colombo", link: combinedMathsTermTestFolderLink },
+  { name: "Rahula College - Matara", link: combinedMathsTermTestFolderLink },
+  { name: "Rathnawali Balika College - Gampaha", link: combinedMathsTermTestFolderLink },
+  { name: "Royal College - Colombo", link: combinedMathsTermTestFolderLink },
+  { name: "Sanghamiththa Girls College - Galle", link: combinedMathsTermTestFolderLink },
+  { name: "Sirimawo Bandaranayake College - Colombo", link: combinedMathsTermTestFolderLink },
+  { name: "Thurstan College - Colombo", link: combinedMathsTermTestFolderLink },
+  { name: "Visaka College - Colombo", link: combinedMathsTermTestFolderLink }
 ];
 
 // Data for Economics (Commerce Stream)
@@ -441,6 +536,19 @@ const econFiles = [
   { name: "Economics Unit 3 T - Dilmi Ranaweera", link: econFolderLink },
   { name: "Economics Unit 4 T - Dilmi Ranaweera", link: econFolderLink },
   { name: "Economics Unit 5 T - Dilmi Ranaweera", link: econFolderLink }
+];
+
+// Data for Economics - Chenuri Rajasinghe
+const econChenuriFolderLink = "https://drive.google.com/drive/folders/1m4PZpAzMAd_N7eL_5p4GgnUkAIlCkmiq?usp=sharing";
+
+const econChenuriFiles = [
+  { name: "5e398496-ba74-4cb8-b1a7-885b403e658c.JPG", link: econChenuriFolderLink },
+  { name: "3192d14b-f744-4a95-a99e-9194c7090c9e.JPG", link: econChenuriFolderLink },
+  { name: "6574c649-6a54-4fd3-84ab-98c0b7cb8490.JPG", link: econChenuriFolderLink },
+  { name: "4002630a-8b58-44b7-9f55-6ea731a60a55.JPG", link: econChenuriFolderLink },
+  { name: "97405400-7e96-4686-a4a2-ed187bc21e38.JPG", link: econChenuriFolderLink },
+  { name: "b4e9acca-8844-468f-83da-291b72442e66.JPG", link: econChenuriFolderLink },
+  { name: "e94e07f4-4cb4-4745-8259-b28b41634649.JPG", link: econChenuriFolderLink }
 ];
 
 // Data for Business Studies (Commerce Stream)
@@ -1396,6 +1504,29 @@ const olTamilNoteKokkaFiles = [
   { name: "Tamil Grammar.pdf", link: olTamilNoteKokkaFolderLink }
 ];
 
+// Data for O/L Tamil Lessons & Resources (Shashini)
+const olTamilShashiniFolderLink = "https://drive.google.com/drive/folders/1CxOu3kg8VcKV1CukaXgm_jxz9uEXWmcH?usp=sharing";
+
+const olTamilShashiniFiles = [
+  { name: "Grade 10 Tamil lesson 1 .pdf", link: olTamilShashiniFolderLink },
+  { name: "Grade 10 Tamil lesson 2 .pdf", link: olTamilShashiniFolderLink },
+  { name: "Grade 10 Tamil lesson 3 .pdf", link: olTamilShashiniFolderLink },
+  { name: "Grade 10 Tamil lesson 4 .pdf", link: olTamilShashiniFolderLink },
+  { name: "Grade 10 Tamil lesson 5.pdf", link: olTamilShashiniFolderLink },
+  { name: "Grade 10 Tamil lesson 6 .pdf", link: olTamilShashiniFolderLink },
+  { name: "Grade 10 Tamil lesson 7 .pdf", link: olTamilShashiniFolderLink },
+  { name: "Grade 10 Tamil lesson 8 .pdf", link: olTamilShashiniFolderLink },
+  { name: "Grade 10 Tamil lesson 9 .pdf", link: olTamilShashiniFolderLink },
+  { name: "Grade 10 Tamil lesson 10 .pdf", link: olTamilShashiniFolderLink },
+  { name: "Grade 10 Tamil lesson 11.pdf", link: olTamilShashiniFolderLink },
+  { name: "Grade 10 Tamil lesson 12 .pdf", link: olTamilShashiniFolderLink },
+  { name: "Grade 10 Tamil lesson 13.pdf", link: olTamilShashiniFolderLink },
+  { name: "Grade 10 Tamil lesson 14 .pdf", link: olTamilShashiniFolderLink },
+  { name: "Grade 10 Tamil lesson 15.pdf", link: olTamilShashiniFolderLink },
+  { name: "O-L Tamil letters, notes, notice, essays Part 1 .pdf", link: olTamilShashiniFolderLink },
+  { name: "O-L Tamil letters, notes, notice, essays Part 2.pdf", link: olTamilShashiniFolderLink }
+];
+
 // Data for O/L Geography Note Kokka
 const olGeographyNoteKokkaFolderLink = "https://drive.google.com/drive/folders/1y2HNu2_O36iEY3qAi596EoIsg0gTZTkv?usp=sharing";
 
@@ -1681,6 +1812,14 @@ const olSubjects = [
         links: [olTamilNoteKokkaFolderLink],
         color: "#fef3c7", // Yellow color for this section
         credits: "Credits to Note Kokka"
+      },
+      {
+        name: "Tamil Lessons & Resources",
+        files: olTamilShashiniFiles,
+        link: olTamilShashiniFolderLink,
+        links: [olTamilShashiniFolderLink],
+        color: "#dbeafe", // Light blue color for this section
+        credits: "Credits to Shashini"
       }
     ],
     special: true,
@@ -1971,6 +2110,22 @@ const gradeConfig = {
             files: physicsFiles, 
             link: physicsFolderLink,
             links: [physicsFolderLink, physicsNewFolderLink, physicsFolderLink3], // Multiple folder links
+            subsections: [
+              {
+                name: "Main Resources",
+                files: physicsFiles,
+                link: physicsFolderLink,
+                links: [physicsFolderLink, physicsNewFolderLink, physicsFolderLink3]
+              },
+              {
+                name: "Term Test Papers",
+                files: physicsTermTestFiles,
+                link: physicsTermTestFolderLink,
+                links: [physicsTermTestFolderLink],
+                color: "#dbeafe", // Light blue color for this section
+                credits: "Term test papers from various schools"
+              }
+            ],
             special: true,
             image: "https://images.unsplash.com/photo-1636466497217-26a8cbeaf0aa?auto=format&fit=crop&w=600&q=80"
           },
@@ -1979,6 +2134,22 @@ const gradeConfig = {
             files: chemistryFiles, 
             link: chemistryFolderLink,
             links: [chemistryFolderLink, chemistryFolderLink2], // Multiple folder links
+            subsections: [
+              {
+                name: "Main Resources",
+                files: chemistryFiles,
+                link: chemistryFolderLink,
+                links: [chemistryFolderLink, chemistryFolderLink2]
+              },
+              {
+                name: "Term Test Papers",
+                files: chemistryTermTestFiles,
+                link: chemistryTermTestFolderLink,
+                links: [chemistryTermTestFolderLink],
+                color: "#dbeafe", // Light blue color for this section
+                credits: "Term test papers from various schools"
+              }
+            ],
             special: true,
             image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=600&q=80" 
           },
@@ -1986,6 +2157,22 @@ const gradeConfig = {
             name: "Biology", 
             files: biologyFiles, 
             link: biologyFolderLink,
+            subsections: [
+              {
+                name: "Main Resources",
+                files: biologyFiles,
+                link: biologyFolderLink,
+                links: [biologyFolderLink]
+              },
+              {
+                name: "Term Test Papers",
+                files: biologyTermTestFiles,
+                link: biologyTermTestFolderLink,
+                links: [biologyTermTestFolderLink],
+                color: "#dbeafe", // Light blue color for this section
+                credits: "Term test papers from various schools"
+              }
+            ],
             special: true,
             image: "https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=600&q=80"
           },
@@ -1993,6 +2180,22 @@ const gradeConfig = {
             name: "Combined Maths", 
             files: combinedMathsFiles, 
             link: combinedMathsFolderLink,
+            subsections: [
+              {
+                name: "Main Resources",
+                files: combinedMathsFiles,
+                link: combinedMathsFolderLink,
+                links: [combinedMathsFolderLink]
+              },
+              {
+                name: "Term Test Papers",
+                files: combinedMathsTermTestFiles,
+                link: combinedMathsTermTestFolderLink,
+                links: [combinedMathsTermTestFolderLink],
+                color: "#dbeafe", // Light blue color for this section
+                credits: "Term test papers from various schools"
+              }
+            ],
             special: true,
             image: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=600&q=80"
           }
@@ -2090,6 +2293,22 @@ const gradeConfig = {
             name: "Econ", 
             files: econFiles, 
             link: econFolderLink,
+            subsections: [
+              {
+                name: "Main Resources",
+                files: econFiles,
+                link: econFolderLink,
+                links: [econFolderLink]
+              },
+              {
+                name: "Economics Resources",
+                files: econChenuriFiles,
+                link: econChenuriFolderLink,
+                links: [econChenuriFolderLink],
+                color: "#dbeafe", // Light blue color for this section
+                credits: "Credits to Chenuri Rajasinghe"
+              }
+            ],
             special: true,
             image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=600&q=80"
           }
@@ -2422,25 +2641,32 @@ export default function GradePage() {
               
               if (subDisplayFiles.length === 0 && query) return null;
 
+              const isTermTestPapers = subsection.name === "Term Test Papers";
               return (
                 <div key={subIndex} style={{ borderBottom: subIndex < subject.subsections.length - 1 ? '2px solid #e5e7eb' : 'none' }}>
                   <div style={{ 
                     padding: '0.75rem 1.5rem', 
-                    background: subsection.color || '#f3f4f6', 
+                    background: isTermTestPapers 
+                      ? 'linear-gradient(135deg, #10b981 0%, #059669 100%)' 
+                      : (subsection.color || '#f3f4f6'), 
                     borderBottom: '1px solid #e5e7eb',
                     fontWeight: '600',
                     fontSize: '0.9rem',
-                    color: '#374151',
+                    color: isTermTestPapers ? 'white' : '#374151',
                     display: 'flex',
                     justifyContent: 'space-between',
-                    alignItems: 'center'
+                    alignItems: 'center',
+                    boxShadow: isTermTestPapers ? '0 2px 8px rgba(16, 185, 129, 0.3)' : 'none'
                   }}>
-                    <span>{subsection.name}</span>
+                    <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                      {isTermTestPapers && <span style={{ fontSize: '1.1rem' }}>📋</span>}
+                      {subsection.name}
+                    </span>
                     {subsection.credits && (
                       <span style={{ 
                         fontSize: '0.75rem', 
                         fontWeight: '500', 
-                        color: '#6b7280',
+                        color: isTermTestPapers ? 'rgba(255, 255, 255, 0.9)' : '#6b7280',
                         fontStyle: 'italic'
                       }}>
                         {subsection.credits}
@@ -2455,6 +2681,7 @@ export default function GradePage() {
 
           <div style={{ padding: '1.5rem', marginTop: 'auto', borderTop: '1px solid #eee', background: 'white' }}>
             {subject.subsections.map((subsection, subIndex) => {
+              const isTermTestPapers = subsection.name === "Term Test Papers";
               if (subsection.links && subsection.links.length > 0) {
                 return (
                   <div key={subIndex} style={{ marginBottom: subIndex < subject.subsections.length - 1 ? '0.75rem' : '0' }}>
@@ -2467,8 +2694,37 @@ export default function GradePage() {
                           key={linkIndex}
                           onClick={() => window.open(link, "_blank")}
                           className={`btn ${subject.special ? 'btn-primary' : 'btn-outline'}`}
-                          style={{ width: '100%', justifyContent: 'center', display: 'flex', padding: '0.75rem', fontSize: '0.85rem' }}
+                          style={{ 
+                            width: '100%', 
+                            justifyContent: 'center', 
+                            display: 'flex', 
+                            alignItems: 'center',
+                            gap: '0.5rem',
+                            padding: '0.75rem', 
+                            fontSize: '0.85rem',
+                            background: isTermTestPapers 
+                              ? 'linear-gradient(135deg, #10b981 0%, #059669 100%)' 
+                              : undefined,
+                            border: isTermTestPapers ? 'none' : undefined,
+                            color: isTermTestPapers ? 'white' : undefined,
+                            boxShadow: isTermTestPapers ? '0 4px 12px rgba(16, 185, 129, 0.4)' : undefined,
+                            transition: 'all 0.3s ease',
+                            fontWeight: '600'
+                          }}
+                          onMouseEnter={(e) => {
+                            if (isTermTestPapers) {
+                              e.currentTarget.style.transform = 'translateY(-2px)';
+                              e.currentTarget.style.boxShadow = '0 6px 16px rgba(16, 185, 129, 0.5)';
+                            }
+                          }}
+                          onMouseLeave={(e) => {
+                            if (isTermTestPapers) {
+                              e.currentTarget.style.transform = 'translateY(0)';
+                              e.currentTarget.style.boxShadow = '0 4px 12px rgba(16, 185, 129, 0.4)';
+                            }
+                          }}
                         >
+                          {isTermTestPapers && <span style={{ fontSize: '1rem' }}>📋</span>}
                           Open {subsection.name} Folder {subsection.links.length > 1 ? `(${linkIndex + 1})` : ''}
                         </button>
                       ))}
@@ -2484,8 +2740,37 @@ export default function GradePage() {
                     <button 
                       onClick={() => window.open(subsection.link, "_blank")}
                       className={`btn ${subject.special ? 'btn-primary' : 'btn-outline'}`}
-                      style={{ width: '100%', justifyContent: 'center', display: 'flex', padding: '0.75rem', fontSize: '0.85rem' }}
+                      style={{ 
+                        width: '100%', 
+                        justifyContent: 'center', 
+                        display: 'flex', 
+                        alignItems: 'center',
+                        gap: '0.5rem',
+                        padding: '0.75rem', 
+                        fontSize: '0.85rem',
+                        background: isTermTestPapers 
+                          ? 'linear-gradient(135deg, #10b981 0%, #059669 100%)' 
+                          : undefined,
+                        border: isTermTestPapers ? 'none' : undefined,
+                        color: isTermTestPapers ? 'white' : undefined,
+                        boxShadow: isTermTestPapers ? '0 4px 12px rgba(16, 185, 129, 0.4)' : undefined,
+                        transition: 'all 0.3s ease',
+                        fontWeight: '600'
+                      }}
+                      onMouseEnter={(e) => {
+                        if (isTermTestPapers) {
+                          e.currentTarget.style.transform = 'translateY(-2px)';
+                          e.currentTarget.style.boxShadow = '0 6px 16px rgba(16, 185, 129, 0.5)';
+                        }
+                      }}
+                      onMouseLeave={(e) => {
+                        if (isTermTestPapers) {
+                          e.currentTarget.style.transform = 'translateY(0)';
+                          e.currentTarget.style.boxShadow = '0 4px 12px rgba(16, 185, 129, 0.4)';
+                        }
+                      }}
                     >
+                      {isTermTestPapers && <span style={{ fontSize: '1rem' }}>📋</span>}
                       Open {subsection.name} Folder
                     </button>
                   </div>
