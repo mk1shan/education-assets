@@ -103,7 +103,7 @@ const Chatbot = () => {
     'science': { level: 'O/L', stream: null, response: 'For Science, go to O/L section and select Science. We have Note Kokka resources. For A/L Science subjects (Physics, Chemistry, Biology), go to Science Stream.' },
     'sinhala': { level: 'O/L', stream: null, response: 'For Sinhala, go to O/L section and select Sinhala or Sinhala Literature. We also have audio files for literature. For A/L Sinhala, go to Arts Stream.' },
     'sinhala literature': { level: 'O/L', stream: null, response: 'For Sinhala Literature, go to O/L section and select Sinhala Literature. We have notes, papers, and audio files (MP3).' },
-    'tamil': { level: 'O/L', stream: null, response: 'For Tamil, go to O/L section and select Tamil. We have Tamil lessons, grammar notes, and resources from Shashini.' },
+    'tamil': { level: 'O/L', stream: null, response: 'For Tamil, go to O/L section and select Tamil. We have Tamil lessons, grammar notes, and resources from Shahini Silva.' },
     'geography': { level: 'O/L', stream: null, response: 'For Geography, go to O/L section and select Geography. We have Note Kokka resources. For A/L Geography, go to Arts Stream.' },
     'health': { level: 'O/L', stream: null, response: 'For Health & Physical Education, go to O/L section and select Health & Physical Education. We have Note Kokka resources.' },
     'physical education': { level: 'O/L', stream: null, response: 'For Health & Physical Education, go to O/L section and select Health & Physical Education. We have Note Kokka resources.' },

@@ -1504,7 +1504,7 @@ const olTamilNoteKokkaFiles = [
   { name: "Tamil Grammar.pdf", link: olTamilNoteKokkaFolderLink }
 ];
 
-// Data for O/L Tamil Lessons & Resources (Shashini)
+// Data for O/L Tamil Lessons & Resources (Shahini Silva)
 const olTamilShashiniFolderLink = "https://drive.google.com/drive/folders/1CxOu3kg8VcKV1CukaXgm_jxz9uEXWmcH?usp=sharing";
 
 const olTamilShashiniFiles = [
@@ -1819,7 +1819,7 @@ const olSubjects = [
         link: olTamilShashiniFolderLink,
         links: [olTamilShashiniFolderLink],
         color: "#dbeafe", // Light blue color for this section
-        credits: "Credits to Shashini"
+        credits: "Credits to Shahini Silva"
       }
     ],
     special: true,
